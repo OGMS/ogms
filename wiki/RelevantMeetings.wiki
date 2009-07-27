@@ -7,4 +7,4 @@
 
 = Past =
 
-*[http//icbo.buffalo.edu 2009 International Conference on Biomedical Ontology (ICBO 2009)]
+*[http://icbo.buffalo.edu 2009 International Conference on Biomedical Ontology (ICBO 2009)]

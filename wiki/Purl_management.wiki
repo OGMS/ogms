@@ -1,0 +1,11 @@
+# Information about setting up and maintaining the purls.
+
+= Adminstrative =
+
+Setup is at http://purl.org/.
+
+We use purl.obolibrary.org, which is a CNAME for purl.org, currently.
+
+There is a purl "group" called "ogms". It currently has Alan(alanruttenberg) and Lindsay(lgcowell) as members. 
+
+There is one purl currently - /obo/ogms.owl - the administators of that purl are the members of the ogms group.

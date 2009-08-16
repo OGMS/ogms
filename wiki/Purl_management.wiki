@@ -8,4 +8,6 @@ We use purl.obolibrary.org, which is a CNAME for purl.org, currently.
 
 There is a purl "group" called "ogms". It currently has Alan(alanruttenberg) and Lindsay(lgcowell) as members. 
 
-There is one purl currently - /obo/ogms.owl - the administators of that purl are the members of the ogms group.
+Existing purls:
+* http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.owl - first translation
+* http://purl.obolibrary.org/obo/ogms.owl - Latest version (= /obo/ogms/2009-08-07/ogms.owl)

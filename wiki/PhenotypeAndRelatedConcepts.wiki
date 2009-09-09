@@ -14,7 +14,7 @@ Disease Phenotype (or Clinical Feature) = A clinically abnormal phenotype.
 thanks,
 Sivaram
 P.S: Albert - if the OGMS mailing list is more suited for this sort of discussion, I can add these in as issues. Please advise.
----
+----
 Peter Robinson <peter.robinson@charite.de> 	Wed, Sep 9, 2009 at 3:20 AM
 Dear colleagues,
 I am sorry I could not make it to the meeting in Milan, it sounds like you had quite an interesting time. I would like to add a comment or two. I do not think that "clinically abnormal" is well defined. Do we mean by "abnormal" something that is "unusual" or do we mean something that is "dysfunctional"? Especially in genetics, there are many clinical features that are quite unusual in the general population but do not cause any particular problems about which patients complain (example: Lisch nodules in neurofibromatosis). There are numerous examples in general medicine. So I would suggest that the word "clinical" not be used in an axiomatic sense! Probably it is best not to use the word at all for defining other concepts.
@@ -58,7 +58,7 @@ http://compbio.charite.de/
 http://www.human-phenotype-ontology.org
 
 
----
+----
 
 Hogan, William R <hoganwr@upmc.edu> 	Wed, Sep 9, 2009 at 6:48 AM
 Peter,

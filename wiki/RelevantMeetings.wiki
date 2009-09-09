@@ -3,8 +3,8 @@
 
 ==Upcoming==
 
-*[http://bimib.disco.unimib.it/index.php/SSFW09 Signs, Symptoms and Findings: Towards an Ontology for Clinical Phenotypes]
 
 ==Past==
 
+*[http://bimib.disco.unimib.it/index.php/SSFW09 Signs, Symptoms and Findings: Towards an Ontology for Clinical Phenotypes]
 *[http://icbo.buffalo.edu 2009 International Conference on Biomedical Ontology (ICBO 2009)]

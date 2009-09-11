@@ -1,5 +1,6 @@
 #labels ogms,phenotype
 Sivaram Arabandi <sivaram.arabandi@gmail.com> 	Tue, Sep 8, 2009 at 1:59 PM
+
 Following the conversions at SSFW09, here are some OGMS term definitions that can be discussed further:
 
 Clinical Picture = A collection of clinical findings (symptoms, signs, lab results, imaging and perhaps genetic information) that are relevant and together form an input to a hypothesis whose output is a diagnosis.
@@ -8,11 +9,15 @@ Phenotype = Expression of genetic information. Includes all bodily features - qu
 
 Clinical Phenotype = A subset of bodily features that are clinically significant. Includes both normal as well as abnormal features.
 
-Disease Phenotype (or Clinical Feature) = A clinically abnormal phenotype.
+Disease Phenotype (or Clinical Feature) = A clinically abnormal phenotype.  
        Note: I am proposing that these two terms are the same.
+ 
+       - *UPDATE:* see below where I have redefined these terms and instead think that Clinical Feature and Clinical Phenotype may in fact be the same.   :)
 
 thanks,
+
 Sivaram
+
 P.S: Albert - if the OGMS mailing list is more suited for this sort of discussion, I can add these in as issues. Please advise.
 ----
 Peter Robinson <peter.robinson@charite.de> 	Wed, Sep 9, 2009 at 3:20 AM
@@ -82,3 +87,37 @@ Furthermore, I challenged those who raised this possibility to envision a device
 Thus, there is one rash, which both the patient may complain about and the clinician may observe.  And if the patient experiences pruritis (itching) with the rash, there is one experience of pruritis, something the clinician cannot observe (although a clinician can observe excoriations due to scratching, which is a sign).
 
 Bill
+
+----
+
+Sivaram Arabandi <sivaram.arabandi@gmail.com> 	Fri, Sep 11, 2009 at 11:40 AM
+
+Peter/Bill,
+
+If we go back to how most of us were taught,  
+
+ - a *Symptom* is a 'feature' that is reported by a patient (based on experiencing it)
+
+ - a *Sign* is a 'feature' that is observed by someone other than a patient (doctor, nurse, parent, etc.)
+
+ - and some _features_ can be both (eg. _rash_), whereas others like _pain_ or _pruritis_ can only be symptoms , and yet others like _corneal reflex_ or _dull on percussion_ can only be signs. In the future _pain_ may be measured by some means but only the patient can experience it. 
+
+So, what are *features*? I think it is implied here that we are talking about *Clinical features*. So, are *Clinical features* always abnormal? Quite obviously not - there are clinical features of pregnancy, aging etc which are normal. So, it appears that *Clinical feature* and *Clinical Phenotype* may be synonyms and may be defined as:
+
+    _'A subset of bodily features that are clinically significant. Includes both normal as well as abnormal features.'_
+
+ - a *Disease Phenotype* is a _clinical feature_ associated with one or more diseases (or disorders) and is indicative of something abnormal.
+
+I think of *Clinical feature*, *Clinical Phenotype*, *Disease Phenotype* as _core clinical concepts_ - _NOT_ as _representational artifacts_. 
+
+*Symptom* and *Sign* may be defined as subtypes of *Clinical finding* which would be the representational artifact counterpart of *Clinical feature*. This will allow certain *Clinical features* to be classified as both *Symptoms* and *Signs* where needed (at the instance level).
+
+Taking the example of _pain_, if we consider _pain_ is a *Clinical feature*, then a recording of it as a *Symptom* would be having other relations like _site of_, _duration_, _radiation_ etc that only the patient can describe (see Bill's discussion above). These aspects of _pain_ clearly fall under the category of *Symptom*. At sometime in the future, there may be tests that may measure _pain_ objectively - then these aspects of _pain_ would be considered as *Sign* - objective and observed by someone other than the patient.
+
+ciao,
+
+Sivaram
+
+
+
+

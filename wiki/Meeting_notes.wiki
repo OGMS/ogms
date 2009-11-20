@@ -1,3 +1,4 @@
+#labels Featured
 = List of meeting notes =
 
 *[Meeting_notes_20091119]

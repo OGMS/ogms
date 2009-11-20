@@ -12,4 +12,4 @@ Where: Skype
 
 == Minutes ==
 
-[http://ogms.googlecode.com/svn/trunk/docs/meeting-transcripts/ogms-tc-2009-1-19.html raw transcript]
+[http://ogms.googlecode.com/svn/trunk/docs/meeting-transcripts/ogms-tc-2009-11-19.html raw transcript]

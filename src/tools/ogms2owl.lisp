@@ -1,7 +1,6 @@
 ;; another obo to owl converter
 
-;; (load "~/lsw/biopax/proto/obo.lisp")
-;; (setq obo (make-instance 'obo :path "/Users/alanr/Downloads/2009-08-07/OGMSv0.2.obo.txt"))
+;; (setq obo (make-instance 'obo :path "~/repos/ogms/trunk/src/ontology/ogms.obo"))
 ;; (read-obo obo)
 ;; (ogms-to-owl) -> ~/Desktop/ogms.owl
 

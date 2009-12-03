@@ -4,7 +4,6 @@ auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo
 
-
 [Term]
 id: BFO:0000000
 name: entity
@@ -179,18 +178,22 @@ is_a: BFO:0000000 ! entity
 creation_date: 2009-07-08T05:42:49Z
 
 [Term]
-id: OGMS:0000013
-name: representation
-comment: See if IAO has any high level term for representation.
+id: IAO:0000030
+name: information content entity
+def: "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" [OBO:sourced "OBI:0000142"]
 is_a: BFO:0000005 ! generically dependent continuant
-created_by: agoldfain
-creation_date: 2009-06-23T10:17:44Z
+
+[Term]
+id: IAO:0000027
+name: data item
+def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo\, e.g.\, measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." [OBO:imported "http://purl.obolibrary.org/obo/iao.owl"]
+is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: OGMS:0000014
 name: clinical finding
 def: "A representation of a bodily feature of a patient that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
-is_a: OGMS:0000013 ! representation
+is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T10:18:02Z
 
@@ -206,7 +209,7 @@ creation_date: 2009-06-23T10:18:59Z
 id: OGMS:0000016
 name: clinical picture
 def: "A representation of the clinically significant bodily features of a patient that is inferred from the totality of clinical findings about the given patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
-is_a: OGMS:0000013 ! representation
+is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T10:20:20Z
 
@@ -230,7 +233,7 @@ creation_date: 2009-06-23T10:21:58Z
 id: OGMS:0000019
 name: preclinical finding
 def: "A representation of a bodily feature of a patient that is (1) recorded by a clinician because the feature is hypothesized to be of clinical significance and (2) refers to features obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: OGMS:0000013 ! representation
+is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T10:22:44Z
 
@@ -620,8 +623,7 @@ creation_date: 2009-06-23T12:00:56Z
 id: OGMS:0000073
 name: diagnosis
 def: "The representation of a conclusion of an interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-!is_a: IAO:0000027 ! data item
-is_a: OGMS:0000013 ! representation
+is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T12:42:23Z
 
@@ -726,5 +728,13 @@ def: "A clinical picture that is an association of symptoms, signs and other cli
 is_a: OGMS:0000016 ! clinical picture
 created_by: agoldfain
 creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000013
+name: obsolete_representation
+comment: See if IAO has any high level term for representation.
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T10:17:44Z
 
 

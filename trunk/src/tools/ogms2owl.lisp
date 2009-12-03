@@ -2,12 +2,12 @@
 
 ;; (setq obo (make-instance 'obo :path "~/repos/ogms/trunk/src/ontology/ogms.obo"))
 ;; (read-obo obo)
-;; (ogms-to-owl) -> ~/Desktop/ogms.owl
+;; (ogms-to-owl obo) -> ~/Desktop/ogms.owl
 
 (defun getf-multiple (plist indicator)
   (loop for (key value) on plist by #'cddr when (eq indicator key) collect value))
 
-(defun ogms-to-owl ()
+(defun ogms-to-owl (obo &optional (dest "ogms:ontology;ogms.owl"))
   (flet ((uri-ify (id)
 	   (cond ((equal id "BFO:0000076")
 		  !bfo:Entity)
@@ -17,6 +17,8 @@
 		  (make-uri (#"replaceFirst" id "OGMS:" "http://purl.obolibrary.org/obo/OGMS_")))
 		 ((#"matches" id "^OBO_REL:.*")
 		  (make-uri (#"replaceFirst" id "^OBO_REL:" "http://www.obofoundry.org/ro/ro.owl#")))
+		 ((#"matches" id "^IAO:.*")
+		  (make-uri (#"replaceFirst" id "^IAO:" "http://purl.obolibrary.org/obo/IAO_")))
 		 (t (error "don't know how to convert id ~a to uri" id)))))
     (with-ontology ogms (:about "http://purl.obolibrary.org/obo/ogms.owl" :base "http://purl.obolibrary.org/obo/ogms.owl")
 	((owl-imports !<http://www.ifomis.org/bfo/1.1>)
@@ -40,7 +42,7 @@ If you are interested in participating in the development of OGMS, please send e
 	 (annotation-property !obo:IAO_0000119 (label "definition source"))
 	 (annotation-property !obo:IAO_0000116 (label "editor note"))
 	 (ontology-annotation !dc:date (literal "2009-08-07" !xsd:date))
-	 (sub-class-of !<http://purl.obolibrary.org/obo/OGMS_0000013> !obo:IAO_0000030)
+;	 (sub-class-of !<http://purl.obolibrary.org/obo/OGMS_0000013> !obo:IAO_0000030)
 	 (loop for record in (terms obo) 
 	    for name = (getf (cdr record) :name)
 	    for id = (getf (cdr record) :id)
@@ -51,7 +53,7 @@ If you are interested in participating in the development of OGMS, please send e
 	    for creation-date = (getf (cdr record) :creation_date)
 	    if (equal name "undefined primitive terms") do (setq name "_undefined primitive term")
 	    unless (or (equal id !owl:Thing) (equal id !bfo:Entity) (#"matches" id "BFO.*") (equal id "OGMS:0000072"))
-	    collect (apply 'class (label name) (uri-ify id)
+	    collect (apply 'class (unless (#"matches" id "IAO.*") (label name)) (uri-ify id)
 			   (if (car def) (annotation !obo:IAO_0000115 (literal (car def)  :|@en|)))
 			   (if (third def) (annotation !obo:IAO_0000119  (third def)))
 			   (if created-by (annotation !obi:IAO_0000117 (#"replaceAll" created-by "agoldfain" "Albert Goldfain")))
@@ -66,7 +68,12 @@ If you are interested in participating in the development of OGMS, please send e
 			       (list !oboinowl:ObsoleteClass)
 			       (mapcar #'uri-ify is_a))))))
 ;      (prin1 (rdfxml flu))
-      (write-rdfxml ogms))))
+      (write-rdfxml ogms dest))))
+
+(defun ogms-convert (&optional (source "ogms:ontology;ogms.obo") (dest "ogms:ontology;ogms.owl"))
+  (let ((obo (make-instance 'obo :path source)))
+    (read-obo obo)
+    (ogms-to-owl obo dest)))
 
 (defparameter *bfo-map* 
   '(("BFO:0000000" "http://www.ifomis.org/bfo/1.1#Entity")

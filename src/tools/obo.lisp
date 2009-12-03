@@ -13,7 +13,7 @@
 	  (loop for line = (read-line f  nil :eof)
 	     until (eq line :eof)
 	     for part = (caar (all-matches line "^\\[(.*?)\\]\s*" 1))
-	     do (assert (or part (equal line ""))  () "Didn't find a record! '~a'" line)
+	     do  (assert (or part (equal line ""))  () "Didn't find a record! '~a'" line)
 	     when part collect  (read-obo-record g part f)
 	     ))
     (values)))
@@ -46,4 +46,6 @@
      ))
 
 (defmethod read-obo-record ((g obo) type stream)
-  (cons type (read-obo-key-values g stream)))
+  (let ((it (cons type (read-obo-key-values g stream))))
+    (print-db it)
+    it))

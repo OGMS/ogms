@@ -1,0 +1,34 @@
+_Describing snapshots for which date PURLs have been allocated_
+
+= Policy =
+
+We use the subversion repository to host files. Releases are named by date released YYYY-MM-DD and have tags of that form in the releases directory. Purls of the form `http://purl.obolibrary.org/obo/ogms/YYYY-MM-DD/____.owl` are used to point to these tagged versions. The latest dated version is also pointed to by the ontology URI: http://purl.obolibrary.org/obo/ogms.owl. 
+
+
+= OGMS Ontology URI =
+
+ * http://purl.obolibrary.org/obo/ogms.owl 
+ * OBO format version (but beware bogus BFO ids) http://purl.obolibrary.org/obo/ogms.obo 
+
+Always points to latest dated version.
+
+= Allocated PURLs =
+
+== Version "0.2" ==
+ * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.owl
+ * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.obo
+
+== Version "0.3" ==
+
+ * http://purl.obolibrary.org/obo/ogms/2009-12-03/ogms.owl
+ * http://purl.obolibrary.org/obo/ogms/2009-12-03/ogms.obo
+
+= OWL 1 usage =
+
+Use the PURL for the version you want. Ignore any complaints from tools that the ontology URI doesn't match the physical URI
+
+= OWL 2 usage =
+
+Use http://purl.obolibrary.org/obo/ogms.owl as the ontologyIRI and the PURL for the version you want as the versionIRI.
+
+See http://www.w3.org/2007/OWL/wiki/Syntax#Ontology_IRI_and_Version_IRI

@@ -26,23 +26,33 @@
 	 (owl-imports !<http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl>)
 	 (ontology-annotation !rdfs:comment "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
-OGMS will be submitted to the OBO Foundry and NCBO Bioportal.
+The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
+This is version 2009-12-03 aka '0.3'
+http://purl.obolibrary.org/obo/ogms/2009-12-09/ogms.owl
+
+The OGMS developer site is http://code.google.com/p/ogms/
+The discussion group is http://groups.google.com/group/ogms-discuss
 
 If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).")
 	 (ontology-annotation !rdfs:comment "This ontology is in early development. Expect it to change.")
 	 (ontology-annotation !dc:creator "Richard Scheuermann")
 	 (ontology-annotation !dc:creator "Barry Smith")
 	 (ontology-annotation !dc:creator "Werner Ceusters")
-	 (ontology-annotation !dc:creator "Lindsay Cowell")
 	 (ontology-annotation !dc:creator "Albert Goldfain")
+	 (ontology-annotation !dc:creator "Lindsay Cowell")
 	 (ontology-annotation !dc:creator "Anand Kumar")
 	 (ontology-annotation !dc:creator "Cornelius Rosse")
+	 (ontology-annotation !dc:creator "Bill Hogan")
+	 (ontology-annotation !dc:creator "Sivaram Arabandi")
+	 (ontology-annotation !dc:creator "Bill Hogan")
+	 (ontology-annotation !dc:creator "Daniel Merico")
+	 (ontology-annotation !dc:creator "Alan Ruttenberg")
 	 (annotation-property !obo:IAO_0000115 (label "definition"))
 	 (annotation-property !obo:IAO_0000117 (label "definition editor"))
 	 (annotation-property !obo:IAO_0000119 (label "definition source"))
 	 (annotation-property !obo:IAO_0000116 (label "editor note"))
+	 (annotation-property !obo:IAO_0000232 (label "curator note"))
 	 (ontology-annotation !dc:date (literal "2009-08-07" !xsd:date))
-;	 (sub-class-of !<http://purl.obolibrary.org/obo/OGMS_0000013> !obo:IAO_0000030)
 	 (loop for record in (terms obo) 
 	    for name = (getf (cdr record) :name)
 	    for id = (getf (cdr record) :id)
@@ -57,6 +67,7 @@ If you are interested in participating in the development of OGMS, please send e
 			   (if (car def) (annotation !obo:IAO_0000115 (literal (car def)  :|@en|)))
 			   (if (third def) (annotation !obo:IAO_0000119  (third def)))
 			   (if created-by (annotation !obi:IAO_0000117 (#"replaceAll" created-by "agoldfain" "Albert Goldfain")))
+			   (if creation-date (annotation !obo:IAO_0000232 (format nil "creation date: ~a" creation-date)))
 			   (if (member "BFO:0000076" is_a :test 'equalp)
 			       (annotation !obi:IAO_0000116 "note: defined class"))
 			   (append
@@ -67,7 +78,6 @@ If you are interested in participating in the development of OGMS, please send e
 			     (if (getf (cdr record) :is_obsolete)
 			       (list !oboinowl:ObsoleteClass)
 			       (mapcar #'uri-ify is_a))))))
-;      (prin1 (rdfxml flu))
       (write-rdfxml ogms dest))))
 
 (defun ogms-convert (&optional (source "ogms:ontology;ogms.obo") (dest "ogms:ontology;ogms.owl"))

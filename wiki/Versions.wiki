@@ -1,3 +1,4 @@
+#labels Featured
 _Describing snapshots for which date PURLs have been allocated_
 
 = Policy =

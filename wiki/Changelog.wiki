@@ -2,34 +2,28 @@
 
 
 = OGMSv0.2-v0.3 Changelog =
-
-* OBO file: Added dbxrefs to the issue tracker for traceability
-* OBO and OWL files: Added 'obsolete_' prefix to obsoleted terms
-* [http://code.google.com/p/ogms/issues/detail?id=4 Issue 4] closed without change
-* [http://code.google.com/p/ogms/issues/detail?id=5 Issue 5] closed without change
-* [http://code.google.com/p/ogms/issues/detail?id=6 Issue 6] closed opened issue 37 to clairfy
-* [http://code.google.com/p/ogms/issues/detail?id=8 Issue 8] closed, modified 'preclinical manifestation' (OGMS:0000026)
-* [http://code.google.com/p/ogms/issues/detail?id=9 Issue 9] closed without change
-* [http://code.google.com/p/ogms/issues/detail?id=10 Issue 10] closed without change
-* [http://code.google.com/p/ogms/issues/detail?id=13 Issue 13] left open, added term pain (OGMS:0000085) without definition
-* [http://code.google.com/p/ogms/issues/detail?id=16 Issue 16] closed, duplicate issue of issue 12
-* [http://code.google.com/p/ogms/issues/detail?id=18 Issue 18] left open, changed definition of clinical picture (OGMS:0000016)
-* [http://code.google.com/p/ogms/issues/detail?id=19 Issue 19] closed, changed definition of phenotype (OGMS:0000023)
-* [http://code.google.com/p/ogms/issues/detail?id=22 Issue 22] closed, obsoleted (OGMS:0000068) bodily feature and moved its elucidation to defined class 'bodily feature of a patient', obsoleted (OGMS:0000072) OGMSdisposition
+Changes made for OGMSv0.3
+ * OBO file: Added dbxrefs to the issue tracker for traceability
+ * OBO and OWL files: Added 'obsolete_' prefix to obsoleted terms
+ * [http://code.google.com/p/ogms/issues/detail?id=4 Issue 4] closed without change
+ * [http://code.google.com/p/ogms/issues/detail?id=5 Issue 5] closed without change
+ * [http://code.google.com/p/ogms/issues/detail?id=6 Issue 6] closed opened issue 37 to clairfy
+ * [http://code.google.com/p/ogms/issues/detail?id=8 Issue 8] closed, modified 'preclinical manifestation' (OGMS:0000026)
+ * [http://code.google.com/p/ogms/issues/detail?id=9 Issue 9] closed without change
+ * [http://code.google.com/p/ogms/issues/detail?id=10 Issue 10] closed without change
+ * [http://code.google.com/p/ogms/issues/detail?id=13 Issue 13] left open, added term pain (OGMS:0000085) without definition
+ * [http://code.google.com/p/ogms/issues/detail?id=16 Issue 16] closed, duplicate issue of issue 12
+ * [http://code.google.com/p/ogms/issues/detail?id=18 Issue 18] left open, changed definition of clinical picture (OGMS:0000016)
+ * [http://code.google.com/p/ogms/issues/detail?id=19 Issue 19] closed, changed definition of phenotype (OGMS:0000023)
+ * [http://code.google.com/p/ogms/issues/detail?id=22 Issue 22] closed, obsoleted (OGMS:0000068) bodily feature and moved its elucidation to defined class 'bodily feature of a patient', obsoleted (OGMS:0000072) OGMSdisposition
 [http://code.google.com/p/ogms/issues/detail?id=26 Issue 26], left open for further work, 
- * reclassified clinical history (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014) 
- * reclassified laboratory finding (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014) 
- * reclassified image finding (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014)
- * added new term (OGMS:0000083) physical examination finding under clinical finding (OGMS:0000014)
-* [http://code.google.com/p/ogms/issues/detail?id=27 Issue 27], closed, obsoleted IDO terms and ids from OGMS.
-* [http://code.google.com/p/ogms/issues/detail?id=32 Issue 32], left open, added term syndrome (OGMS:0000086)
-* [http://code.google.com/p/ogms/issues/detail?id=33 Issue 33], closed added term organism population (OGMS:0000084)
-* [http://code.google.com/p/ogms/issues/detail?id=34 Issue 34], closed changed definition of disease (OGMS:0000031)
-* New Issue [http://code.google.com/p/ogms/issues/detail?id=37 37] created
-* New Issue [http://code.google.com/p/ogms/issues/detail?id=38 38] created
-
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * reclassified clinical history (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014) 
+  * reclassified laboratory finding (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014) 
+  * reclassified image finding (OGMS:0000018) from representation (OGMS:0000013) to clinical finding (OGMS:0000014)
+  * added new term (OGMS:0000083) physical examination finding under clinical finding (OGMS:0000014)
+ * [http://code.google.com/p/ogms/issues/detail?id=27 Issue 27], closed, obsoleted IDO terms and ids from OGMS.
+ * [http://code.google.com/p/ogms/issues/detail?id=32 Issue 32], left open, added term syndrome (OGMS:0000086)
+ * [http://code.google.com/p/ogms/issues/detail?id=33 Issue 33], closed added term organism population (OGMS:0000084)
+ * [http://code.google.com/p/ogms/issues/detail?id=34 Issue 34], closed changed definition of disease (OGMS:0000031)
+ * New Issue [http://code.google.com/p/ogms/issues/detail?id=37 37] created
+ * New Issue [http://code.google.com/p/ogms/issues/detail?id=38 38] created

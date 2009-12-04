@@ -11,7 +11,7 @@ Changes made for OGMSv0.3
  * [http://code.google.com/p/ogms/issues/detail?id=8 Issue 8] closed, modified 'preclinical manifestation' (OGMS:0000026)
  * [http://code.google.com/p/ogms/issues/detail?id=9 Issue 9] closed without change
  * [http://code.google.com/p/ogms/issues/detail?id=10 Issue 10] closed without change
- * [http://code.google.com/p/ogms/issues/detail?id=10 Issue 11] closed, representation replaced by data item (IAO:0000027)
+ * [http://code.google.com/p/ogms/issues/detail?id=11 Issue 11] closed, representation replaced by data item (IAO:0000027)
  * [http://code.google.com/p/ogms/issues/detail?id=13 Issue 13] left open, added term pain (OGMS:0000085) without definition
  * [http://code.google.com/p/ogms/issues/detail?id=16 Issue 16] closed, duplicate issue of issue 12
  * [http://code.google.com/p/ogms/issues/detail?id=18 Issue 18] left open, changed definition of clinical picture (OGMS:0000016)

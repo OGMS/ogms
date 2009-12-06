@@ -13,6 +13,10 @@
 						       '("src" :wild-inferiors))
 				    :name :wild
 				    :type :wild))
+	("web;**;*.*" ,(make-pathname :directory (append (butlast (pathname-directory *load-pathname*) 3)
+							 '("trunk" :wild-inferiors))
+				    :name :wild
+				    :type :wild))
 	))
 
 (defsystem :ogms
@@ -21,6 +25,7 @@
     :components
     ((:file "obo")
      (:file "ogms2owl")
+     (:file "make-ogms-treeview")
      )
     :depends-on (owl))
 

@@ -24,7 +24,7 @@ Changes made for OGMSv0.3
   * added new term (OGMS:0000083) physical examination finding under clinical finding (OGMS:0000014)
  * [http://code.google.com/p/ogms/issues/detail?id=27 Issue 27], closed, obsoleted IDO terms and ids from OGMS.
  * [http://code.google.com/p/ogms/issues/detail?id=32 Issue 32], left open, added term syndrome (OGMS:0000086)
- * [http://code.google.com/p/ogms/issues/detail?id=33 Issue 33], closed added term organism population (OGMS:0000084)
+ * [http://code.google.com/p/ogms/issues/detail?id=33 Issue 33], left open, added term organism population (OGMS:0000084)
  * [http://code.google.com/p/ogms/issues/detail?id=34 Issue 34], closed changed definition of disease (OGMS:0000031)
  * New Issue [http://code.google.com/p/ogms/issues/detail?id=37 37] created
  * New Issue [http://code.google.com/p/ogms/issues/detail?id=38 38] created

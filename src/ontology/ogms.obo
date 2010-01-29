@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:07:2009 18:11
+date: 25:01:2010 18:11
 auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo
@@ -20,7 +20,7 @@ creation_date: 2009-06-23T10:05:06Z
 
 [Term]
 id: BFO:0000002
-name: occurrentno
+name: occurrent
 namespace: bfo
 is_a: BFO:0000000 ! entity
 created_by: agoldfain
@@ -287,7 +287,7 @@ creation_date: 2009-06-23T11:15:43Z
 
 [Term]
 id: OGMS:0000026
-name: preclinical manifestationof a disease
+name: preclinical manifestation of a disease
 def: "A manifestation of a disease that exists prior to the time at which it would be detected in a clinical history taking or physical examination, if the patient were to present to a clinician. A realization of a disease that exists prior to its becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=8]
 is_a: OGMS:0000022 ! manifestation of a disease
 created_by: agoldfain
@@ -415,9 +415,9 @@ creation_date: 2009-06-23T11:36:58Z
 [Term]
 id: OGMS:0000045
 name: disorder
-def: "A causally relatively isolated combination of physical components that is (a) clinically abnormal and (b) maximal, in the sense that it is not part of some larger such combination. Disorders are the physical basis of disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 comment: Examples: A tumor, an infected cell, a prion molecule in the brain, a mutation in genomic DNA, endotoxin in blood.
-is_a: BFO:0000042 ! fiat object part
+is_a: BFO:0000041 ! material entity
 created_by: agoldfain
 creation_date: 2009-06-23T11:39:44Z
 
@@ -469,7 +469,7 @@ creation_date: 2009-06-23T11:43:09Z
 [Term]
 id: OGMS:0000051
 name: constitutional genetic disorder
-def: "A genetic disorder inherited during conception that is borne by all cells in the organism." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A genetic disorder inherited during conception that is part of all cells in the organism." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 comment: Examples: Mutation in the hexosaminidase, a gene leading to Tay-Sachs disease.
 is_a: OGMS:0000047 ! genetic disorder
 created_by: agoldfain
@@ -488,7 +488,7 @@ creation_date: 2009-06-23T11:47:06Z
 id: OGMS:0000055
 name: clinical history taking
 def: "An interview in which a clinician elicits a clinical history from a patient or from a third party who is reporting on behalf of the patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: BFO:0000053 ! fiat process part
+is_a: BFO:0000052 ! processual entity
 created_by: agoldfain
 creation_date: 2009-06-23T11:49:16Z
 
@@ -496,7 +496,7 @@ creation_date: 2009-06-23T11:49:16Z
 id: OGMS:0000056
 name: laboratory test
 def: "A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: BFO:0000053 ! fiat process part
+is_a: BFO:0000052 ! processual entity
 created_by: agoldfain
 creation_date: 2009-06-23T11:49:49Z
 
@@ -504,7 +504,7 @@ creation_date: 2009-06-23T11:49:49Z
 id: OGMS:0000057
 name: physical examination
 def: "A sequence of acts of observing and measuring bodily features of a patient performed by a clinician; measurements may occur with and without elicitation." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: BFO:0000053 ! fiat process part
+is_a: BFO:0000052 ! processual entity
 created_by: agoldfain
 creation_date: 2009-06-23T11:50:18Z
 
@@ -539,7 +539,7 @@ creation_date: 2009-06-23T11:54:29Z
 id: OGMS:0000063
 name: disease course
 def: "The totality of all processes through which a given disease instance is realized." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: BFO:0000062 ! process aggregate
+is_a: BFO:0000052 ! processual entity
 created_by: agoldfain
 creation_date: 2009-06-23T11:55:44Z
 
@@ -728,6 +728,24 @@ def: "A clinical picture that is an association of symptoms, signs and other cli
 is_a: OGMS:0000016 ! clinical picture
 created_by: agoldfain
 creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000087
+name: extended organism
+def: "An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism." [http://code.google.com/p/ogms/issues/detail?id=3]
+is_a: BFO:0000044 ! object aggregate
+created_by: agoldfain
+creation_date: 2010-01-25T04:51:11Z
+
+[Term]
+id: OGMS:0000088
+name: patient symptom report
+def: "A communication from a patient about something they perceive as being abnormal about their body or life." [http://code.google.com/p/ogms/issues/detail?id=12]
+comment: This term should be reclassified to wherever IAO places 'communication'.
+is_a: IAO:0000030 ! information content entity
+created_by: agoldfain
+creation_date: 2010-01-25T04:51:11Z
+
 
 [Term]
 id: OGMS:0000013

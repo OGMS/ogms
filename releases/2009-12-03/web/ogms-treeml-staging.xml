@@ -1,0 +1,24 @@
+<tree> <declarations><attributeDecl name="name" type="String"/> <attributeDecl name="entity" type="String"/></declarations><branch><attribute name="name" value="Entity(2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1#Entity"/>
+<branch><attribute name="name" value="bodily feature of a patient(4)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000021"/>
+<branch><attribute name="name" value="phenotype(2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000023"/>
+<leaf><attribute name="name" value="clinical phenotype"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000027"/></leaf>
+<leaf><attribute name="name" value="disease phenotype"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000028"/></leaf>
+</branch>
+<branch><attribute name="name" value="symptom(1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000020"/>
+<leaf><attribute name="name" value="pain"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000085"/></leaf>
+</branch>
+<branch><attribute name="name" value="manifestation of a disease(2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000022"/>
+<leaf><attribute name="name" value="clinical manifestation of a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000025"/></leaf>
+<leaf><attribute name="name" value="preclinical manifestationof a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000026"/></leaf>
+</branch>
+<branch><attribute name="name" value="sign(1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000024"/>
+<leaf><attribute name="name" value="vital sign"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000029"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="_undefined primitive term(3)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000067"/>
+<leaf><attribute name="name" value="clinically abnormal"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000069"/></leaf>
+<leaf><attribute name="name" value="physical basis"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000070"/></leaf>
+<leaf><attribute name="name" value="realization"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000071"/></leaf>
+</branch>
+</branch>
+</tree> 

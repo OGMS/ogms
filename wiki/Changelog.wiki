@@ -1,5 +1,13 @@
 #Changes made between successive versions of OGMS
 
+= OGMSv0.3-v0.4 Changelog =
+Changes made for OGMSv0.4
+ * OBO file: Fixed typo 'occurrentno' (BFO:0000002) to 'occurrent'.
+ * OBO file: Fixed typo 'preclinical manifestationof a disease' (OGMS:0000026) to 'preclinical manifestation of a disease'
+ * [http://code.google.com/p/ogms/issues/detail?id=3 Issue 3] left open, changed definition of 'disorder' (OGMS:0000045), changed it to 'material entity', added term 'extended organism' (OGMS:0000087), and corrected 'borne' to 'part of' in the definition of 'constitutional genetic disorder' to reflect the fact that disorders are independent continuants. 
+ * [http://code.google.com/p/ogms/issues/detail?id=12 Issue 12] left open, added term 'patient symptom report' (OGMS:0000088)
+ * [http://code.google.com/p/ogms/issues/detail?id=20 Issue 20] closed, changed 'disease course' (OGMS:0000063) from 'process aggregate' to 'processual entity'
+ * [http://code.google.com/p/ogms/issues/detail?id=21 Issue 21] closed, changed 'clinical history taking' (OGMS:0000055), 'laboratory test' (OGMS:0000056), and 'physical examination' (OGMS:0000057) from 'fiat process part' to 'processual entity'
 
 = OGMSv0.2-v0.3 Changelog =
 Changes made for OGMSv0.3

@@ -1,24 +1,160 @@
-<tree> <declarations><attributeDecl name="name" type="String"/> <attributeDecl name="entity" type="String"/></declarations><branch><attribute name="name" value="Entity(2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1#Entity"/>
-<branch><attribute name="name" value="bodily feature of a patient(4)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000021"/>
-<branch><attribute name="name" value="phenotype(2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000023"/>
+<tree> <declarations><attributeDecl name="name" type="String"/> <attributeDecl name="entity" type="String"/><attributeDecl name="tooltip" type="String"/></declarations><branch><attribute name="name" value="Thing (2)"/><attribute name="entity" value="http://www.w3.org/2002/07/owl#Thing"/>
+<branch><attribute name="name" value="entity (4)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1#Entity"/>
+<branch><attribute name="name" value="bodily feature of a patient (4)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000021"/>
+<branch><attribute name="name" value="symptom (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000020"/>
+<leaf><attribute name="name" value="pain"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000085"/></leaf>
+</branch>
+<branch><attribute name="name" value="manifestation of a disease (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000022"/>
+<leaf><attribute name="name" value="preclinical manifestationof a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000026"/></leaf>
+<leaf><attribute name="name" value="clinical manifestation of a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000025"/></leaf>
+</branch>
+<branch><attribute name="name" value="phenotype (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000023"/>
 <leaf><attribute name="name" value="clinical phenotype"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000027"/></leaf>
 <leaf><attribute name="name" value="disease phenotype"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000028"/></leaf>
 </branch>
-<branch><attribute name="name" value="symptom(1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000020"/>
-<leaf><attribute name="name" value="pain"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000085"/></leaf>
-</branch>
-<branch><attribute name="name" value="manifestation of a disease(2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000022"/>
-<leaf><attribute name="name" value="clinical manifestation of a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000025"/></leaf>
-<leaf><attribute name="name" value="preclinical manifestationof a disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000026"/></leaf>
-</branch>
-<branch><attribute name="name" value="sign(1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000024"/>
+<branch><attribute name="name" value="sign (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000024"/>
 <leaf><attribute name="name" value="vital sign"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000029"/></leaf>
 </branch>
 </branch>
-<branch><attribute name="name" value="_undefined primitive term(3)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000067"/>
-<leaf><attribute name="name" value="clinically abnormal"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000069"/></leaf>
+<branch><attribute name="name" value="occurrent (3)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
+<branch><attribute name="name" value="temporal_region (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#TemporalRegion"/>
+<branch><attribute name="name" value="connected_temporal_region (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion"/>
+<leaf><attribute name="name" value="temporal_interval"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/></leaf>
+<leaf><attribute name="name" value="temporal_instant"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/></leaf>
+</branch>
+<leaf><attribute name="name" value="scattered_temporal_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion"/></leaf>
+</branch>
+<branch><attribute name="name" value="spatiotemporal_region (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion"/>
+<leaf><attribute name="name" value="scattered_spatiotemporal_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion"/></leaf>
+<branch><attribute name="name" value="connected_spatiotemporal_region (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion"/>
+<leaf><attribute name="name" value="spatiotemporal_instant"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant"/></leaf>
+<leaf><attribute name="name" value="spatiotemporal_interval"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="processual_entity (9)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+<branch><attribute name="name" value="disease course (3)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+<leaf><attribute name="name" value="transient disease course"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000066"/></leaf>
+<leaf><attribute name="name" value="progressive disease course"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000065"/></leaf>
+<leaf><attribute name="name" value="chronic disease course"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000064"/></leaf>
+</branch>
+<leaf><attribute name="name" value="clinical history taking"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000055"/></leaf>
+<leaf><attribute name="name" value="process_boundary"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ProcessBoundary"/></leaf>
+<branch><attribute name="name" value="process (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#Process"/>
+<leaf><attribute name="name" value="etiological process"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000059"/></leaf>
+<branch><attribute name="name" value="bodily process (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+<branch><attribute name="name" value="pathological bodily process (3)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+<leaf><attribute name="name" value="pathological derivation"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000081"/></leaf>
+<leaf><attribute name="name" value="pathological transformation"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000080"/></leaf>
+<leaf><attribute name="name" value="pathological invasion"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000082"/></leaf>
+</branch>
+</branch>
+</branch>
+<leaf><attribute name="name" value="fiat_process_part"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#FiatProcessPart"/></leaf>
+<leaf><attribute name="name" value="laboratory test"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000056"/></leaf>
+<leaf><attribute name="name" value="process_aggregate"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ProcessAggregate"/></leaf>
+<leaf><attribute name="name" value="processual_context"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/span#ProcessualContext"/></leaf>
+<leaf><attribute name="name" value="physical examination"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000057"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="continuant (3)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+<branch><attribute name="name" value="dependent_continuant (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"/>
+<branch><attribute name="name" value="specifically_dependent_continuant (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
+<branch><attribute name="name" value="realizable_entity (3)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
+<leaf><attribute name="name" value="function"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Function"/></leaf>
+<leaf><attribute name="name" value="role"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Role"/></leaf>
+<branch><attribute name="name" value="disposition (3)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+<branch><attribute name="name" value="disease (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+<leaf><attribute name="name" value="constitutional genetic disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000035"/></leaf>
+<leaf><attribute name="name" value="acquired genetic disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000034"/></leaf>
+</branch>
+<branch><attribute name="name" value="homeostasis (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000032"/>
+<leaf><attribute name="name" value="normal homeostasis"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000038"/></leaf>
+<leaf><attribute name="name" value="abnormal homeostasis"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000037"/></leaf>
+</branch>
+<branch><attribute name="name" value="predisposition to disease of type X (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000030"/>
+<leaf><attribute name="name" value="genetic predisposition to disease of type X"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000033"/></leaf>
+</branch>
+</branch>
+</branch>
+<branch><attribute name="name" value="quality (1)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+<branch><attribute name="name" value="configuration (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000039"/>
+<leaf><attribute name="name" value="pathological physical configuration"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000040"/></leaf>
+</branch>
+</branch>
+</branch>
+<branch><attribute name="name" value="generically_dependent_continuant (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+<branch><attribute name="name" value="information content entity (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000030"/>
+<branch><attribute name="name" value="data item (5)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000027"/>
+<leaf><attribute name="name" value="diagnosis"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000073"/></leaf>
+<branch><attribute name="name" value="clinical finding (4)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+<leaf><attribute name="name" value="image finding"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000017"/></leaf>
+<leaf><attribute name="name" value="clinical history"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000015"/></leaf>
+<leaf><attribute name="name" value="physical examination finding"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000083"/></leaf>
+<leaf><attribute name="name" value="laboratory finding"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000018"/></leaf>
+</branch>
+<branch><attribute name="name" value="clinical picture (1)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000016"/>
+<leaf><attribute name="name" value="syndrome"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000086"/></leaf>
+</branch>
+<branch><attribute name="name" value="data about an ontology part (8)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000102"/>
+<leaf><attribute name="name" value="Subset"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#Subset"/></leaf>
+<leaf><attribute name="name" value="SynonymType"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#SynonymType"/></leaf>
+<leaf><attribute name="name" value="Definition"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#Definition"/></leaf>
+<leaf><attribute name="name" value="obsolescence reason specification"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000225"/></leaf>
+<leaf><attribute name="name" value="DbXref"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#DbXref"/></leaf>
+<leaf><attribute name="name" value="curation status specification"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000078"/></leaf>
+<leaf><attribute name="name" value="denotator type"/><attribute name="entity" value="http://purl.obolibrary.org/obo/IAO_0000409"/></leaf>
+<leaf><attribute name="name" value="Synonym"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#Synonym"/></leaf>
+</branch>
+<leaf><attribute name="name" value="preclinical finding"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000019"/></leaf>
+</branch>
+<leaf><attribute name="name" value="patient symptom report"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000088"/></leaf>
+</branch>
+<leaf><attribute name="name" value="normal value"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000074"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="spatial_region (4)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"/>
+<leaf><attribute name="name" value="two_dimensional_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion"/></leaf>
+<leaf><attribute name="name" value="one_dimensional_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion"/></leaf>
+<leaf><attribute name="name" value="zero_dimensional_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion"/></leaf>
+<leaf><attribute name="name" value="three_dimensional_region"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion"/></leaf>
+</branch>
+<branch><attribute name="name" value="independent_continuant (3)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+<branch><attribute name="name" value="material_entity (7)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+<leaf><attribute name="name" value="pathological formation"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000077"/></leaf>
+<branch><attribute name="name" value="object_aggregate (2)"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+<leaf><attribute name="name" value="extended organism"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000087"/></leaf>
+<leaf><attribute name="name" value="organism population"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000084"/></leaf>
+</branch>
+<leaf><attribute name="name" value="portion of pathological body substance"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000079"/></leaf>
+<leaf><attribute name="name" value="pathological anatomical structure"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000078"/></leaf>
+<leaf><attribute name="name" value="object"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Object"/></leaf>
+<leaf><attribute name="name" value="fiat_object_part"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart"/></leaf>
+<branch><attribute name="name" value="disorder (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+<leaf><attribute name="name" value="epigenetic disorder"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000046"/></leaf>
+<branch><attribute name="name" value="genetic disorder (2)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000047"/>
+<leaf><attribute name="name" value="constitutional genetic disorder"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000051"/></leaf>
+<leaf><attribute name="name" value="acquired genetic disorder"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000050"/></leaf>
+</branch>
+</branch>
+</branch>
+<leaf><attribute name="name" value="site"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#Site"/></leaf>
+<leaf><attribute name="name" value="object_boundary"/><attribute name="entity" value="http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="_undefined primitive term (3)"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000067"/>
 <leaf><attribute name="name" value="physical basis"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000070"/></leaf>
+<leaf><attribute name="name" value="clinically abnormal"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000069"/></leaf>
 <leaf><attribute name="name" value="realization"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000071"/></leaf>
+</branch>
+</branch>
+<branch><attribute name="name" value="ObsoleteClass (7)"/><attribute name="entity" value="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+<leaf><attribute name="name" value="obsolete_representation"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000013"/></leaf>
+<leaf><attribute name="name" value="obsolete_standardized clinical process"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000054"/></leaf>
+<leaf><attribute name="name" value="obsolete_infection"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000075"/></leaf>
+<leaf><attribute name="name" value="obsolete_infectious disease"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000036"/></leaf>
+<leaf><attribute name="name" value="obsolete_infectious disorder"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000048"/></leaf>
+<leaf><attribute name="name" value="obsolete_bodily feature"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000068"/></leaf>
+<leaf><attribute name="name" value="obsolete_secondary infection"/><attribute name="entity" value="http://purl.obolibrary.org/obo/OGMS_0000049"/></leaf>
 </branch>
 </branch>
 </tree> 

@@ -1,4 +1,4 @@
 #labels Featured
-An experimental tree browser for OGMS is available [http://ogms.googlecode.com/svn/trunk/web/ogms.html here]. Until a bug that prevents the whole tree to be visible initially is fixed, you probably want to command-click or right-click first thing, to get it to do so. Note that the viewer requires that java applets work in your browser. Email alanruttenberg@gmail.com if you have problems using it.
+An experimental tree browser for OGMS is available [http://ogms.googlecode.com/svn/releases/2010-01-29/web/ogms.html here]. Until a bug that prevents the whole tree to be visible initially is fixed, you probably want to command-click or right-click first thing, to get it to do so. Note that the viewer requires that java applets work in your browser. Email alanruttenberg@gmail.com if you have problems using it.
 
-[http://owl.cs.manchester.ac.uk/browser/classes/?session=12562692abd-641-1256269b7d0 Here] is OGMS viewed in the Manchester OWL Browser.
+[http://owl.cs.manchester.ac.uk/browser/classes/1693031007/?session=1268077d870-11352-126807b9701 Here] is OGMS viewed in the Manchester OWL Browser.

@@ -28,12 +28,12 @@
     <dc:creator>Richard Scheuermann</dc:creator>
     <dc:creator>Sivaram Arabandi</dc:creator>
     <dc:creator>Werner Ceusters</dc:creator>
-    <dc:date rdf:datatype="&xsd;date">2009-08-07</dc:date>
+    <dc:date rdf:datatype="&xsd;date">2010-01-29</dc:date>
     <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2009-12-03 aka '0.3'
-http://purl.obolibrary.org/obo/ogms/2009-12-09/ogms.owl
+This is version 2009-01-29 aka '0.4'
+http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.owl
 
 The OGMS developer site is http://code.google.com/p/ogms/
 The discussion group is http://groups.google.com/group/ogms-discuss

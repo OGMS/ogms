@@ -6,10 +6,10 @@ Where: Skype
 
 = Agenda =
 
-* Issue 28: congenital malformation http://code.google.com/p/ogms/issues/detail?id=28
-* Issue 35: cures, successful treatments, outcomes http://code.google.com/p/ogms/issues/detail?id=35
-* Issue 43: prognosis, diagnostic process, clinical protocol, clinical guideline, family medical history http://code.google.com/p/ogms/issues/detail?id=43
-* Issue 44: state http://code.google.com/p/ogms/issues/detail?id=44
+  * Issue 28: congenital malformation http://code.google.com/p/ogms/issues/detail?id=28
+  * Issue 35: cures, successful treatments, outcomes http://code.google.com/p/ogms/issues/detail?id=35
+  * Issue 43: prognosis, diagnostic process, clinical protocol, clinical guideline, family medical history http://code.google.com/p/ogms/issues/detail?id=43
+  * Issue 44: state http://code.google.com/p/ogms/issues/detail?id=44
 
 == Minutes ==
 Raw transcript

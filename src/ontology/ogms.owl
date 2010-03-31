@@ -28,12 +28,12 @@
     <dc:creator>Richard Scheuermann</dc:creator>
     <dc:creator>Sivaram Arabandi</dc:creator>
     <dc:creator>Werner Ceusters</dc:creator>
-    <dc:date rdf:datatype="&xsd;date">2009-08-07</dc:date>
+    <dc:date rdf:datatype="&xsd;date">2010-03-31</dc:date>
     <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2009-12-03 aka '0.3'
-http://purl.obolibrary.org/obo/ogms/2009-12-09/ogms.owl
+This is version 2010-03-31 aka '0.5'
+http://purl.obolibrary.org/obo/ogms/2010-03-31/ogms.owl
 
 The OGMS developer site is http://code.google.com/p/ogms/
 The discussion group is http://groups.google.com/group/ogms-discuss
@@ -630,6 +630,51 @@ If you are interested in participating in the development of OGMS, please send e
     <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
     <rdfs:label rdf:datatype="&xsd;string">patient symptom report</rdfs:label>
     <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000089">
+    <obo:IAO_0000115 xml:lang="en">A structurally anomalous part of an organism acquired during fetal development and present at birth (but not necessarily hereditary) which is hypothesized to be harmful for the organism.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=28</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">congenital malformation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000090">
+    <obo:IAO_0000115 xml:lang="en">A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">treatment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000091">
+    <obo:IAO_0000115 xml:lang="en">A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course. </obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">convalescence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000092">
+    <obo:IAO_0000115 xml:lang="en">A processual entity which has as parts all the processes in which a given organism is participant.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=38</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">life course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000093">
+    <obo:IAO_0000115 xml:lang="en">A hypothesis about the course of a disease.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-03-31T12:42:23Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">prognosis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
   </owl:Class>
 
   <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>

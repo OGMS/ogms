@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:01:2010 18:11
+date: 31:03:2010 18:11
 auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo
@@ -746,6 +746,48 @@ is_a: IAO:0000030 ! information content entity
 created_by: agoldfain
 creation_date: 2010-01-25T04:51:11Z
 
+[Term]
+id: OGMS:0000089
+name: congenital malformation
+def: "A structurally anomalous part of an organism acquired during fetal development and present at birth (but not necessarily hereditary) which is hypothesized to be harmful for the organism." [http://code.google.com/p/ogms/issues/detail?id=28]
+comment: "Is anything a congenital malformation that is not a disorder in the OGMS sense?".
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000090
+name: treatment
+def: "A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder" [http://code.google.com/p/ogms/issues/detail?id=35]
+comment: "Should there be a corresponding continuant (the treatment) that is administered to the patient?  Curative and Palliative Treatments as subtypes?".
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000091
+name: convalescence
+def: "A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course. " [http://code.google.com/p/ogms/issues/detail?id=35]
+comment: "Convalescence is usually triggered by a treatment process".
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000092
+name: life course
+def: "A processual entity which has as parts all the processes in which a given organism is participant." [http://code.google.com/p/ogms/issues/detail?id=38]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000093
+name: prognosis
+def: "A hypothesis about the course of a disease." [http://code.google.com/p/ogms/issues/detail?id=35]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2010-03-31T12:42:23Z
 
 [Term]
 id: OGMS:0000013

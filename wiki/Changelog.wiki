@@ -1,5 +1,11 @@
 #Changes made between successive versions of OGMS
 
+= OGMSv0.4-v0.5 Changelog =
+ * [http://code.google.com/p/ogms/issues/detail?id=28 Issue 28] closed, added 'congenital malformation' (OGMS:0000089).
+ * [http://code.google.com/p/ogms/issues/detail?id=35 Issue 35] left open, added 'treatment' (OGMS:0000090) and 'convalescence' (OGMS:0000091).
+ * [http://code.google.com/p/ogms/issues/detail?id=38 Issue 38] closed, added 'life course' (OGMS:0000092)
+ * [http://code.google.com/p/ogms/issues/detail?id=44 Issue 44] closed, determined that 'state' does not belong in OGMS.
+
 = OGMSv0.3-v0.4 Changelog =
 Changes made for OGMSv0.4
  * OBO file: Fixed typo 'occurrentno' (BFO:0000002) to 'occurrent'.

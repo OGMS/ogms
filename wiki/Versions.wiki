@@ -29,6 +29,10 @@ Always points to latest dated version.
  * http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.owl
  * http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.obo
 
+== Version "0.5" ==
+
+ * http://purl.obolibrary.org/obo/ogms/2010-03-31/ogms.owl
+ * http://purl.obolibrary.org/obo/ogms/2010-03-31/ogms.obo
 
 = OWL 1 usage =
 

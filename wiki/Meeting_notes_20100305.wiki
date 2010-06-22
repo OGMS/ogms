@@ -1,4 +1,3 @@
-#labels Featured
 = Details =
 
 Convened by: Albert

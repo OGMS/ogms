@@ -1,5 +1,12 @@
 #Changes made between successive versions of OGMS
 
+= OGMSv0.5-v0.6 Changelog =
+ * [http://code.google.com/p/ogms/issues/detail?id=32 Issue 32] closed, changed definition of 'syndrome', reclassified as bfo:quality.
+ * Created term 'acute disease course' (OGMS:0000094)
+ * Obsoleted 'bodily feature of a patient'. Reclassified its children as bfo:quality and modified definitions accordingly.  Note, per previous discussions, this makes 'sign' and 'symptom' into qualities (blocks all processual entities from being sings or symptoms and requires that they are exhibited when borne).  More discussion will surely follow.
+ * [http://code.google.com/p/ogms/issues/detail?id=41 Issue 41] left open, obsoleted 'defined_class' (since 'bodily feature of a patient' was its final child)
+ * Created term 'inflamation process' (OGMS:0000095)
+
 = OGMSv0.4-v0.5 Changelog =
  * [http://code.google.com/p/ogms/issues/detail?id=28 Issue 28] closed, added 'congenital malformation' (OGMS:0000089).
  * [http://code.google.com/p/ogms/issues/detail?id=35 Issue 35] left open, added 'treatment' (OGMS:0000090) and 'convalescence' (OGMS:0000091).

@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 31:03:2010 18:11
+date: 20:07:2010 18:19
 auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo
@@ -172,9 +172,9 @@ creation_date: 2009-06-23T11:55:18Z
 
 [Term]
 id: BFO:0000076
-name: defined class
+name: obsolete_defined class
+is_obsolete: true
 namespace: bfo
-is_a: BFO:0000000 ! entity
 creation_date: 2009-07-08T05:42:49Z
 
 [Term]
@@ -192,26 +192,27 @@ is_a: IAO:0000030 ! information content entity
 [Term]
 id: OGMS:0000014
 name: clinical finding
-def: "A representation of a bodily feature of a patient that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+def: "A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
 is_a: IAO:0000027 ! data item
 created_by: agoldfain
-creation_date: 2009-06-23T10:18:02Z
+creation_date: 2010-07-19T10:18:02Z
 
 [Term]
 id: OGMS:0000015
 name: clinical history
-def: "A series of statements representing health-relevant features of a patient and of a patient's family." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+def: "A series of statements representing health-relevant qualities of a patient and of a patient's family." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
 is_a: OGMS:0000014 ! clinical finding
 created_by: agoldfain
-creation_date: 2009-06-23T10:18:59Z
+creation_date: 2010-07-19T10:18:59Z
 
 [Term]
 id: OGMS:0000016
 name: clinical picture
-def: "A representation of the clinically significant bodily features of a patient that is inferred from the totality of clinical findings about the given patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
+def: "A representation of the clinically significant bodily components and/or bodily processes of a human being that is inferred from the totality of relevant clinical findings." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
+comment: Need to differentiate 'clinical picture' from 'clinical presentation'?
 is_a: IAO:0000027 ! data item
 created_by: agoldfain
-creation_date: 2009-06-23T10:20:20Z
+creation_date: 2010-07-19T10:20:20Z
 
 [Term]
 id: OGMS:0000017
@@ -232,7 +233,7 @@ creation_date: 2009-06-23T10:21:58Z
 [Term]
 id: OGMS:0000019
 name: preclinical finding
-def: "A representation of a bodily feature of a patient that is (1) recorded by a clinician because the feature is hypothesized to be of clinical significance and (2) refers to features obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A representation of a quality of a patient that is (1) recorded by a clinician because the quality is hypothesized to be of clinical significance and (2) refers to qualities obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T10:22:44Z
@@ -240,14 +241,14 @@ creation_date: 2009-06-23T10:22:44Z
 [Term]
 id: OGMS:0000020
 name: symptom
-def: "A bodily feature of a patient that is observed by the patient and is hypothesized by the patient to be a realization of a disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: OGMS:0000021 ! bodily feature of a patient
-creation_date: 2009-06-23T11:02:10Z
+def: "A quality of a patient that is observed by the patient and is hypothesized by the patient to be a realization of a disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000007 ! quality
+creation_date: 2010-07-19T11:02:10Z
 
 [Term]
 id: OGMS:0000021
-name: bodily feature of a patient
-is_a: BFO:0000076 ! defined class
+name: obsolete_bodily feature of a patient
+is_obsolete: true
 comment: "Elucidation: By bodily feature we mean any member of the defined class comprising not only such bodily components but also associated bodily qualities and processes in an organism, both physiological and pathological." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 created_by: agoldfain
 creation_date: 2009-06-23T11:09:37Z
@@ -255,27 +256,27 @@ creation_date: 2009-06-23T11:09:37Z
 [Term]
 id: OGMS:0000022
 name: manifestation of a disease
-def: "A bodily feature of a patient that is (a) a deviation from clinical normality that exists in virtue of the realization of a disease and (b) is observable." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
-is_a: OGMS:0000021 ! bodily feature of a patient
+def: "A quality of a patient that is (a) a deviation from clinical normality that exists in virtue of the realization of a disease and (b) is observable." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000007 ! quality
 created_by: agoldfain
 creation_date: 2009-06-23T11:12:33Z
 
 [Term]
 id: OGMS:0000023
 name: phenotype
-def: "A (combination of) bodily feature(s) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf,http://code.google.com/p/ogms/issues/detail?id=19]
-is_a: OGMS:0000021 ! bodily feature of a patient
+def: "A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf,http://code.google.com/p/ogms/issues/detail?id=19]
+is_a: BFO:0000007 ! quality
 created_by: agoldfain
-creation_date: 2009-06-23T11:13:49Z
+creation_date: 2010-07-19T11:13:49Z
 
 [Term]
 id: OGMS:0000024
 name: sign
-def: "A bodily feature of a patient that is observed in a physical examination and is deemed by the clinician to be of clinical significance." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A quality of a patient that is observed in a physical examination and is deemed by the clinician to be of clinical significance." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 comment: Perhaps make this a role?
-is_a: OGMS:0000021 ! bodily feature of a patient
+is_a: BFO:0000007 ! quality
 created_by: agoldfain
-creation_date: 2009-06-23T11:14:36Z
+creation_date: 2010-07-19T11:14:36Z
 
 [Term]
 id: OGMS:0000025
@@ -373,7 +374,6 @@ id: OGMS:0000036
 name: obsolete_infectious disease
 def: "A disease whose physical basis is an infectious disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
 comment: Examples: seasonal flu (transient), genital herpes (chronic), Ebola-virus-mediated hemorrhagic fever (progressive).
-is_a: OGMS:0000031 ! disease
 is_obsolete: true
 created_by: agoldfain
 creation_date: 2009-06-23T11:25:51Z
@@ -442,7 +442,6 @@ id: OGMS:0000048
 name: obsolete_infectious disorder
 def: "A disorder whose etiology includes the presence of a pathogenic organism within a host organism or an abnormal imbalance in the normal resident organismal flora." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
 comment: LGC's proposed change: A disorder of a host whose etiology includes the presence of a pathogen within the host, colonization by the normal resident microbiota of host anatomical locations not part of the microbiota's typical habitat, or a symptomatic overgrowth of at least one species of the normal resident microbiota.
-is_a: OGMS:0000045 ! disorder
 is_obsolete: true
 created_by: agoldfain
 creation_date: 2009-06-23T11:41:45Z
@@ -452,7 +451,6 @@ id: OGMS:0000049
 name: obsolete_secondary infection
 def: "A disorder consisting in the presence of a pathogenic organism within a host organism that occurs due to the disposition established by a prior infection with a pathogenic organism of a different kind." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
 comment: Examples: Cryptosporidiosis in a patient suffering from AIDS.
-is_a: OGMS:0000045 ! disorder
 is_obsolete: true
 created_by: agoldfain
 creation_date: 2009-06-23T11:42:20Z
@@ -503,10 +501,10 @@ creation_date: 2009-06-23T11:49:49Z
 [Term]
 id: OGMS:0000057
 name: physical examination
-def: "A sequence of acts of observing and measuring bodily features of a patient performed by a clinician; measurements may occur with and without elicitation." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 is_a: BFO:0000052 ! processual entity
 created_by: agoldfain
-creation_date: 2009-06-23T11:50:18Z
+creation_date: 2010-07-19T11:50:18Z
 
 [Term]
 id: OGMS:0000059
@@ -581,7 +579,6 @@ creation_date: 2009-06-23T11:58:22Z
 id: OGMS:0000068
 name: obsolete_bodily feature
 comment: Elucidation: By bodily feature we mean any member of the defined class comprising not only such bodily components but also associated bodily qualities and processes in an organism, both physiological and pathological.
-is_a: OGMS:0000067 ! undefined primitive terms
 is_obsolete: true
 created_by: agoldfain
 creation_date: 2009-06-23T11:58:39Z
@@ -589,7 +586,7 @@ creation_date: 2009-06-23T11:58:39Z
 [Term]
 id: OGMS:0000069
 name: clinically abnormal
-comment: Elucidation: We use clinically abnormal to characterize those bodily features of or in an organism that are (1) causally linked to an elevated risk of pain or other feelings of illness, to dysfunction, or to enhanced morbidity, and which (unlike pregnancy or menopause) are not such as to belong to the life plan for an organism of the relevant type. A clinician will judge a bodily feature to be clinically abnormal only where the elevated risk exceeds a certain threshold level of clinical significance.
+comment: Elucidation: We use clinically abnormal to characterize those qualities of or in an organism that are (1) causally linked to an elevated risk of pain or other feelings of illness, to dysfunction, or to enhanced morbidity, and which (unlike pregnancy or menopause) are not such as to belong to the life plan for an organism of the relevant type. A clinician will judge a quality to be clinically abnormal only where the elevated risk exceeds a certain threshold level of clinical significance.
 is_a: OGMS:0000067 ! undefined primitive terms
 created_by: agoldfain
 creation_date: 2009-06-23T11:59:24Z
@@ -614,7 +611,6 @@ creation_date: 2009-06-23T12:00:39Z
 id: OGMS:0000072
 name: obsolete_OGMSdisposition
 comment: Possibly covered by BFO disposition.
-is_a: OGMS:0000067 ! undefined primitive terms
 is_obsolete: true
 created_by: agoldfain
 creation_date: 2009-06-23T12:00:56Z
@@ -724,8 +720,9 @@ creation_date: 2009-11-24T04:51:11Z
 [Term]
 id: OGMS:0000086
 name: syndrome
-def: "A clinical picture that is an association of symptoms, signs and other clinical findings that collectively indicate or characterize a disease or disorder." [http://code.google.com/p/ogms/issues/detail?id=32]
-is_a: OGMS:0000016 ! clinical picture
+def: "A pattern of signs and symptoms that typically co-occur." [http://code.google.com/p/ogms/issues/detail?id=32]
+comment: Usually used for patterns with unknown etiology. Note: AIDS and Down Syndrome are not syndromes in this sense. 
+is_a: BFO:0000007 ! quality
 created_by: agoldfain
 creation_date: 2009-11-24T04:51:11Z
 
@@ -788,6 +785,24 @@ def: "A hypothesis about the course of a disease." [http://code.google.com/p/ogm
 is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2010-03-31T12:42:23Z
+
+[Term]
+id: OGMS:0000094
+name: acute disease course
+def: "a disease course with a rapid onset but typical unfolding of signs and symptoms after this rapid onset." [http://code.google.com/p/ogms/wiki/Meeting_notes_20100513]
+comment: Examples: A bout of the flu.
+is_a: OGMS:0000063 ! disease course
+created_by: agoldfain
+creation_date: 2010-07-19T11:57:44Z
+
+
+[Term]
+id: OGMS:0000095
+name: inflamation process
+def: "A process which is a response by an organism's tissues that is generally identified by swelling or localized pain" [http://code.google.com/p/ogms/wiki/Meeting_notes_20100513]
+is_a: BFO:0000058 ! process
+created_by: agoldfain
+creation_date: 2010-07-19T11:57:44Z
 
 [Term]
 id: OGMS:0000013

@@ -3,7 +3,6 @@
 			   (dest "ogms:web;ogms-treeml.xml")			   )
   (let ((*inhibit-property-info-in-toolips* t))
     (let ((kb (load-ontology src)))
-      (instantiate-reasoner 
       (write-classtree-treeml kb :depth 10 :dont-show
 			      (list !span:SpatiotemporalRegion !snap:SpatialRegion
 				    !oboInOwl:ObsoleteClass

@@ -47,5 +47,5 @@
 
 (defmethod read-obo-record ((g obo) type stream)
   (let ((it (cons type (read-obo-key-values g stream))))
-    (print-db it)
+;    (print-db it)
     it))

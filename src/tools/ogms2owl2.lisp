@@ -27,7 +27,7 @@
 	 (imports !<http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl>))
 	 (let ((ogms !<http://purl.obolibrary.org/obo/ogms.owl>))
 	   (as
-	    `(annotation-assertion ,ogms  !rdfs:comment "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+	    `(annotation-assertion !rdfs:comment  ,ogms "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
 This is version 2009-12-03 aka '0.3'
@@ -62,7 +62,7 @@ If you are interested in participating in the development of OGMS, please send e
 	    (declaration (annotation-property !obo:IAO_0000232))
 	    (annotation-assertion  !rdfs:label !obo:IAO_0000232 "curator note")
 	    (declaration (annotation-property !dc:date)))
-	   (as `(annotation-assertion ,ogms !dc:date "2009-08-07")))
+	   (as `(annotation-assertion !dc:date ,ogms "2009-08-07")))
 	  (loop for record in (terms obo) 
 	    for name = (getf (cdr record) :name)
 	    for id = (getf (cdr record) :id)

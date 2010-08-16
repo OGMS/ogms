@@ -18,6 +18,24 @@
         <dc:creator>Bill Hogan</dc:creator>
         <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
+   	<!-- http://purl.org/dc/elements/1.1/date -->
+    	<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+        	<obo:ogms.owl>2010-07-20</obo:ogms.owl>
+    	</rdf:Description>
+    
+    	<!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+	<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        	<obo:ogms.owl>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+
+		The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
+		This is version 2010-07-20 aka &#39;0.6&#39;
+		http://purl.obolibrary.org/obo/ogms/2010-07-20/ontology/ogms.owl
+
+		The OGMS developer site is http://code.google.com/p/ogms/
+		The discussion group is http://groups.google.com/group/ogms-discuss
+
+		If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</obo:ogms.owl>
+	</rdf:Description>
         <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:creator>Werner Ceusters</dc:creator>
@@ -1023,35 +1041,13 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
+    // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-        <obo:ogms.owl>2010-07-20</obo:ogms.owl>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
-        <obo:ogms.owl>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
-
-The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2010-20-07 aka &#39;0.6&#39;
-http://purl.obolibrary.org/obo/ogms/2010-20-07/ogms.owl
-
-The OGMS developer site is http://code.google.com/p/ogms/
-The discussion group is http://groups.google.com/group/ogms-discuss
-
-If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</obo:ogms.owl>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
+        <dc:date>2009-08-07</dc:date>
     </rdf:Description>
 </rdf:RDF>
 

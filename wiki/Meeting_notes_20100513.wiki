@@ -1,5 +1,4 @@
 #summary : working notes from OGMS meeting at FOIS
-#labels Featured
 
 = Notes from OGMS meeting at FOIS (May 13, 2010) =
 

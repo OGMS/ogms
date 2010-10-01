@@ -5,7 +5,7 @@ Where: Skype
 
 = Agenda =
 
-  * Issue 36: CPR Integration http://code.google.com/p/ogms/issues/detail?id=
+  * Issue 36: CPR Integration http://code.google.com/p/ogms/issues/detail?id=36
   * Discussion of 'average blood pressure', 'palpated blood pressure', and 'seated blood pressure', 
 
 == Minutes ==

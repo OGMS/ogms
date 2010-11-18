@@ -1,4 +1,11 @@
 #Changes made between successive versions of OGMS
+= OGMSv0.6-v0.7 Changelog =
+ * Unobsoleted defined class (BFO:0000076) to accommodate signs and symptoms which could be either continuants or occurrents (since these are disjoint per bfo, any classifier would complain if they are asserted as quality OR processual entity).
+ * [http://code.google.com/p/ogms/issues/detail?id=12 Issue 12] closed, changed definition of symptom per discussion.
+ * Changed definition of sign per discussion.
+ * [http://code.google.com/p/ogms/issues/detail?id=36 Issue 36] closed without action, CPR-OGMS overlaps will be handled by mutual referencing and/or mireot where necessary.
+ * [http://code.google.com/p/ogms/issues/detail?id=49 Issue 49] closed, fixed misspelling.
+ * [http://code.google.com/p/ogms/issues/detail?id=50 Issue 50] closed, reclassified suggested processes as processual entities in preparation for BFO 2.0
 
 = OGMSv0.5-v0.6 Changelog =
  * [http://code.google.com/p/ogms/issues/detail?id=32 Issue 32] closed, changed definition of 'syndrome', reclassified as bfo:quality.

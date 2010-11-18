@@ -21,8 +21,8 @@
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2010-07-20 aka &#39;0.6&#39;
-http://purl.obolibrary.org/obo/ogms/2010-07-20/ontology/ogms.owl
+This is version 2009-12-03 aka &#39;0.3&#39;
+http://purl.obolibrary.org/obo/ogms/2009-12-09/ogms.owl
 
 The OGMS developer site is http://code.google.com/p/ogms/
 The discussion group is http://groups.google.com/group/ogms-discuss
@@ -195,10 +195,11 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
         <rdfs:label>symptom</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient and is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
-        <obo:IAO_0000232>creation date: 2010-07-19T11:02:10Z</obo:IAO_0000232>
+        <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient that is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -244,11 +245,12 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
         <rdfs:label>sign</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000232>creation date: 2010-07-19T11:14:36Z</obo:IAO_0000232>
+        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in that is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2010-11-18T11:14:36Z</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -606,7 +608,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059">
         <rdfs:label>etiological process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2009-06-23T11:53:07Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
@@ -619,7 +621,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
         <rdfs:label>bodily process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <obo:IAO_0000232>creation date: 2009-06-23T11:53:49Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
     </owl:Class>
@@ -1020,8 +1022,8 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000095 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000095">
-        <rdfs:label>inflamation process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <rdfs:label>inflammation process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <obo:IAO_0000119>http://code.google.com/p/ogms/wiki/Meeting_notes_20100513</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A process which is a response by an organism&#39;s tissues that is generally identified by swelling or localized pain</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>

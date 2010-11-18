@@ -38,6 +38,12 @@ Always points to latest dated version.
  * http://purl.obolibrary.org/obo/ogms/2010-07-20/ogms.owl
  * http://purl.obolibrary.org/obo/ogms/2010-07-20/ogms.obo
 
+== Version "0.7" ==
+Note: PURL service down for adding new PURLs...here are the googlecode paths
+ * http://ogms.googlecode.com/svn/releases/2010-11-18/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2010-11-18/ontology/ogms.obo
+
+
 = OWL 1 usage =
 
 Use the PURL for the version you want. Ignore any complaints from tools that the ontology URI doesn't match the physical URI

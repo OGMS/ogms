@@ -198,7 +198,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z</obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient that is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
         <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
     </owl:Class>
     
@@ -248,7 +248,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in that is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-11-18T11:14:36Z</obo:IAO_0000232>
     </owl:Class>

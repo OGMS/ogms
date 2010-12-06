@@ -240,7 +240,7 @@ creation_date: 2009-06-23T10:22:44Z
 [Term]
 id: OGMS:0000020
 name: symptom
-def: "A quality of a patient that is observed by the patient or a processual entity experienced by the patient that is hypothesized by the patient to be a realization of a disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 is_a: BFO:0000076 ! defined class
 comment: "Symptoms are typically reported by a patient to their healthcare provider. We can drop the quality-or-processual entity solution (thus reinstating symptoms as universals) under a theory of purely experiential/subjective symptoms.  However this theory will go against usage in practice and will require a good theory for mental experiences in BFO."
 creation_date: 2010-11-18T11:02:10Z
@@ -272,7 +272,7 @@ creation_date: 2010-07-19T11:13:49Z
 [Term]
 id: OGMS:0000024
 name: sign
-def: "A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in that is observed in a physical examination and is deemed by the clinician to be of clinical significance." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 is_a: BFO:0000076 ! defined class
 comment: "Signs are typically reported/recorded by a patient's healthcare provider."
 created_by: agoldfain

@@ -1,5 +1,7 @@
 #labels Featured
 = List of meeting notes =
+*[Meeting_notes_20110112]
+
 *[Meeting_notes_20101105]
 
 *[Meeting_notes_20101001]

@@ -22,7 +22,7 @@
 		 (t (error "don't know how to convert id ~a to uri" id)))))
     (with-ontology ogms (:about "http://purl.obolibrary.org/obo/ogms.owl" :base "http://purl.obolibrary.org/obo/ogms.owl")
 	((owl-imports !<http://www.ifomis.org/bfo/1.1>)
-	 (owl-imports !<http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl>)
+	 (owl-imports !<http://purl.obolibrary.org/obo/iao/ontology-metadata.owl>)
 	 (owl-imports !<http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl>)
 	 (ontology-annotation !rdfs:comment "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 

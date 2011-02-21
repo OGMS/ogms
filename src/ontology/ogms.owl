@@ -12,6 +12,7 @@
      xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
+        <owl:versionInfo>2011-02-21</owl:versionInfo>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>
@@ -21,8 +22,8 @@
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2009-12-03 aka &#39;0.3&#39;
-http://purl.obolibrary.org/obo/ogms/2009-12-09/ogms.owl
+This is version 2011-02-21 aka &#39;0.8&#39;
+http://purl.obolibrary.org/obo/ogms/2011-02-21/ogms.owl
 
 The OGMS developer site is http://code.google.com/p/ogms/
 The discussion group is http://groups.google.com/group/ogms-discuss

@@ -1,5 +1,6 @@
 format-version: 1.2
-date: 18:11:2010 18:19
+data-version: 2011-02-21
+date: 21:02:2011 18:19
 auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo

@@ -1,4 +1,7 @@
 #Changes made between successive versions of OGMS
+= OGMSv0.7-v0.8 Changelog =
+ * [http://code.google.com/p/ogms/issues/detail?id=54 Issue 54] closed, added 'health care process', 'health care encounter', and stubs for subtypes.  See also ogms-discuss thread on the issue [http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6/bf0e22e8a344c173#bf0e22e8a344c173 here].
+
 = OGMSv0.6-v0.7 Changelog =
  * Unobsoleted defined class (BFO:0000076) to accommodate signs and symptoms which could be either continuants or occurrents (since these are disjoint per bfo, any classifier would complain if they are asserted as quality OR processual entity).
  * [http://code.google.com/p/ogms/issues/detail?id=12 Issue 12] closed, changed definition of symptom per discussion.

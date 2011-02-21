@@ -815,7 +815,7 @@ creation_date: 2011-02-21T09:57:44Z
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" [http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6]
-is_a: BFO:0000052 ! processual entity
+is_a: OGMS:0000096 ! health care process
 created_by: agoldfain
 creation_date: 2011-02-21T09:57:44Z
 

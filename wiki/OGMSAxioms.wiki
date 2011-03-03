@@ -9,7 +9,7 @@ TODO: Decide which restrictions are necessary and sufficient and which are just 
 
 disease:
   * *realized_by* ONLY 'disease course'
-  * *has_material_basis_in* SOME disorder
+  * [http://code.google.com/p/bfo/issues/detail?id=13 *has_material_basis_in*] SOME disorder
 
 'disease course':
   * *realizes* ONLY disease

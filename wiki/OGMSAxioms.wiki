@@ -22,5 +22,7 @@ extended organism:
   * organism AND (*part_of* SOME organism) AND (*contained_in* SOME organism)
 
 diagnosis:
+  * TODO: The output of: 'planned process' AND (*has_specified_input* SOME 'clinical picture') AND (*has_specified_output* SOME 'diagnostic statement')
+  * We need to decide whether to assert what 'diagnosis' is_about? 
 
 syndrome:

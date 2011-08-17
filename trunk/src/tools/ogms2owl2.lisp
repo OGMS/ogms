@@ -23,7 +23,7 @@
     (with-ontology ogms (:about "http://purl.obolibrary.org/obo/ogms.owl" :base "http://purl.obolibrary.org/obo/ogms.owl" :collecting t)
 	((asq 
 	  (imports !<http://www.ifomis.org/bfo/1.1>)
-	 (imports !<http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl>)
+	 (imports !<http://purl.obolibrary.org/obo/iao/ontology-metadata.owl>)
 	 (imports !<http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl>))
 	 (let ((ogms !<http://purl.obolibrary.org/obo/ogms.owl>))
 	   (as

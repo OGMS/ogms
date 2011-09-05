@@ -16,8 +16,8 @@ Always points to latest dated version.
 = Allocated PURLs =
 
 == Version "0.2" ==
- * http://ogms.googlecode.com/svn/releases/2009-08-07/ontology/ogms.owl
- * http://ogms.googlecode.com/svn/releases/2009-08-07/ontology/ogms.obo
+ * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.owl
+ * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.obo
 
 == Version "0.3" ==
 

@@ -16,27 +16,27 @@ Always points to latest dated version.
 = Allocated PURLs =
 
 == Version "0.2" ==
- * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.owl
- * http://purl.obolibrary.org/obo/ogms/2009-08-07/ogms.obo
+ * http://ogms.googlecode.com/svn/releases/2009-08-07/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2009-08-07/ontology/ogms.obo
 
 == Version "0.3" ==
 
- * http://purl.obolibrary.org/obo/ogms/2009-12-03/ogms.owl
- * http://purl.obolibrary.org/obo/ogms/2009-12-03/ogms.obo
+ * http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.obo
 
 == Version "0.4" ==
 
- * http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.owl
- * http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.obo
+ * http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.obo
 
 == Version "0.5" ==
 
- * http://purl.obolibrary.org/obo/ogms/2010-03-31/ogms.owl
- * http://purl.obolibrary.org/obo/ogms/2010-03-31/ogms.obo
+ * http://ogms.googlecode.com/svn/releases/2010-03-31/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2010-03-31/ontology/ogms.obo
 
 == Version "0.6" ==
- * http://purl.obolibrary.org/obo/ogms/2010-07-20/ogms.owl
- * http://purl.obolibrary.org/obo/ogms/2010-07-20/ogms.obo
+ * http://ogms.googlecode.com/svn/releases/2010-07-20/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2010-07-20/ontology/ogms.obo
 
 == Version "0.7" ==
 Note: PURL service down for adding new PURLs...here are the googlecode paths

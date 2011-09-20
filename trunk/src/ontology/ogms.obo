@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2011-02-21
-date: 21:02:2011 18:19
+data-version: 2011-09-20
+date: 20:09:2011 18:19
 auto-generated-by: OBO-Edit 2.0
 default-namespace: ogms
 !import http://purl.obolibrary.org/obo/iao.obo
@@ -619,7 +619,7 @@ creation_date: 2009-06-23T12:00:56Z
 [Term]
 id: OGMS:0000073
 name: diagnosis
-def: "The representation of a conclusion of an interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+def: "The representation of a conclusion of diagnostic process." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
 is_a: IAO:0000027 ! data item
 created_by: agoldfain
 creation_date: 2009-06-23T12:42:23Z
@@ -851,6 +851,32 @@ def: "TODO" [http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2
 is_a: OGMS:0000097 ! health care encounter
 created_by: agoldfain
 creation_date: 2011-02-21T09:57:44Z
+
+[Term]
+id: OGMS:0000102
+name: injury
+def: "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure." [http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5]
+is_a: BFO:0000041 ! material entity
+comment: At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.
+created_by: agoldfain
+creation_date: 2011-09-20T09:57:44Z
+
+[Term]
+id: OGMS:0000103
+name: prophylaxis
+def: "A planned process that has the objective to reduce the risk of acquiring one or more disorders." [http://groups.google.com/group/ogms-discuss/browse_thread/thread/e42bde79218ee34e] 
+is_a: BFO:0000052 ! processual entity
+comment: Whether or not 'prophylaxis' and 'treatment' classes are disjoint is an open question.
+created_by: agoldfain
+creation_date: 2011-09-20T09:57:44Z
+
+[Term]
+id: OGMS:0000104
+name: diagnostic process
+def: "An interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type." [http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e] 
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2011-09-20T09:57:44Z
 
 [Term]
 id: OGMS:0000013

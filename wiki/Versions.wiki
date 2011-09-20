@@ -47,6 +47,11 @@ Note: PURL service down for adding new PURLs...here are the googlecode paths
  * http://ogms.googlecode.com/svn/releases/2011-02-21/ontology/ogms.owl
  * http://ogms.googlecode.com/svn/releases/2011-02-21/ontology/ogms.obo
 
+== Version "0.9" ==
+ * http://ogms.googlecode.com/svn/releases/2011-09-20/ontology/ogms.owl
+ * http://ogms.googlecode.com/svn/releases/2011-09-20/ontology/ogms.obo
+
+
 = OWL 1 usage =
 
 Use the PURL for the version you want. Ignore any complaints from tools that the ontology URI doesn't match the physical URI

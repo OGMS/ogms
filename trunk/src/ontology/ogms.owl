@@ -12,7 +12,7 @@
      xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
-        <owl:versionInfo>2011-02-21</owl:versionInfo>
+        <owl:versionInfo>2011-09-20</owl:versionInfo>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>

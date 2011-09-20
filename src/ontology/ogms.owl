@@ -755,7 +755,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:label>diagnosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of an interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
     </owl:Class>
@@ -1110,6 +1110,45 @@ If you are interested in participating in the development of OGMS, please send e
     </owl:Class>
     
 
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000102">
+        <rdfs:label>injury</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure.</obo:IAO_0000115>
+        <obo:IAO_0000116>At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.</obo:IAO_0000116>
+        <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
+    </owl:Class>    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000103">
+        <rdfs:label>prophylaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/e42bde79218ee34e</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has the objective to reduce the risk of acquiring one or more disorders.</obo:IAO_0000115>
+        <obo:IAO_0000116>Whether or not 'prophylaxis' and 'treatment' classes are disjoint is an open question.</obo:IAO_0000116>
+        <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104">
+        <rdfs:label>diagnostic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
+    </owl:Class>    
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////

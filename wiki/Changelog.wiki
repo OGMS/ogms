@@ -1,4 +1,10 @@
 #Changes made between successive versions of OGMS
+= OGMSv0.8-v0.9 Changelog =
+ * [http://code.google.com/p/ogms/issues/detail?id=60 Issue 60] closed, added 'diagnostic process', modified term 'diagnosis'.
+ * [http://code.google.com/p/ogms/issues/detail?id=61 Issue 61] closed, added term 'injury'.
+ * [http://code.google.com/p/ogms/issues/detail?id=65 Issue 65] closed, superseded by Issue 66.
+ * [http://code.google.com/p/ogms/issues/detail?id=66 Issue 66] left open for refinement of 'treatment', added term 'prophylaxis'
+
 = OGMSv0.7-v0.8 Changelog =
  * [http://code.google.com/p/ogms/issues/detail?id=54 Issue 54] closed, added 'health care process', 'health care encounter', and stubs for subtypes.  See also ogms-discuss thread on the issue [http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6/bf0e22e8a344c173#bf0e22e8a344c173 here].
 

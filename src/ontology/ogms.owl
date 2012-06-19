@@ -120,7 +120,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000232>creation date: 2010-07-19T10:20:20Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A representation of the clinically significant bodily components and/or bodily processes of a human being that is inferred from the totality of relevant clinical findings.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A representation of clinically significant bodily components, dispositions, and/or bodily processes of a human being that is inferred from relevant clinical findings.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
     </owl:Class>
     

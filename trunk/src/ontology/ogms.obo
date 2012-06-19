@@ -208,7 +208,7 @@ creation_date: 2010-07-19T10:18:59Z
 [Term]
 id: OGMS:0000016
 name: clinical picture
-def: "A representation of the clinically significant bodily components and/or bodily processes of a human being that is inferred from the totality of relevant clinical findings." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
+def: "A representation of clinically significant bodily components, dispositions, and/or bodily processes of a human being that is inferred from relevant clinical findings." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
 comment: Need to differentiate 'clinical picture' from 'clinical presentation'?
 is_a: IAO:0000027 ! data item
 created_by: agoldfain

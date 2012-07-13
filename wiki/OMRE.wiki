@@ -39,6 +39,6 @@ http://purl.obolibrary.org/obo/ogms/omre.owl
 
 == Term Lists for OMRE ==
 
-We are soliciting lists of relevant terms for OMRE that OGMS users require for their particular applications. It would be very helpful if these were sent as lists, rather than term-by-term. Also, please indicate whether the term is a material entity or a processual entity (or the more specific OGMS parent from the list above).
+We are soliciting lists of relevant terms for OMRE that OGMS users require for their particular applications. It would be very helpful if these were sent as lists, rather than term-by-term. Also, please indicate whether the term is a material entity or a processual entity (or the more specific OGMS parent from the list above) and include a preliminary definition for each term.
 
 *Please submit the list to ogms-discuss and use the "`[OMRE`] Term List" in the subject line*. Also, any OMRE-specific discussion on ogms-discuss should have `[OMRE`] in the subject line.

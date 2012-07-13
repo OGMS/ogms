@@ -7,7 +7,7 @@ One of the guiding principles of OGMS development has been to keep the ontology 
 
 Recently, there have been multiple requests to incorporate general terms for pathological anatomical entities (e.g., embolism, rash, fracture, lesion) and pathological bodily processes (e.g., hemorrhaging, fever process, inflammation process) within the OGMS framework. The proposal is to create an extension of OGMS called the *Ontology of Medically Relevant Entities* for this purpose.
 
-Several of the terms proposed terms already exist in the Symptom Ontology (SYMP) and elsewhere in the OBO Foundry. These will be examined on a case-by-case basis and considered for import, however some issues are noticeable with respect to many of these external terms:
+Several of the proposed terms already exist in the Symptom Ontology (SYMP) and elsewhere in the OBO Foundry. These will be examined on a case-by-case basis and considered for import, however some issues are noticeable with respect to many of these external terms:
 
   # The source ontology is currently not actively maintained (e.g., SYMP) 
   # Several relevant terms have no definitions or have unclear definitions.    
@@ -41,4 +41,4 @@ http://purl.obolibrary.org/obo/ogms/omre.owl
 
 We are soliciting lists of relevant terms for OMRE that OGMS users require for their particular applications. It would be very helpful if these were sent as lists, rather than term-by-term. Also, please indicate whether the term is a material entity or a processual entity (or the more specific OGMS parent from the list above).
 
-*Please submit the list to ogms-discuss and use the "`[OMRE`] Term List" in the subject line*. Also, any OMRE-specific discussion on ogms-discuss should have the `[OMRE`] in the subject line.
+*Please submit the list to ogms-discuss and use the "`[OMRE`] Term List" in the subject line*. Also, any OMRE-specific discussion on ogms-discuss should have `[OMRE`] in the subject line.

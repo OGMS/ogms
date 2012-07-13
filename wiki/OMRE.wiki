@@ -37,6 +37,8 @@ http://purl.obolibrary.org/obo/ogms/OMRE_NNNNNNN
 When released, the stable PURL of OMRE will be:
 http://purl.obolibrary.org/obo/ogms/omre.owl
 
+Note: further discussion is needed regarding the URI scheme in order to ensure compliance with the [http://obofoundry.org/id-policy.shtml OBO Foundry ID policy]
+
 == Term Lists for OMRE ==
 
 We are soliciting lists of relevant terms for OMRE that OGMS users require for their particular applications. It would be very helpful if these were sent as lists, rather than term-by-term. Also, please indicate whether the term is a material entity or a processual entity (or the more specific OGMS parent from the list above) and include a preliminary definition for each term.

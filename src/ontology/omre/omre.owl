@@ -324,8 +324,8 @@
         <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">Pus in a body cavity; when used without qualification, refers specifically to pyothorax.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">empyema</obo:IAO_0000111>
-        <rdfs:seeAlso rdf:resource=" http://purl.obolibrary.org/obo/MPATH_609"/>
-        <obo:IAO_0000119 rdf:resource=" http://purl.obolibrary.org/obo/MPATH_609"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/MPATH_609"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/MPATH_609"/>
     </owl:Class>
     
 

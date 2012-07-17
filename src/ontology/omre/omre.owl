@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogms/omre.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ogms/omre.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ogms="http://purl.obolibrary.org/obo/ogms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms/omre.owl">
+        <dc:creator>Melanie Courtot</dc:creator>
+        <dc:creator>Barry Smith</dc:creator>
+        <owl:versionInfo>2012-07-16</owl:versionInfo>
+        <dc:date>2012-07-16</dc:date>
+        <rdfs:comment>See https://code.google.com/p/ogms/wiki/OMRE</rdfs:comment>
+        <dc:creator>Albert Goldfain</dc:creator>
+        <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
+        <dc:creator>Lindsay Cowell</dc:creator>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label>curator note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000077 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000077">
+        <obo:IAO_0000112 xml:lang="en">A carcinoma, a blister, an ulcer</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">Needs to be defined in OGMS</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">PROPOSED DEFINITION: A newly formed continuant entity that is evolving in some larger anatomical structure.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">The definition refers to continuant entity rather than material entity because a pathological formation could be immaterial (for example a fracture or a cavity).  BFO 2.0 will support immaterial entities.</obo:IAO_0000116>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000078 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000078">
+        <obo:IAO_0000112 xml:lang="en">a carcinomatous lung, a blistered thumb, an ulcerated colon</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000079 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000079">
+        <obo:IAO_0000112 xml:lang="en">a portion of pus, a portion of amyloid</obo:IAO_0000112>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000000">
+        <rdfs:label xml:lang="en">abscess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000079"/>
+        <obo:IAO_0000115 xml:lang="en">A collection of pus (dead neutrophils) that has accumulated in a cavity formed by the tissue in which the pus resides.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">abscess</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Abscess"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/MPATH_608"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000001">
+        <rdfs:label xml:lang="en">nodule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000115 xml:lang="en">A relatively hard, roughly spherical abnormal formation.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Classified as pathological formation because tendons, muscles, and vocal cords can be the host organ for nodules.</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">nodule</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Nodule_(medicine)"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000002">
+        <rdfs:label xml:lang="en">erythematous skin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Is this a subtype of rash?</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">Redness of the skin, caused by hyperemia of the capillaries in the lower layers of the skin.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">erythema</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">erythematous skin</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0010783"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0010783"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000003">
+        <rdfs:label xml:lang="en">skin rash</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Skin that has a changed color, appearance, or texture.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">rash</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">skin rash</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Rash"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000004">
+        <rdfs:label xml:lang="en">urticaria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Raised, well-circumscribed areas of erythema and edema involving the dermis and epidermis. Urticaria is intensely pruritic, and blanches completely with pressure.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">hives</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">urticaria</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0001025"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0001025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000005">
+        <rdfs:label xml:lang="en">angioedema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <rdfs:comment xml:lang="en"> The swelling can also occur elsewhere, typically in the hands. Angioedema is similar to urticaria, but the swelling is subcutaneous rather than on the epidermis.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A swollen dermis, subcutaneous tissue, mucosa and submucosal tissues of the skin of the face, normally around the mouth, and the mucosa of the mouth and/or throat, as well as the tongue during a period of minutes to several hours.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">The HPO definition was modified to clarify  that this is a material entity (swollen entity) rather than a process (swelling)</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">angioedema</obo:IAO_0000111>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0100665"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0100665"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000006">
+        <rdfs:label xml:lang="en">red eye</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Redness of the white of the eye.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">TODO: Reference AEFI document</obo:IAO_0000119>
+        <obo:IAO_0000116 xml:lang="en">Unclear if we need another term &#39;red eyes&#39; to cover the bilateral case.</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">red eye</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000007">
+        <rdfs:label xml:lang="en">arthritic joint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">An arthritic joint is the material basis for arthritis (ogms:disease)</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An inflammed joint.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">arthritic joint</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0001369"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0001369"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/MPATH_195"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000008">
+        <rdfs:label xml:lang="en">inflammed lymph node</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An inflameed lymph node</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An inflammed lymph node is the material basis for the disease Lymphadenitis.</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">inflammed lymph node</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0002840"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0002840"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000009">
+        <rdfs:label xml:lang="en">swollen lymph node</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000115 xml:lang="en">A swollen lymph node.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Is a swollen lymph node the material basis for lymphadenopathy or is it identical to lymphadenopathy?</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">swollen lymph node</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0002716"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0002716"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000010">
+        <rdfs:label xml:lang="en">burn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000115 xml:lang="en">A traumatic injury involving interruption of tissue cohesiveness that results from exposure to caustic chemicals, extreme heat, extreme cold or excessive radiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">burn</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Burn"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000011">
+        <rdfs:label xml:lang="en">ulcer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000115 xml:lang="en">A discontinuity or break in a bodily membrane that impedes the organ of which that membrane is a part from continuing its normal functions</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">ulcer</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Ulcer"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/MPATH_579"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000012">
+        <rdfs:label xml:lang="en">embolus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Any detached, traveling intravascular mass (solid, liquid, or gaseous) carried by circulation, which is capable of clogging arterial capillary beds (create an arterial occlusion) at a site distant from its point of origin.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">embolus</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Embolus"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000013">
+        <rdfs:label xml:lang="en">wound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000115 xml:lang="en">A type of injury in which skin is torn, cut or punctured (an open wound), or where blunt force trauma causes a contusion (a closed wound)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">wound</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Wound"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000014">
+        <rdfs:label xml:lang="en">empyema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000079"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Pus in a body cavity; when used without qualification, refers specifically to pyothorax.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">empyema</obo:IAO_0000111>
+        <rdfs:seeAlso rdf:resource=" http://purl.obolibrary.org/obo/MPATH_609"/>
+        <obo:IAO_0000119 rdf:resource=" http://purl.obolibrary.org/obo/MPATH_609"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000015">
+        <rdfs:label xml:lang="en">rheumatoid factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The presence in the serum of an autoantibody directed against the Fc portion of IgG.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">rheumatoid factor</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0002923"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0002923"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000016">
+        <rdfs:label xml:lang="en">neoplasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An organ or organ-system abnormality that consists of uncontrolled autonomous cell-proliferation which can occur in any part of the body as a benign or malignant.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">neoplasm</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0002664"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0002664"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/MPATH_218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000017">
+        <rdfs:label xml:lang="en">hemorrhaged eye</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000078"/>
+        <obo:IAO_0000115 xml:lang="en">A pathological anatomical structure in the eye that allows bleeding from vessels of the various tissues of the eye.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">hemorrhaged eye</obo:IAO_0000111>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0011885"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0011885"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000018">
+        <rdfs:label xml:lang="en">petechiae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Pinpoint-sized reddish/purple spots, resembling a rash, that appear just under the skin or a mucous membrane when capillaries have ruptured and some superficial bleeding into the skin has happened.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">petechiae</obo:IAO_0000111>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/HP_0000967"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/HP_0000967"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000019">
+        <rdfs:label xml:lang="en">lesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000077"/>
+        <obo:IAO_0000117 xml:lang="en">Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Any abnormality in the tissue of an organism (in layman&#39;s terms, &quot;damage&quot;), usually caused by disease or trauma.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">lesion</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:resource="http://en.wikipedia.org/wiki/Lesion"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

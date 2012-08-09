@@ -482,7 +482,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000055">
         <rdfs:label>clinical history taking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An interview in which a clinician elicits a clinical history from a patient or from a third party who is reporting on behalf of the patient.</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:16Z</obo:IAO_0000232>
@@ -495,7 +495,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000056">
         <rdfs:label>laboratory test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
@@ -508,7 +508,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000057">
         <rdfs:label>physical examination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation.</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2010-07-19T11:50:18Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
@@ -521,7 +521,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000059">
         <rdfs:label>etiological process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2009-06-23T11:53:07Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A process in an organism that leads to a subsequent disorder.</obo:IAO_0000115>
@@ -534,7 +534,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
         <rdfs:label>bodily process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2009-06-23T11:53:49Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
     </owl:Class>
@@ -558,7 +558,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
         <rdfs:label>disease course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000232>creation date: 2009-06-23T11:55:44Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -849,7 +849,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
         <rdfs:label>treatment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
@@ -862,7 +862,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000091">
         <rdfs:label>convalescence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course. </obo:IAO_0000115>
@@ -875,7 +875,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000092">
         <rdfs:label>life course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=38</obo:IAO_0000119>
@@ -914,7 +914,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000095">
         <rdfs:label>inflammation process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000115 xml:lang="en">A process which is a response by an organism&#39;s tissues that is generally identified by swelling or localized pain</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
@@ -927,7 +927,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
         <rdfs:label>health care process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A social process that has at least one human participant and that includes as parts the treatment, diagnosis, or prevention of disease or injury--or the following of instructions of another human for treatment, diagnosis, or prevention--of a participant in the process</obo:IAO_0000115>
@@ -1019,7 +1019,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000103">
         <rdfs:label>prophylaxis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/e42bde79218ee34e</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000116>Whether or not &#39;prophylaxis&#39; and &#39;treatment&#39; classes are disjoint is an open question.</obo:IAO_0000116>
@@ -1033,7 +1033,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104">
         <rdfs:label>diagnostic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An interpretive process that has as input a clinical picture of a given patient and as output an assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these.</obo:IAO_0000115>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
@@ -1046,7 +1046,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000105">
         <rdfs:label xml:lang="en">relapse</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A part of a disease course that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000115>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
@@ -1058,7 +1058,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000106">
         <rdfs:label xml:lang="en">remission</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A part of a disease course that includes a temporary convalescense.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>

@@ -890,7 +890,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:label>prognosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000232>creation date: 2010-03-31T12:42:23Z</obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A hypothesis about the course of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A hypothesis about some future part of a disease course.</obo:IAO_0000115>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
     </owl:Class>

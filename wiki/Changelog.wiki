@@ -4,7 +4,8 @@
 <i>Note these changes are in the development version only.</i>
  * Update to BFO2 ids
  * Modified definition of 'clinical picture' to include dispositions and allow for partial clinical pictures.
- * [http://code.google.com/p/ogms/issues/detail?id=69 Issue 69] Modified definition of 'diagnostic process' to allow the diagnostic statement (output) to be about a disease, disorder, or syndrome, or that a patient has none of these. 
+ * [http://code.google.com/p/ogms/issues/detail?id=69 Issue 69] Modified definition of 'diagnostic process' to allow the diagnostic statement (output) to be about a disease, disorder, or syndrome, or that a patient has none of these.
+ * [http://code.google.com/p/ogms/issues/detail?id=72 Issue 72] Changed 'prognosis' definition to refer to some future part of a disease course. 
  * [http://code.google.com/p/ogms/issues/detail?id=73 Issue 73] Added terms 'relapse' and 'remission'.
  * TODO MIREOT: 'drug role' http://purl.obolibrary.org/obo/OBI_0000040
 

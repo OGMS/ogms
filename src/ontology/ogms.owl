@@ -787,8 +787,8 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000020"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000232>creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">TODO: Define.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=13</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bodily process in an organism S involving two integrated levels: (a) activation of the nociceptive system and associated emotion generating brain components of S, and (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.referent-tracking.com/RTU/sendfile/?file=painTokyo1_27_2011.pdf</obo:IAO_0000119>
     </owl:Class>
     
 

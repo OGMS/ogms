@@ -1,0 +1,29 @@
+#summary a page summarizing the discussion around how to formalize diagnosis guidelines and criteria
+
+= Introduction =
+
+Background information: 
+ * issue at http://code.google.com/p/ogms/issues/detail?id=75
+ * thread at https://groups.google.com/forum/?fromgroups=#!topic/ogms-discuss/9oVK5dLdZQs
+
+A call was organized on August 29th 2012, during which Melanie Courtot, Alexander Cox, Alexander Diehl, Albert Goldfain, Mark Jensen, Yu Lin, Alan Ruttenberg (in alphabetical order) discussed how to proceed. Summary of status before the call:
+(1) set of diagnosis criteria/diagnosis guideline 
+
+For Alex: a subclass of 'data item' and defined as "A set of criteria that has been agreed upon by the medical community to provide sufficient, necessary, or sufficient and necessary warrant for a clinician to reach a particular diagnosis concerning a patient whose clinical picture satisfies the relevant criteria." It currently has about 60 subclasses of it for specific disease diagnoses in the Neurological Disease Ontology (ND) 
+
+For Melanie: a subclass of 'directive information entity' and defined as "A directive information entity that specifies how to establish a diagnosis based on clinical findings" I subclass diagnosis guideline with (in my case) "Brighton case definition", which is the parent of "Brighton case definition for generalized convulsive seizure as an adverse event following immunization". The concretization of this case definition is realized during a "generalized convulsive seizure as an AEFI according to the Brighton collaboration" process. 
+
+(2) diagnostic criterion 
+
+For Alex: proposal to use a relation. The relations 'has major criterion', 'has primary criterion', 'has supporting criterion', 'has minor criterion', 'has secondary criterion', 'has necessary criterion', or 'has sufficient criterion' might be candidates for representing this. E.g., 'set of diagnostic criteria for norovirus' has_major_criterion 'vomiting', 'set of diagnostic criteria for pregnancy' has_supporting_criterion 'vomiting' 
+
+For Melanie: proposal to use an equivalent class. E.g., "major dermatological criterion for anaphylaxis according to Brighton" would be disjointUnionOf "hives-finding", "angioedema-finding", "pruritus-finding" This would allow me to specify the system (dermatological, cardiovascular etc) and the degree per set of criteria. (as Alex mentions at http://code.google.com/p/ogms/issues/detail?id=75, we agree that one finding can belong to multiple sets (e.g. vomiting is used to diagnose anaphylaxis but also intussusception), have different degrees of importance (vomiting is major criteria for intussusception, minor for anaphylaxis) Cretaing a class allows also to link to each guideline; different guidelines may have different criteria for anaphylaxis for example are different for NIAID and Brighton) 
+
+Additional note: Alan noted an issue with saying that the adverse event realizes the concretization of the diagnosis guideline as the normal way is to have the protocol, and *then* have the process, rather than observing the process first. He called it "realization is forward looking" I am not sure where that is expressed in BFO, but I think in any case we would need something to say that a disease is diagnosed according to a set of guidelines. 
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

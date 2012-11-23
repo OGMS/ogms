@@ -20,6 +20,7 @@
         <dc:creator>Lindsay Cowell</dc:creator>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl"/>
     </owl:Ontology>
     
 

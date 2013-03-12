@@ -87,12 +87,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000137">
         <rdfs:label>bilateral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
         <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
@@ -101,30 +98,24 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000103">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000103">
         <rdfs:label xml:lang="en">generalized urticaria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000334"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000334"/>
         <obo:IAO_0000118>hives</obo:IAO_0000118>
         <obo:AERO_0000106>UrticariaGen</obo:AERO_0000106>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000104">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000104">
         <rdfs:label xml:lang="en">generalized erythema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000205"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
         <obo:AERO_0000106>ErythemaGen</obo:AERO_0000106>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000105 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000105">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000105">
         <rdfs:label xml:lang="en">angioedema</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -138,32 +129,24 @@
         <obo:IAO_0000232>localized or generalized</obo:IAO_0000232>
         <obo:AERO_0000106>AngEdGenLoc</obo:AERO_0000106>
     </owl:Class>
-    
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000107 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000107">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107">
         <rdfs:label xml:lang="en">generalized pruritus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000335"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000335"/>
         <obo:AERO_0000106>PruritusGen</obo:AERO_0000106>
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000108 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000108">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108">
         <rdfs:label xml:lang="en">skin rash</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000337"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
         <obo:AERO_0000106>SkinRash</obo:AERO_0000106>
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000114">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000114">
         <rdfs:label xml:lang="en">bilateral wheeze</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
         <obo:IAO_0000118>bronchospasm</obo:IAO_0000118>
@@ -172,32 +155,24 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000116 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000116">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000116">
         <rdfs:label xml:lang="en">upper airway swelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000320"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000320"/>
         <obo:IAO_0000232>lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
         <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
     </owl:Class>
-    
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000200 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000200">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000200">
         <rdfs:label xml:lang="en">infected abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
         <obo:AERO_0000324 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
-    
+ 
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000201 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000201">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000201">
         <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:AERO_0000324 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:AERO_0000324>
@@ -207,9 +182,8 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000202 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000202">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000202">
         <rdfs:label xml:lang="en">cellulitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
         <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
@@ -219,9 +193,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000203 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000203">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000203">
         <rdfs:label xml:lang="en">nodule</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:AERO_0000324 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:AERO_0000324>
@@ -231,9 +203,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000204 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000204">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000204">
         <rdfs:label xml:lang="en">lymphadenitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
         <obo:AERO_0000324 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:AERO_0000324>
@@ -242,9 +212,8 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000205 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000205">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000205">
         <rdfs:label xml:lang="en">erythema</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -259,9 +228,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000206 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000206">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000206">
         <rdfs:label xml:lang="en">induration</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5839-5857</obo:IAO_0000116>
@@ -271,70 +238,60 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000219 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000219">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000219">
         <rdfs:label xml:lang="en">generalized pruritus with skin rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000107"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000108"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000107"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000220 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000220">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000220">
         <rdfs:label xml:lang="en">generalized pruritus without skin rash</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000107"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000108"/>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
                     </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000107"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000271 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000271">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000271">
         <rdfs:label xml:lang="en">generalized prickle sensation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000336"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000336"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000275 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000275">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000275">
         <rdfs:label xml:lang="en">red and itchy eyes</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000338"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000339"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
-    
+  
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000287 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000287">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287">
         <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
@@ -348,14 +305,13 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000288 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000288">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000288">
         <rdfs:label xml:lang="en">difficulty breathing without wheeze or stridor</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000287"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
                     </owl:Class>
@@ -365,14 +321,13 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO_0000287"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000291 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000291">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000291">
         <rdfs:label xml:lang="en">sneezing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
@@ -386,10 +341,7 @@
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000320 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000320">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000320">
         <rdfs:label xml:lang="en">swelling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5858-5874</obo:IAO_0000116>
@@ -399,9 +351,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000322 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000322">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000322">
         <rdfs:label xml:lang="en">tenderness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
         <obo:AERO_0000324 xml:lang="en">Abnormal sensitivity to touch or release of pressure.</obo:AERO_0000324>
@@ -409,20 +359,13 @@
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000331 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000331">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000331">
         <rdfs:label xml:lang="en">regional lymphadenopathy</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:AERO_0000324 xml:lang="en">Abnormal enlargement of the lymph nodes closest to the vaccination site (e.g., inguinal adenopathy when associated with an IM vaccination in the thigh, axillary adenopathy associated with an IM vaccination in the deltoid, etc.).</obo:AERO_0000324>
     </owl:Class>
-    
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000332 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000332">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000332">
         <rdfs:label xml:lang="en">oculo-respiratory syndrome</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <obo:IAO_0000118 xml:lang="en">ORS</obo:IAO_0000118>
@@ -431,9 +374,8 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000334 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000334">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000334">
         <rdfs:label xml:lang="en">urticaria</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -448,9 +390,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000335 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000335">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000335">
         <rdfs:label xml:lang="en">pruritus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -464,9 +404,8 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000336 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000336">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000336">
         <rdfs:label xml:lang="en">prickle sensation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
@@ -479,10 +418,7 @@
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/AERO_0000337 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000337">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000337">
         <rdfs:label xml:lang="en">rash</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -497,9 +433,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000338 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000338">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338">
         <rdfs:label xml:lang="en">red eyes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -514,9 +448,8 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000339 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000339">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339">
         <rdfs:label xml:lang="en">itchy eyes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <rdfs:subClassOf>
@@ -531,9 +464,7 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000345 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000345">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000345">
         <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <rdfs:subClassOf>
@@ -547,18 +478,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000352 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000352">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000352">
         <rdfs:label xml:lang="en">anaphylaxis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000353 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000353">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000353">
         <rdfs:label xml:lang="en">seizure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
@@ -574,11 +502,6 @@
         <obo:IAO_0000111 xml:lang="en">anatomical entity</obo:IAO_0000111>
     </owl:Class>
     
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
     
 
 
@@ -788,8 +711,8 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000103"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AERO_0000104"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000103"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000104"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>

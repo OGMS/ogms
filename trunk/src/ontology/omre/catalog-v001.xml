@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogms.owl" uri="http://purl.obolibrary.org/obo/ogms.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ogms.owl" uri="file:/Users/mcourtot/Desktop/projects/ogms/src/ontology/ogms.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1353710846386" name="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl" uri="OMRE_AEROImport.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1353710846386" name="http://purl.obolibrary.org/obo/ogms/omre.owl" uri="omre.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1363109087323" name="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl" uri="OMRE_AEROImport.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1363109087323" name="http://purl.obolibrary.org/obo/ogms/omre.owl" uri="omre.owl"/>
     </group>
 </catalog>

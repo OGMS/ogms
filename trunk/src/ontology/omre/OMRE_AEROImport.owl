@@ -276,7 +276,6 @@
     <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000027">
-        <rdfs:label xml:lang="en">dry cough finding</rdfs:label>
         <rdfs:label xml:lang="en">persistent dry cough</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000027"/>
@@ -424,7 +423,6 @@ vaccine administration.</obo:AERO_0000324>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000036">
         <rdfs:label xml:lang="en">lymphangitic streaking</rdfs:label>
-        <rdfs:label xml:lang="en">recession</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -432,7 +430,6 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000106>Recess</obo:AERO_0000106>
         <obo:AERO_0000324 xml:lang="en">Red streaks below the skin’s surface that follows the path of lymph draining from the site of infection via lymphatic vessels to regional lymph nodes.</obo:AERO_0000324>
     </owl:Class>
     
@@ -1112,6 +1109,24 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000353">
         <rdfs:label xml:lang="en">seizure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000354">
+        <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000355">
+        <rdfs:label xml:lang="en">recession</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
     </owl:Class>
     
 

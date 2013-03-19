@@ -242,7 +242,7 @@
     <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000024">
-        <rdfs:label xml:lang="en">decreased level of consciousness</rdfs:label>
+        <rdfs:label xml:lang="en">level of consciousness</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -250,19 +250,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000106>ConscDecr</obo:AERO_0000106>
-        <obo:AERO_0000324 xml:lang="en">Reduced alertness or awareness of the outside world.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000025">
-        <rdfs:label xml:lang="en">loss of consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000024"/>
-        <obo:AERO_0000324 xml:lang="en">Total suspension of conscious relationship with the outside world demonstrated by the inability to perceive and to respond to verbal, visual, and painful stimulus.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Level of alertness or awareness of the outside world.</obo:IAO_0000115>
     </owl:Class>
     
 

@@ -87,409 +87,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000137">
-        <rdfs:label>bilateral</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-        <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
-        <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000103">
-        <rdfs:label xml:lang="en">generalized urticaria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000334"/>
-        <obo:IAO_0000118>hives</obo:IAO_0000118>
-        <obo:AERO_0000106>UrticariaGen</obo:AERO_0000106>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000104">
-        <rdfs:label xml:lang="en">generalized erythema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
-        <obo:AERO_0000106>ErythemaGen</obo:AERO_0000106>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000105">
-        <rdfs:label xml:lang="en">angioedema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
-        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-        <obo:IAO_0000232>localized or generalized</obo:IAO_0000232>
-        <obo:AERO_0000106>AngEdGenLoc</obo:AERO_0000106>
-    </owl:Class>
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107">
-        <rdfs:label xml:lang="en">generalized pruritus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000335"/>
-        <obo:AERO_0000106>PruritusGen</obo:AERO_0000106>
-    </owl:Class>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108">
-        <rdfs:label xml:lang="en">skin rash</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
-        <obo:AERO_0000106>SkinRash</obo:AERO_0000106>
-    </owl:Class>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000114">
-        <rdfs:label xml:lang="en">bilateral wheeze</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
-        <obo:IAO_0000118>bronchospasm</obo:IAO_0000118>
-        <obo:AERO_0000106>WheezeBilat</obo:AERO_0000106>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000116">
-        <rdfs:label xml:lang="en">upper airway swelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000320"/>
-        <obo:IAO_0000232>lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
-        <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
-    </owl:Class>
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000200">
-        <rdfs:label xml:lang="en">infected abscess</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
-        <obo:AERO_0000324 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
- 
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000201">
-        <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:AERO_0000324 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:AERO_0000324>
-        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000202">
-        <rdfs:label xml:lang="en">cellulitis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
-        <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
-        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5803-5820</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000203">
-        <rdfs:label xml:lang="en">nodule</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:AERO_0000324 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:AERO_0000324>
-        <obo:IAO_0000116>BCCD: Vaccine 22(2004) 575-585</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000204">
-        <rdfs:label xml:lang="en">lymphadenitis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
-        <obo:AERO_0000324 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000205">
-        <rdfs:label xml:lang="en">erythema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">Abnormal redness of the skin without any raised skin lesions</obo:AERO_0000324>
-        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000206">
-        <rdfs:label xml:lang="en">induration</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5839-5857</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-        <obo:AERO_0000324 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue (subcutaneous tissue, fat, fascia or muscle) that is assessed by a health care provider</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000219">
-        <rdfs:label xml:lang="en">generalized pruritus with skin rash</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000220">
-        <rdfs:label xml:lang="en">generalized pruritus without skin rash</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000271">
-        <rdfs:label xml:lang="en">generalized prickle sensation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000336"/>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000275">
-        <rdfs:label xml:lang="en">red and itchy eyes</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-  
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287">
-        <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">Sensation of difficult/uncomfortable breathing or a feeling of not getting enough air.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000288">
-        <rdfs:label xml:lang="en">difficulty breathing without wheeze or stridor</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000291">
-        <rdfs:label xml:lang="en">sneezing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">An involuntary (reflex), sudden, violent, and audible expulsion of air through the mouth and nose.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-    </owl:Class>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000320">
-        <rdfs:label xml:lang="en">swelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5858-5874</obo:IAO_0000116>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-        <obo:AERO_0000324 xml:lang="en">Visible enlargement of the vaccinated limb that is assessed by any person, with or without objective measurement.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000322">
-        <rdfs:label xml:lang="en">tenderness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
-        <obo:AERO_0000324 xml:lang="en">Abnormal sensitivity to touch or release of pressure.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
-    </owl:Class>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000331">
-        <rdfs:label xml:lang="en">regional lymphadenopathy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:AERO_0000324 xml:lang="en">Abnormal enlargement of the lymph nodes closest to the vaccination site (e.g., inguinal adenopathy when associated with an IM vaccination in the thigh, axillary adenopathy associated with an IM vaccination in the deltoid, etc.).</obo:AERO_0000324>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000332">
-        <rdfs:label xml:lang="en">oculo-respiratory syndrome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <obo:IAO_0000118 xml:lang="en">ORS</obo:IAO_0000118>
-        <obo:AERO_0000324 xml:lang="en">The presence of “bilateral red eyes” plus ≥1 respiratory symptom (cough, wheeze, chest tightness, difficulty breathing, difficulty swallowing, hoarseness or sore throat) that starts within 24 hrs of vaccination, with or without facial oedema.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000334">
-        <rdfs:label xml:lang="en">urticaria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000335">
-        <rdfs:label xml:lang="en">pruritus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324>An unpleasant skin sensation that provokes a desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000336">
-        <rdfs:label xml:lang="en">prickle sensation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324>Tingling or smarting (stinging) sensation.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000337">
-        <rdfs:label xml:lang="en">rash</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324>A morphologically described change in the appearance of the skin or mucosa that occurs in the context of and in conjunction with an emerging allergic event that consists of one or more clearly identified primary lesion(s) (macule, papule, vesicle, nodule, bulla, cyst, plaque, pustule) and/or secondary skin change(s) (scaling, atrophy, ulcer, fissure, excoriation).</obo:AERO_0000324>
-        <obo:IAO_0000119>Vaccine, 25 (2007) 5697-5706</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338">
-        <rdfs:label xml:lang="en">red eyes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-        <obo:AERO_0000324>Redness of the white(s) of the eye (s) (sclera)</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339">
-        <rdfs:label xml:lang="en">itchy eyes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-        <obo:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000345">
-        <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">Sensation or feeling of difficulty in the passage of solids and liquids down to the stomach.</obo:AERO_0000324>
-    </owl:Class>
-    
-
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000352">
-        <rdfs:label xml:lang="en">anaphylaxis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000353">
-        <rdfs:label xml:lang="en">seizure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
     
 
 
@@ -502,6 +99,11 @@
         <obo:IAO_0000111 xml:lang="en">anatomical entity</obo:IAO_0000111>
     </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
     
 
 
@@ -586,7 +188,7 @@
     <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000021">
-        <rdfs:label xml:lang="en">capillary refill time &gt; 3s</rdfs:label>
+        <rdfs:label xml:lang="en">capillary refill time</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -594,9 +196,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000106>CapRefillOver3</obo:AERO_0000106>
         <obo:AERO_0000324 xml:lang="en">Capillary refill time is the time required for the normal skin colour to reappear after a blanching pressure is applied. It is usually performed by pressing on the nail bed to cause blanching and then counting the time it takes for the blood to return to the tissue, indicated by a pink colour returning to the nail. Normally it is &lt;3 seconds.</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1049,6 +649,481 @@ vaccine administration.</obo:AERO_0000324>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en"> A whistling, squeaking, musical, or puffing sound made by breathing out.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000103">
+        <rdfs:label xml:lang="en">generalized urticaria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000334"/>
+        <obo:AERO_0000106>UrticariaGen</obo:AERO_0000106>
+        <obo:IAO_0000118>hives</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000104">
+        <rdfs:label xml:lang="en">generalized erythema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
+        <obo:AERO_0000106>ErythemaGen</obo:AERO_0000106>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000105">
+        <rdfs:label xml:lang="en">angioedema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:AERO_0000106>AngEdGenLoc</obo:AERO_0000106>
+        <obo:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
+        <obo:IAO_0000232>localized or generalized</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107">
+        <rdfs:label xml:lang="en">generalized pruritus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000335"/>
+        <obo:AERO_0000106>PruritusGen</obo:AERO_0000106>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108">
+        <rdfs:label xml:lang="en">skin rash</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
+        <obo:AERO_0000106>SkinRash</obo:AERO_0000106>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000114">
+        <rdfs:label xml:lang="en">bilateral wheeze</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
+        <obo:AERO_0000106>WheezeBilat</obo:AERO_0000106>
+        <obo:IAO_0000118>bronchospasm</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000116">
+        <rdfs:label xml:lang="en">upper airway swelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000320"/>
+        <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
+        <obo:IAO_0000232>lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000137">
+        <rdfs:label>bilateral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000200">
+        <rdfs:label xml:lang="en">infected abscess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:AERO_0000324 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000201">
+        <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
+        <obo:AERO_0000324 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000202">
+        <rdfs:label xml:lang="en">cellulitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
+        <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5803-5820</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000203">
+        <rdfs:label xml:lang="en">nodule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:AERO_0000324 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 22(2004) 575-585</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000204">
+        <rdfs:label xml:lang="en">lymphadenitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
+        <obo:AERO_0000324 xml:lang="en">Inflammation of one or more lymph nodes, usually caused by a primary focus of infection elsewhere in the body.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000205">
+        <rdfs:label xml:lang="en">erythema</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">Abnormal redness of the skin without any raised skin lesions</obo:AERO_0000324>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000206">
+        <rdfs:label xml:lang="en">induration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5839-5857</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Palpable thickening, firmness or hardening of soft tissue (subcutaneous tissue, fat, fascia or muscle) that is assessed by a health care provider</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000219">
+        <rdfs:label xml:lang="en">generalized pruritus with skin rash</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000220">
+        <rdfs:label xml:lang="en">generalized pruritus without skin rash</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000108"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000107"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000271">
+        <rdfs:label xml:lang="en">generalized prickle sensation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000336"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000275">
+        <rdfs:label xml:lang="en">red and itchy eyes</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287">
+        <rdfs:label xml:lang="en">difficulty breathing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">Sensation of difficult/uncomfortable breathing or a feeling of not getting enough air.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000288">
+        <rdfs:label xml:lang="en">difficulty breathing without wheeze or stridor</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000291">
+        <rdfs:label xml:lang="en">sneezing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">An involuntary (reflex), sudden, violent, and audible expulsion of air through the mouth and nose.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000320">
+        <rdfs:label xml:lang="en">swelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000116 xml:lang="en">BCCD: Vaccine 25 (2007) 5858-5874</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Visible enlargement of the vaccinated limb that is assessed by any person, with or without objective measurement.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000322">
+        <rdfs:label xml:lang="en">tenderness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+        <obo:AERO_0000324 xml:lang="en">Abnormal sensitivity to touch or release of pressure.</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000331">
+        <rdfs:label xml:lang="en">regional lymphadenopathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:AERO_0000324 xml:lang="en">Abnormal enlargement of the lymph nodes closest to the vaccination site (e.g., inguinal adenopathy when associated with an IM vaccination in the thigh, axillary adenopathy associated with an IM vaccination in the deltoid, etc.).</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000332">
+        <rdfs:label xml:lang="en">oculo-respiratory syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000118 xml:lang="en">ORS</obo:IAO_0000118>
+        <obo:AERO_0000324 xml:lang="en">The presence of “bilateral red eyes” plus ≥1 respiratory symptom (cough, wheeze, chest tightness, difficulty breathing, difficulty swallowing, hoarseness or sore throat) that starts within 24 hrs of vaccination, with or without facial oedema.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000334">
+        <rdfs:label xml:lang="en">urticaria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000335">
+        <rdfs:label xml:lang="en">pruritus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324>An unpleasant skin sensation that provokes a desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000336">
+        <rdfs:label xml:lang="en">prickle sensation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324>Tingling or smarting (stinging) sensation.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000337">
+        <rdfs:label xml:lang="en">rash</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324>A morphologically described change in the appearance of the skin or mucosa that occurs in the context of and in conjunction with an emerging allergic event that consists of one or more clearly identified primary lesion(s) (macule, papule, vesicle, nodule, bulla, cyst, plaque, pustule) and/or secondary skin change(s) (scaling, atrophy, ulcer, fissure, excoriation).</obo:AERO_0000324>
+        <obo:IAO_0000119>Vaccine, 25 (2007) 5697-5706</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000338">
+        <rdfs:label xml:lang="en">red eyes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324>Redness of the white(s) of the eye (s) (sclera)</obo:AERO_0000324>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000339">
+        <rdfs:label xml:lang="en">itchy eyes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000345">
+        <rdfs:label xml:lang="en">difficulty swallowing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:AERO_0000324 xml:lang="en">Sensation or feeling of difficulty in the passage of solids and liquids down to the stomach.</obo:AERO_0000324>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000352">
+        <rdfs:label xml:lang="en">anaphylaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000353">
+        <rdfs:label xml:lang="en">seizure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
     
 

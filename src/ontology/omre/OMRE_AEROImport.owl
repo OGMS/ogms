@@ -233,7 +233,6 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000036"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000045"/>
         <obo:AERO_0000324 xml:lang="en">A dark bluish or purplish discolouration of the skin and mucous membrane due to lack of oxygen in the blood.</obo:AERO_0000324>
-        <obo:AERO_0000106>Cyanosis</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     

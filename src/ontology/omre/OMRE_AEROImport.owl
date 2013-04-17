@@ -90,17 +90,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/AERO_0000383 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AERO_0000383">
-        <rdfs:label xml:lang="en">localized urticaria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000334"/>
-        <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</obo:AERO_0000324>
-        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0100015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100015">
@@ -1135,6 +1124,17 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000355">
         <rdfs:label xml:lang="en">recession</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms/OMRE_0000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000383">
+        <rdfs:label xml:lang="en">localized urticaria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000334"/>
+        <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 hours).</obo:AERO_0000324>
+        <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 

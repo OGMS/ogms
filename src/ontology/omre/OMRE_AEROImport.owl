@@ -457,7 +457,6 @@ vaccine administration.</obo:AERO_0000324>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000038">
         <rdfs:label xml:lang="en">nausea</rdfs:label>
-        <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -472,7 +471,6 @@ vaccine administration.</obo:AERO_0000324>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
-        <obo:AERO_0000324 xml:lang="en">Discharge of thin nasal mucus.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
@@ -1118,6 +1116,7 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000354">
         <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
+        <obo:AERO_0000324 xml:lang="en">Discharge of thin nasal mucus.</obo:AERO_0000324>
     </owl:Class>
     
 

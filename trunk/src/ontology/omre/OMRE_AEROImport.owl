@@ -459,14 +459,14 @@ vaccine administration.</obo:AERO_0000324>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
@@ -562,9 +562,9 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004535"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000106>TacchyCard</obo:AERO_0000106>
         <obo:AERO_0000324 xml:lang="en">A heart rate that is abnormally high for age and circumstance (In beats per minute: &lt;1year old: &gt;160; 1 – 2 yrs: &gt;150; 2-5 yrs: &gt;140; 5-12 yrs: &gt;120; &gt;12 yrs: &gt;100)</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
+        <obo:AERO_0000106 xml:lang="en">TachyCard</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     

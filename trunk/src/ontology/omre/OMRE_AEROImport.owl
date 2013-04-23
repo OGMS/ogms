@@ -650,7 +650,6 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000104">
         <rdfs:label xml:lang="en">generalized erythema</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000205"/>
-        <obo:AERO_0000106>ErythemaGen</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -667,7 +666,6 @@ vaccine administration.</obo:AERO_0000324>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-        <obo:AERO_0000106>AngEdGenLoc</obo:AERO_0000106>
         <obo:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
         <obo:IAO_0000232>localized or generalized</obo:IAO_0000232>
     </owl:Class>

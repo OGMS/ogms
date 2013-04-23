@@ -679,7 +679,6 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107">
         <rdfs:label xml:lang="en">generalized pruritus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000335"/>
-        <obo:AERO_0000106>PruritusGen</obo:AERO_0000106>
     </owl:Class>
     
 

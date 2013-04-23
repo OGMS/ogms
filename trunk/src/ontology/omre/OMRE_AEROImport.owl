@@ -446,7 +446,6 @@ vaccine administration.</obo:AERO_0000324>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An abnormally low blood pressure and documented by appropriate measurement. Infants and children: age specific systolic BP of &lt;3-5%percentile or greater than a 30% decrease from that person’s baseline; Adults: systolic BP of &lt;90mm Hg or greater than 30% decrease from that person’s baseline.</obo:AERO_0000324>
-        <obo:AERO_0000106>HypotensMeas</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     

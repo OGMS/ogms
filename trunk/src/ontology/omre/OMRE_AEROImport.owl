@@ -689,7 +689,6 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000108">
         <rdfs:label xml:lang="en">skin rash</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000337"/>
-        <obo:AERO_0000106>SkinRash</obo:AERO_0000106>
     </owl:Class>
     
 

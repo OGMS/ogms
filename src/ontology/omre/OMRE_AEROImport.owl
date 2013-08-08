@@ -27,26 +27,60 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000106 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AERO_0000106"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AERO_0000324 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AERO_0000324"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
@@ -95,7 +129,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100015">
         <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-        <obo:IAO_0000115 xml:lang="en">An anatomical entity is a material entity that is part of a multicellular organism, and which is large enough so that it forms an identifiable structure in the organism. Specifically, it excludes granular parts of the organism, such as atoms, molecules, cells, which can be removed from the organism without affecting it. It is defined as the union of &#39;multi-tissue structure&#39;, &#39;body substance&#39; and &#39;portion of tissue&#39;</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An anatomical entity is a material entity that is part of a multicellular organism, and which is large enough so that it forms an identifiable structure in the organism. Specifically, it excludes granular parts of the organism, such as atoms, molecules, cells, which can be removed from the organism without affecting it. It is defined as the union of &apos;multi-tissue structure&apos;, &apos;body substance&apos; and &apos;portion of tissue&apos;</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">anatomical entity</obo:IAO_0000111>
     </owl:Class>
     
@@ -122,10 +156,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001016">
         <rdfs:label xml:lang="en">nervous system</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100015"/>
-        <obo:IAO_0000118>UBERON:FBbt_00005093-FMA_7157-MA_0000016-MIAA_0000026-WBbt_0005735-XAO_0000177-ZFA_0000396</obo:IAO_0000118>
         <obo:IAO_0000116>MC, 20100112: I am using the UBERON term as this one is non human specific, compared to FMA.</obo:IAO_0000116>
         <oboInOwl:hasDbXref xml:lang="en">UBERON:0001016</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&#39;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
+        <obo:IAO_0000118>UBERON:FBbt_00005093-FMA_7157-MA_0000016-MIAA_0000026-WBbt_0005735-XAO_0000177-ZFA_0000396</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">a network of specialized cells that communicate information about an organism&apos;s surroundings and itself[Wikipedia].</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -324,8 +358,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
         <obo:AERO_0000106>Grunting</obo:AERO_0000106>
+        <obo:AERO_0000324 xml:lang="en">A sudden and short noise with each breath when breathing out.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
@@ -359,8 +393,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000232>sternocleidomastoid, intercostals, etc</obo:IAO_0000232>
         <obo:AERO_0000106>RespMuscAccIncr</obo:AERO_0000106>
+        <obo:IAO_0000232>sternocleidomastoid, intercostals, etc</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -531,9 +565,9 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000106>Stridor</obo:AERO_0000106>
-        <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
         <obo:IAO_0000115>A harsh or vibrating noise when breathing caused by obstruction of the windpipe or larynx.</obo:IAO_0000115>
+        <obo:AERO_0000324 xml:lang="en">A harsh and continuous sound made on breathing in.</obo:AERO_0000324>
+        <obo:AERO_0000106>Stridor</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
@@ -581,8 +615,8 @@ vaccine administration.</obo:AERO_0000324>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 xml:lang="en">Citation for norms is Don &amp; Roberton; Physical examination; in Practical Pediatrics 2007; 6th ed</obo:IAO_0000119>
-        <obo:AERO_0000106>TachyPnea</obo:AERO_0000106>
         <obo:AERO_0000324 xml:lang="en">Rapid breathing which is abnormally high for age and circumstance rapid breathing whichis abnormally high for age and circumstance (&lt;1yr: &gt;60; 1-2 yrs: &gt;40; 2-5 yrs: &gt;35; 5-12 yrs: &gt;30: &gt;12 yrs: &gt;16)</obo:AERO_0000324>
+        <obo:AERO_0000106>TachyPnea</obo:AERO_0000106>
         <obo:IAO_0000119 xml:lang="en">Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">tachypnea</obo:IAO_0000118>
     </owl:Class>
@@ -664,9 +698,9 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
-        <obo:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
         <obo:IAO_0000232>localized or generalized</obo:IAO_0000232>
+        <obo:AERO_0000324>Areas of deeper swelling of the skin and/or mucosal tissues in either single or multiple sites which may not be well circumscribed and is usually not itchy. Reported symptoms of ‘swelling of the lip’ or ‘swelling of the tongue or throat’ should not be documented as angioedema unless there is visible skin or mucosal swelling.</obo:AERO_0000324>
+        <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -694,8 +728,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000114">
         <rdfs:label xml:lang="en">bilateral wheeze</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
-        <obo:AERO_0000106>WheezeBilat</obo:AERO_0000106>
         <obo:IAO_0000118>bronchospasm</obo:IAO_0000118>
+        <obo:AERO_0000106>WheezeBilat</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -705,8 +739,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000116">
         <rdfs:label xml:lang="en">upper airway swelling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000320"/>
-        <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
         <obo:IAO_0000232>lip, tongue, throat, uvula or larynx</obo:IAO_0000232>
+        <obo:AERO_0000106>SwellUpAirways</obo:AERO_0000106>
     </owl:Class>
     
 
@@ -716,8 +750,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000137">
         <rdfs:label>bilateral</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-        <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.thefreedictionary.com/bilateral</obo:IAO_0000119>
+        <obo:IAO_0000115>Affecting or undertaken by two sides equally; binding on both parties</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -727,8 +761,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000200">
         <rdfs:label xml:lang="en">infected abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:AERO_0000324 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:AERO_0000324>
         <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
+        <obo:AERO_0000324 xml:lang="en">A localized collection of pus in a cavity formed by the disintegration of tissue, usually caused by microorganisms that invade the tissues.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -739,8 +773,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000201">
         <rdfs:label xml:lang="en">sterile abscess</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
         <obo:AERO_0000324 xml:lang="en">An abscess whose contents are not caused by pyogenic bacteria.</obo:AERO_0000324>
+        <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5821-5838</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -751,8 +785,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000202">
         <rdfs:label xml:lang="en">cellulitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/GO#GO_0006954"/>
-        <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
         <obo:IAO_0000116>BCCD: Vaccine 25 (2007) 5803-5820</obo:IAO_0000116>
+        <obo:AERO_0000324 xml:lang="en">A diffuse inflammatory process within solid tissues, characterized by edema, redness, pain, and interference with function, usually caused by infection with streptococci, staphylococci, or similar organisms.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -763,8 +797,8 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000203">
         <rdfs:label xml:lang="en">nodule</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:AERO_0000324 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:AERO_0000324>
         <obo:IAO_0000116>BCCD: Vaccine 22(2004) 575-585</obo:IAO_0000116>
+        <obo:AERO_0000324 xml:lang="en">A firm, small mass of tissue at the injection site with discrete or well demarcated borders in the absence of abscess formation, erythema and warmth.</obo:AERO_0000324>
         <obo:IAO_0000119 xml:lang="en">PHAC user guide, http://www.phac-aspc.gc.ca/im/pdf/AEFI-ug-gu-eng.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -792,8 +826,8 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000324 xml:lang="en">Abnormal redness of the skin without any raised skin lesions</obo:AERO_0000324>
         <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Abnormal redness of the skin without any raised skin lesions</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -891,19 +925,6 @@ vaccine administration.</obo:AERO_0000324>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000288">
         <rdfs:label xml:lang="en">difficulty breathing without wheeze or stridor</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000042"/>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000048"/>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000287"/>
     </owl:Class>
     
@@ -1028,8 +1049,8 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000324>A morphologically described change in the appearance of the skin or mucosa that occurs in the context of and in conjunction with an emerging allergic event that consists of one or more clearly identified primary lesion(s) (macule, papule, vesicle, nodule, bulla, cyst, plaque, pustule) and/or secondary skin change(s) (scaling, atrophy, ulcer, fissure, excoriation).</obo:AERO_0000324>
         <obo:IAO_0000119>Vaccine, 25 (2007) 5697-5706</obo:IAO_0000119>
+        <obo:AERO_0000324>A morphologically described change in the appearance of the skin or mucosa that occurs in the context of and in conjunction with an emerging allergic event that consists of one or more clearly identified primary lesion(s) (macule, papule, vesicle, nodule, bulla, cyst, plaque, pustule) and/or secondary skin change(s) (scaling, atrophy, ulcer, fissure, excoriation).</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -1062,8 +1083,8 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
         <obo:IAO_0000119>Vaccine 28 (2010) 4487-4498</obo:IAO_0000119>
+        <obo:AERO_0000324>A sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -1174,5 +1195,5 @@ vaccine administration.</obo:AERO_0000324>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 

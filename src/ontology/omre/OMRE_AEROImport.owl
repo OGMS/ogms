@@ -492,14 +492,14 @@ vaccine administration.</obo:AERO_0000324>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AERO/_SymptomsSignsTerms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005409"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:AERO_0000324 xml:lang="en">An unpleasant sensation vaguely referred to the upper abdominal region and the abdomen, with a tendency to vomit.</obo:AERO_0000324>
@@ -710,6 +710,7 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000107">
         <rdfs:label xml:lang="en">generalized pruritus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000335"/>
+        <obo:AERO_0000324 xml:lang="en">Pruritus involving more than one body site—that is each limb is counted separately as is the abdomen, back, head and neck. Urticaria at the injection site can be included as a separate site.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -885,6 +886,7 @@ vaccine administration.</obo:AERO_0000324>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms/OMRE_0000271">
         <rdfs:label xml:lang="en">generalized prickle sensation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms/OMRE_0000336"/>
+        <obo:AERO_0000324 xml:lang="en">A prickle sensation involving more than one body site—that is each limb is counted separately as is the abdomen, back, head and neck. Urticaria at the injection site can be included as a separate site.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -901,6 +903,7 @@ vaccine administration.</obo:AERO_0000324>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:AERO_0000324 xml:lang="en">Redness of the whites of the eyes (sclera) with sensation that provokes the desire to rub and/or scratch to obtain relief.</obo:AERO_0000324>
     </owl:Class>
     
 
@@ -1002,6 +1005,8 @@ vaccine administration.</obo:AERO_0000324>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119 xml:lang="en">Adapted from P.A. Miescher, H.J. Müller-Eberhard (Eds.), Textbook of immunopathology (2nd ed.), Grune and Stratton, New York (1976)</obo:IAO_0000119>
+        <obo:AERO_0000324 xml:lang="en">Localized redness of superficial layers of skin that is itchy, raised, sharply demarcated and transient (that is skin changes at any location are usually present for less than 12 h)</obo:AERO_0000324>
     </owl:Class>
     
 

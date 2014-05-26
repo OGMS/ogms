@@ -6,7 +6,8 @@
  * [https://code.google.com/p/ohd-ontology/Oral Health and Disease Ontology]
  * [http://code.google.com/p/hdot/ Health Data Ontology Trunk] 
  * [https://code.google.com/p/vital-sign-ontology/ Vital Sign Ontology] 
- * [https://code.google.com/p/ogms/wiki/OMRE Ontology of Medically Relevant Social Entities] 
+ * [https://code.google.com/p/ogms/wiki/OMRE Ontology of Medically Relevant Entities] 
+ * Ontology of Medically Relevant Social Entities
  * [http://code.google.com/p/mental-functioning-ontology/  Mental Functioning Ontology] 
  * Ontology for Pain
  * Mental Health and Quality of Life

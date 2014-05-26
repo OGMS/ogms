@@ -2,20 +2,20 @@
 
 = Introduction =
 
-* The Cardiovascular Disease Ontology , 
-* Oral Health and Disease Ontology
-* Health Data Ontology Trunk 
-* Vital Sign Ontology 
-* Ontology of Medically Relevant Social Entities 
-* Mental Functioning Ontology 
-* Ontology for Pain
-* Mental Health and Quality of Life
-* Sleep Domain Ontology
-* Ontology for Newborn Screening and Translational Research
-* Infectious Disease Ontology
-* Neurological Disease Ontology
-* Ontology of Adverse Events
-* Adverse Event Reporting Ontology . 
+ * [[https://code.google.com/p/cvdo/ The Cardiovascular Disease Ontology]]
+ * Oral Health and Disease Ontology
+ * Health Data Ontology Trunk 
+ * Vital Sign Ontology 
+ * Ontology of Medically Relevant Social Entities 
+ * Mental Functioning Ontology 
+ * Ontology for Pain
+ * Mental Health and Quality of Life
+ * Sleep Domain Ontology
+ * Ontology for Newborn Screening and Translational Research
+ * Infectious Disease Ontology
+ * Neurological Disease Ontology
+ * Ontology of Adverse Events
+ * Adverse Event Reporting Ontology
 
 
   https://code.google.com/p/cvdo/

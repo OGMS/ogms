@@ -1,0 +1,3 @@
+An experimental tree browser for OGMS is available [here](http://ogms.googlecode.com/svn/releases/2010-01-29/web/ogms.html). Until a bug that prevents the whole tree to be visible initially is fixed, you probably want to command-click or right-click first thing, to get it to do so. Note that the viewer requires that java applets work in your browser. Email alanruttenberg@gmail.com if you have problems using it.
+
+[Here](http://owl.cs.manchester.ac.uk/browser/classes/1693031007/?session=1268077d870-11352-126807b9701) is OGMS viewed in the Manchester OWL Browser.

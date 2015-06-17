@@ -1,0 +1,3 @@
+[submodule "ogms"]
+	path = ogms
+	url = https://github.com/sbjain/ogms.git

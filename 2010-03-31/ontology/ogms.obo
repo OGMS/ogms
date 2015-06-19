@@ -1,0 +1,800 @@
+format-version: 1.2
+date: 31:03:2010 18:11
+auto-generated-by: OBO-Edit 2.0
+default-namespace: ogms
+!import http://purl.obolibrary.org/obo/iao.obo
+
+[Term]
+id: BFO:0000000
+name: entity
+namespace: bfo
+creation_date: 2009-06-23T10:01:31Z
+
+[Term]
+id: BFO:0000001
+name: continuant
+namespace: bfo
+is_a: BFO:0000000 ! entity
+created_by: agoldfain
+creation_date: 2009-06-23T10:05:06Z
+
+[Term]
+id: BFO:0000002
+name: occurrent
+namespace: bfo
+is_a: BFO:0000000 ! entity
+created_by: agoldfain
+creation_date: 2009-06-23T10:05:27Z
+
+[Term]
+id: BFO:0000003
+name: dependent continuant
+namespace: bfo
+is_a: BFO:0000001 ! continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:09:50Z
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+namespace: bfo
+is_a: BFO:0000001 ! continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:10:12Z
+
+[Term]
+id: BFO:0000005
+name: generically dependent continuant
+namespace: bfo
+is_a: BFO:0000003 ! dependent continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:11:09Z
+
+[Term]
+id: BFO:0000006
+name: specifically dependent continuant
+namespace: bfo
+is_a: BFO:0000003 ! dependent continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:11:36Z
+
+[Term]
+id: BFO:0000007
+name: quality
+namespace: bfo
+is_a: BFO:0000006 ! specifically dependent continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:12:40Z
+
+[Term]
+id: BFO:0000008
+name: realizable entity
+namespace: bfo
+is_a: BFO:0000006 ! specifically dependent continuant
+created_by: agoldfain
+creation_date: 2009-06-23T10:13:02Z
+
+[Term]
+id: BFO:0000009
+name: disposition
+namespace: bfo
+is_a: BFO:0000008 ! realizable entity
+created_by: agoldfain
+creation_date: 2009-06-23T10:13:24Z
+
+[Term]
+id: BFO:0000010
+name: role
+namespace: bfo
+is_a: BFO:0000008 ! realizable entity
+created_by: agoldfain
+creation_date: 2009-06-23T10:13:46Z
+
+[Term]
+id: BFO:0000011
+name: function
+namespace: bfo
+is_a: BFO:0000009 ! disposition
+created_by: agoldfain
+creation_date: 2009-06-23T10:14:10Z
+
+[Term]
+id: BFO:0000012
+name: capability
+namespace: bfo
+is_a: BFO:0000009 ! disposition
+created_by: agoldfain
+creation_date: 2009-06-23T10:14:25Z
+
+[Term]
+id: BFO:0000041
+name: material entity
+namespace: bfo
+is_a: BFO:0000004 ! independent continuant
+created_by: agoldfain
+creation_date: 2009-06-23T11:38:12Z
+
+[Term]
+id: BFO:0000042
+name: fiat object part
+namespace: bfo
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:38:32Z
+
+[Term]
+id: BFO:0000043
+name: object
+namespace: bfo
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:38:50Z
+
+[Term]
+id: BFO:0000044
+name: object aggregate
+namespace: bfo
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:39:11Z
+
+[Term]
+id: BFO:0000052
+name: processual entity
+namespace: bfo
+is_a: BFO:0000002 ! occurrent
+created_by: agoldfain
+creation_date: 2009-06-23T11:46:33Z
+
+[Term]
+id: BFO:0000053
+name: fiat process part
+namespace: bfo
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:46:49Z
+
+[Term]
+id: BFO:0000058
+name: process
+namespace: bfo
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:52:49Z
+
+[Term]
+id: BFO:0000062
+name: process aggregate
+namespace: bfo
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:55:18Z
+
+[Term]
+id: BFO:0000076
+name: defined class
+namespace: bfo
+is_a: BFO:0000000 ! entity
+creation_date: 2009-07-08T05:42:49Z
+
+[Term]
+id: IAO:0000030
+name: information content entity
+def: "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" [OBO:sourced "OBI:0000142"]
+is_a: BFO:0000005 ! generically dependent continuant
+
+[Term]
+id: IAO:0000027
+name: data item
+def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo\, e.g.\, measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." [OBO:imported "http://purl.obolibrary.org/obo/iao.owl"]
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OGMS:0000014
+name: clinical finding
+def: "A representation of a bodily feature of a patient that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2009-06-23T10:18:02Z
+
+[Term]
+id: OGMS:0000015
+name: clinical history
+def: "A series of statements representing health-relevant features of a patient and of a patient's family." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+is_a: OGMS:0000014 ! clinical finding
+created_by: agoldfain
+creation_date: 2009-06-23T10:18:59Z
+
+[Term]
+id: OGMS:0000016
+name: clinical picture
+def: "A representation of the clinically significant bodily features of a patient that is inferred from the totality of clinical findings about the given patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=18]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2009-06-23T10:20:20Z
+
+[Term]
+id: OGMS:0000017
+name: image finding
+def: "A representation of an image that supports an inference to an assertion about some quality of a patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+is_a: OGMS:0000014 ! clinical finding
+created_by: agoldfain
+creation_date: 2009-06-23T10:21:10Z
+
+[Term]
+id: OGMS:0000018
+name: laboratory finding
+def: "A representation of a quality of a specimen that is the output of a laboratory test and that can support an inference to an assertion about some quality of the patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=26]
+is_a: OGMS:0000014 ! clinical finding
+created_by: agoldfain
+creation_date: 2009-06-23T10:21:58Z
+
+[Term]
+id: OGMS:0000019
+name: preclinical finding
+def: "A representation of a bodily feature of a patient that is (1) recorded by a clinician because the feature is hypothesized to be of clinical significance and (2) refers to features obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2009-06-23T10:22:44Z
+
+[Term]
+id: OGMS:0000020
+name: symptom
+def: "A bodily feature of a patient that is observed by the patient and is hypothesized by the patient to be a realization of a disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000021 ! bodily feature of a patient
+creation_date: 2009-06-23T11:02:10Z
+
+[Term]
+id: OGMS:0000021
+name: bodily feature of a patient
+is_a: BFO:0000076 ! defined class
+comment: "Elucidation: By bodily feature we mean any member of the defined class comprising not only such bodily components but also associated bodily qualities and processes in an organism, both physiological and pathological." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+created_by: agoldfain
+creation_date: 2009-06-23T11:09:37Z
+
+[Term]
+id: OGMS:0000022
+name: manifestation of a disease
+def: "A bodily feature of a patient that is (a) a deviation from clinical normality that exists in virtue of the realization of a disease and (b) is observable." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000021 ! bodily feature of a patient
+created_by: agoldfain
+creation_date: 2009-06-23T11:12:33Z
+
+[Term]
+id: OGMS:0000023
+name: phenotype
+def: "A (combination of) bodily feature(s) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf,http://code.google.com/p/ogms/issues/detail?id=19]
+is_a: OGMS:0000021 ! bodily feature of a patient
+created_by: agoldfain
+creation_date: 2009-06-23T11:13:49Z
+
+[Term]
+id: OGMS:0000024
+name: sign
+def: "A bodily feature of a patient that is observed in a physical examination and is deemed by the clinician to be of clinical significance." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Perhaps make this a role?
+is_a: OGMS:0000021 ! bodily feature of a patient
+created_by: agoldfain
+creation_date: 2009-06-23T11:14:36Z
+
+[Term]
+id: OGMS:0000025
+name: clinical manifestation of a disease
+def: "A manifestation of a disease that is detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000022 ! manifestation of a disease
+created_by: agoldfain
+creation_date: 2009-06-23T11:15:43Z
+
+[Term]
+id: OGMS:0000026
+name: preclinical manifestation of a disease
+def: "A manifestation of a disease that exists prior to the time at which it would be detected in a clinical history taking or physical examination, if the patient were to present to a clinician. A realization of a disease that exists prior to its becoming detectable in a clinical history taking or physical examination." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=8]
+is_a: OGMS:0000022 ! manifestation of a disease
+created_by: agoldfain
+creation_date: 2009-06-23T11:16:50Z
+
+[Term]
+id: OGMS:0000027
+name: clinical phenotype
+def: "A clinically abnormal phenotype." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000023 ! phenotype
+created_by: agoldfain
+creation_date: 2009-06-23T11:18:05Z
+
+[Term]
+id: OGMS:0000028
+name: disease phenotype
+def: "A clinically abnormal phenotype that is characteristic of a single disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000023 ! phenotype
+created_by: agoldfain
+creation_date: 2009-06-23T11:18:39Z
+
+[Term]
+id: OGMS:0000029
+name: vital sign
+def: "A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000024 ! sign
+created_by: agoldfain
+creation_date: 2009-06-23T11:19:17Z
+
+[Term]
+id: OGMS:0000030
+name: predisposition to disease of type X
+def: "A disposition in an organism that constitutes an increased risk of the organism's subsequently developing the disease X." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000009 ! disposition
+created_by: agoldfain
+creation_date: 2009-06-23T11:20:25Z
+
+[Term]
+id: OGMS:0000031
+name: disease
+def: "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf,http://code.google.com/p/ogms/issues/detail?id=34]
+comment: Examples: Epilepsy as a disease that disposes to the occurence of seizures (pathological process) due to an underlying abnormality in the neuronal circuitry of the brain (phyisical basis).
+is_a: BFO:0000009 ! disposition
+created_by: agoldfain
+creation_date: 2009-06-23T11:21:20Z
+
+[Term]
+id: OGMS:0000032
+name: homeostasis
+comment: Elucidation: We use homeostasis to designate the state in which the bodily processes of the organism are regulated in such a way as (1) to maintain bodily qualities within a certain range or profile and (2) to respond successfully to departures from this range caused by external influences.
+is_a: BFO:0000009 ! disposition
+created_by: agoldfain
+creation_date: 2009-06-23T11:22:01Z
+
+[Term]
+id: OGMS:0000033
+name: genetic predisposition to disease of type X
+def: "A predisposition to disease of type X whose physical basis is a constitutional abnormality in an organism's genome. This abnormality is the physical basis for the increased risk of acquiring the disease X." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000030 ! predisposition to disease of type X
+created_by: agoldfain
+creation_date: 2009-06-23T11:23:07Z
+
+[Term]
+id: OGMS:0000034
+name: acquired genetic disease
+def: "A disease whose physical basis is an acquired genetic disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Chronic: Benign colonic neoplasia; Progressive: Malignant colon cancer.
+is_a: OGMS:0000031 ! disease
+created_by: agoldfain
+creation_date: 2009-06-23T11:24:05Z
+
+[Term]
+id: OGMS:0000035
+name: constitutional genetic disease
+def: "A disease whose physical basis is a constitutional genetic disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Chronic: Color Blindness, Polydactyly; Progressive: Down syndrome, Tay-Sachs disease.
+is_a: OGMS:0000031 ! disease
+created_by: agoldfain
+creation_date: 2009-06-23T11:24:59Z
+
+[Term]
+id: OGMS:0000036
+name: obsolete_infectious disease
+def: "A disease whose physical basis is an infectious disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
+comment: Examples: seasonal flu (transient), genital herpes (chronic), Ebola-virus-mediated hemorrhagic fever (progressive).
+is_a: OGMS:0000031 ! disease
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T11:25:51Z
+
+[Term]
+id: OGMS:0000037
+name: abnormal homeostasis
+def: "Homeostasis that is clinically abnormal for an organism of a given type and age in a given environment." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Maintenance of high blood pressure.
+is_a: OGMS:0000032 ! homeostasis
+created_by: agoldfain
+creation_date: 2009-06-23T11:26:44Z
+
+[Term]
+id: OGMS:0000038
+name: normal homeostasis
+def: "Homeostasis of a type that is not clinically abnormal." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000032 ! homeostasis
+created_by: agoldfain
+creation_date: 2009-06-23T11:27:28Z
+
+[Term]
+id: OGMS:0000039
+name: configuration
+def: "A quality which is an spatial arrangement or distribution of a(n) independent continuant(s) across a Three Dimensional Region." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Example: The quality of being bent.\nThis belongs in an upper ontology.
+is_a: BFO:0000007 ! quality
+created_by: agoldfain
+creation_date: 2009-06-23T11:36:24Z
+
+[Term]
+id: OGMS:0000040
+name: pathological physical configuration
+def: "A configuration which deviates in some way from a canonical configuration for a particular organism." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000039 ! configuration
+created_by: agoldfain
+creation_date: 2009-06-23T11:36:58Z
+
+[Term]
+id: OGMS:0000045
+name: disorder
+def: "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: A tumor, an infected cell, a prion molecule in the brain, a mutation in genomic DNA, endotoxin in blood.
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:39:44Z
+
+[Term]
+id: OGMS:0000046
+name: epigenetic disorder
+def: "A disorder whose etiology involves (1) a modification to the patient's genomic DNA which leads to alterations in the normal expression pattern of the genome, but is (2) not a change in the nucleotide sequence." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000045 ! disorder
+created_by: agoldfain
+creation_date: 2009-06-23T11:40:27Z
+
+[Term]
+id: OGMS:0000047
+name: genetic disorder
+def: "A disorder whose etiology involves an abnormality in the nucleotide sequence of an organism's genome." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: OGMS:0000045 ! disorder
+created_by: agoldfain
+creation_date: 2009-06-23T11:41:14Z
+
+[Term]
+id: OGMS:0000048
+name: obsolete_infectious disorder
+def: "A disorder whose etiology includes the presence of a pathogenic organism within a host organism or an abnormal imbalance in the normal resident organismal flora." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
+comment: LGC's proposed change: A disorder of a host whose etiology includes the presence of a pathogen within the host, colonization by the normal resident microbiota of host anatomical locations not part of the microbiota's typical habitat, or a symptomatic overgrowth of at least one species of the normal resident microbiota.
+is_a: OGMS:0000045 ! disorder
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T11:41:45Z
+
+[Term]
+id: OGMS:0000049
+name: obsolete_secondary infection
+def: "A disorder consisting in the presence of a pathogenic organism within a host organism that occurs due to the disposition established by a prior infection with a pathogenic organism of a different kind." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf, http://code.google.com/p/ogms/issues/detail?id=27]
+comment: Examples: Cryptosporidiosis in a patient suffering from AIDS.
+is_a: OGMS:0000045 ! disorder
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T11:42:20Z
+
+[Term]
+id: OGMS:0000050
+name: acquired genetic disorder
+def: "A genetic disorder acquired by a single cell in an organism that leads to a population of cells within the organism bearing the disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Point mutation acquired in the H-ras gene in colorectal cancer cells.
+is_a: OGMS:0000047 ! genetic disorder
+created_by: agoldfain
+creation_date: 2009-06-23T11:43:09Z
+
+[Term]
+id: OGMS:0000051
+name: constitutional genetic disorder
+def: "A genetic disorder inherited during conception that is part of all cells in the organism." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Mutation in the hexosaminidase, a gene leading to Tay-Sachs disease.
+is_a: OGMS:0000047 ! genetic disorder
+created_by: agoldfain
+creation_date: 2009-06-23T11:43:44Z
+
+[Term]
+id: OGMS:0000054
+name: obsolete_standardized clinical process
+def: "A fiat process part which involves the execution of a standardized protocol for measuring qualities of a patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Werner Ceusters: "standardized clinical process" is at best a defined class, but I don't see a need for it. None of the stated descendants have to be standardized in\norder to exist. If you need "standard", then it belongs under "plan" which\nbelongs under "information content entity" which belongs under "generically\ndependant continuant" (NB: IAO terms?)
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T11:47:06Z
+
+[Term]
+id: OGMS:0000055
+name: clinical history taking
+def: "An interview in which a clinician elicits a clinical history from a patient or from a third party who is reporting on behalf of the patient." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:49:16Z
+
+[Term]
+id: OGMS:0000056
+name: laboratory test
+def: "A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:49:49Z
+
+[Term]
+id: OGMS:0000057
+name: physical examination
+def: "A sequence of acts of observing and measuring bodily features of a patient performed by a clinician; measurements may occur with and without elicitation." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:50:18Z
+
+[Term]
+id: OGMS:0000059
+name: etiological process
+def: "A process in an organism that leads to a subsequent disorder." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Toxic chemical exposure resulting in a mutation in the genomic DNA of a cell.
+is_a: BFO:0000058 ! process
+created_by: agoldfain
+creation_date: 2009-06-23T11:53:07Z
+
+[Term]
+id: OGMS:0000060
+name: bodily process
+comment: Elucidation: Bodily processes are processes unfolding in or on the surface of the body in which any combination of phyisical components serves as a participant.
+is_a: BFO:0000058 ! process
+created_by: agoldfain
+creation_date: 2009-06-23T11:53:49Z
+
+[Term]
+id: OGMS:0000061
+name: pathological bodily process
+def: "A bodily process that is clinically abnormal." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Definition in paper: A bodily process that is a manifestation of a disorder. However, disorders are not realizables and, thus, are not manifested. The definition might be improved as "A bodily process that is a manifestation of a disease", but RS wants disease to cover the entire disposition, whereas a pathological process may just be a manifestation of one part of the overall disposition (i.e., just a partial manifestation of the disease). The term 'bodily' includes all biological scales (genetic, cellular, organ, organism) involving parts of an organism. RS: "a pathological process inherits its 'abnormal' properties from the definition of disorder. The one question that I have is - are all process that are realizations of a disease/disorder[sic] pathological processes, or are some physiological responses. If so, what are the differences? ".
+is_a: OGMS:0000060 ! bodily process
+Examples: Transient inflamation in response to bacterial infection.
+created_by: agoldfain
+creation_date: 2009-06-23T11:54:29Z
+
+[Term]
+id: OGMS:0000063
+name: disease course
+def: "The totality of all processes through which a given disease instance is realized." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:55:44Z
+
+[Term]
+id: OGMS:0000064
+name: chronic disease course
+def: "A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, fall within abnormal homeostatic range." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Intermittent seizures in an epilepsy patient.
+is_a: OGMS:0000063 ! disease course
+created_by: agoldfain
+creation_date: 2009-06-23T11:56:26Z
+
+[Term]
+id: OGMS:0000065
+name: progressive disease course
+def: "A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, involve an increasing deviation from homeostasis." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: Malignant cancer.
+is_a: OGMS:0000063 ! disease course
+created_by: agoldfain
+creation_date: 2009-06-23T11:57:09Z
+
+[Term]
+id: OGMS:0000066
+name: transient disease course
+def: "A disease course that terminates in a return to normal homeostasis." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Examples: A bout of the flu.
+is_a: OGMS:0000063 ! disease course
+created_by: agoldfain
+creation_date: 2009-06-23T11:57:44Z
+
+[Term]
+id: OGMS:0000067
+name: undefined primitive terms
+is_a: BFO:0000000 ! entity
+created_by: agoldfain
+creation_date: 2009-06-23T11:58:22Z
+
+[Term]
+id: OGMS:0000068
+name: obsolete_bodily feature
+comment: Elucidation: By bodily feature we mean any member of the defined class comprising not only such bodily components but also associated bodily qualities and processes in an organism, both physiological and pathological.
+is_a: OGMS:0000067 ! undefined primitive terms
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T11:58:39Z
+
+[Term]
+id: OGMS:0000069
+name: clinically abnormal
+comment: Elucidation: We use clinically abnormal to characterize those bodily features of or in an organism that are (1) causally linked to an elevated risk of pain or other feelings of illness, to dysfunction, or to enhanced morbidity, and which (unlike pregnancy or menopause) are not such as to belong to the life plan for an organism of the relevant type. A clinician will judge a bodily feature to be clinically abnormal only where the elevated risk exceeds a certain threshold level of clinical significance.
+is_a: OGMS:0000067 ! undefined primitive terms
+created_by: agoldfain
+creation_date: 2009-06-23T11:59:24Z
+
+[Term]
+id: OGMS:0000070
+name: physical basis
+comment: Elucidation: The physical basis, as we understand it, includes any collection of the physical components that make up the body, whether healthy or diseased, at any level of granularity from molecule to whole organism (e.g., a single nucleotide, a liver cell, an arm, a liver cell that has been infected by a virus, a polyp, a clot, a displaced disk).
+is_a: OGMS:0000067 ! undefined primitive terms
+created_by: agoldfain
+creation_date: 2009-06-23T12:00:09Z
+
+[Term]
+id: OGMS:0000071
+name: realization
+comment: Elucidation: We use 'realization' to refer to the processes corresponding to a disposition.
+is_a: OGMS:0000067 ! undefined primitive terms
+created_by: agoldfain
+creation_date: 2009-06-23T12:00:39Z
+
+[Term]
+id: OGMS:0000072
+name: obsolete_OGMSdisposition
+comment: Possibly covered by BFO disposition.
+is_a: OGMS:0000067 ! undefined primitive terms
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T12:00:56Z
+
+[Term]
+id: OGMS:0000073
+name: diagnosis
+def: "The representation of a conclusion of an interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2009-06-23T12:42:23Z
+
+[Term]
+id: OGMS:0000074
+name: normal value
+def: "A value for a quality reported in a lab report and asserted by the testing lab or the kit manufacturer to be normal based on a statistical treatment of values from a reference population." [http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+comment: Use "canonical to a reference anatomy for the organism" instead of "normal" to avoid circularity.
+is_a: BFO:0000005 ! generically dependent continuant
+created_by: agoldfain
+creation_date: 2009-06-26T10:31:34Z
+
+[Term]
+id: OGMS:0000075
+name: obsolete_infection
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-07-08T12:20:49Z
+
+[Term]
+id: OGMS:0000077
+name: pathological formation
+def: "TODO: Define, relate to disorder, and place in the OGMS hierarchy." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+comment: Instances of pathological formations are parts of instances of pathological anatomical structures. Pathological formations differ from pathological physical configurations in that the latter refer to the arrangement of objects (a quality) rather than the independent continuants.
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-07-13T02:14:59Z
+
+[Term]
+id: OGMS:0000078
+name: pathological anatomical structure
+def: "An anatomical structure (FMA) is pathological whenever (1) it has come into being as a result of changes in some pre-existing canonical anatomical structure, (2) through processes other than the expression of the normal complement of genes of an organism of the given type, and (3) is predisposed to have health-related consequences for the organism in question manifested by symptoms and signs." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+comment: Instances of pathological anatomical structures have pathological formations as parts.\nTODO: Relationship between this term and disorder.\nTODO: Relationship between this term and FMA.
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-07-13T02:14:05Z
+
+[Term]
+id: OGMS:0000079
+name: portion of pathological body substance
+def: "TODO: Define, relate to disorder, and place in the OGMS hierarchy." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2009-07-13T02:15:17Z
+
+[Term]
+id: OGMS:0000080
+name: pathological transformation
+def: "A pathological bodily process in which a canonical anatomical structure becomes a pathological anatomical structure." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+is_a: OGMS:0000061 ! pathological bodily process
+created_by: agoldfain
+creation_date: 2009-07-13T02:17:07Z
+
+[Term]
+id: OGMS:0000081
+name: pathological derivation
+def: "A pathological bodily process in which matter is reorganized in such a way as to give rise to new pathological formations which take the place of entities existing earlier." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+is_a: OGMS:0000061 ! pathological bodily process
+created_by: agoldfain
+creation_date: 2009-07-13T02:17:24Z
+
+[Term]
+id: OGMS:0000082
+name: pathological invasion
+def: "TODO: Define." [http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf]
+comment: Processes of a type which yield patterns of continuant entities related together in specific ways.
+synonym: "infiltration" RELATED []
+is_a: OGMS:0000061 ! pathological bodily process
+created_by: agoldfain
+creation_date: 2009-07-13T02:17:47Z
+
+[Term]
+id: OGMS:0000083
+name: physical examination finding
+def: "TODO: Define." [http://code.google.com/p/ogms/issues/detail?id=26]
+comment: "Proposed definition: documentation of a sign that is discovered by the physician during a physical examination.  A physical examination finding is the output of a physical examination."
+is_a: OGMS:0000014 ! clinical finding
+created_by: agoldfain
+creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000084
+name: organism population
+def: "An aggregate of organisms of the same type." [http://code.google.com/p/ogms/issues/detail?id=33]
+comment: "An organism population is usually specified by spatiotemporal or demographic criteria."
+is_a: BFO:0000044 ! object aggregate
+created_by: agoldfain
+creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000085
+name: pain
+def: "TODO: Define." [http://code.google.com/p/ogms/issues/detail?id=13]
+is_a: OGMS:0000020 ! symptom
+created_by: agoldfain
+creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000086
+name: syndrome
+def: "A clinical picture that is an association of symptoms, signs and other clinical findings that collectively indicate or characterize a disease or disorder." [http://code.google.com/p/ogms/issues/detail?id=32]
+is_a: OGMS:0000016 ! clinical picture
+created_by: agoldfain
+creation_date: 2009-11-24T04:51:11Z
+
+[Term]
+id: OGMS:0000087
+name: extended organism
+def: "An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism." [http://code.google.com/p/ogms/issues/detail?id=3]
+is_a: BFO:0000044 ! object aggregate
+created_by: agoldfain
+creation_date: 2010-01-25T04:51:11Z
+
+[Term]
+id: OGMS:0000088
+name: patient symptom report
+def: "A communication from a patient about something they perceive as being abnormal about their body or life." [http://code.google.com/p/ogms/issues/detail?id=12]
+comment: This term should be reclassified to wherever IAO places 'communication'.
+is_a: IAO:0000030 ! information content entity
+created_by: agoldfain
+creation_date: 2010-01-25T04:51:11Z
+
+[Term]
+id: OGMS:0000089
+name: congenital malformation
+def: "A structurally anomalous part of an organism acquired during fetal development and present at birth (but not necessarily hereditary) which is hypothesized to be harmful for the organism." [http://code.google.com/p/ogms/issues/detail?id=28]
+comment: "Is anything a congenital malformation that is not a disorder in the OGMS sense?".
+is_a: BFO:0000041 ! material entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000090
+name: treatment
+def: "A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder" [http://code.google.com/p/ogms/issues/detail?id=35]
+comment: "Should there be a corresponding continuant (the treatment) that is administered to the patient?  Curative and Palliative Treatments as subtypes?".
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000091
+name: convalescence
+def: "A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course. " [http://code.google.com/p/ogms/issues/detail?id=35]
+comment: "Convalescence is usually triggered by a treatment process".
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000092
+name: life course
+def: "A processual entity which has as parts all the processes in which a given organism is participant." [http://code.google.com/p/ogms/issues/detail?id=38]
+is_a: BFO:0000052 ! processual entity
+created_by: agoldfain
+creation_date: 2010-03-31T04:51:11Z
+
+[Term]
+id: OGMS:0000093
+name: prognosis
+def: "A hypothesis about the course of a disease." [http://code.google.com/p/ogms/issues/detail?id=35]
+is_a: IAO:0000027 ! data item
+created_by: agoldfain
+creation_date: 2010-03-31T12:42:23Z
+
+[Term]
+id: OGMS:0000013
+name: obsolete_representation
+comment: See if IAO has any high level term for representation.
+is_obsolete: true
+created_by: agoldfain
+creation_date: 2009-06-23T10:17:44Z
+
+

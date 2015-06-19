@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+  <!ENTITY obo "http://purl.obolibrary.org/obo/">
+  <!ENTITY ogms "http://purl.obolibrary.org/obo/ogms.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://purl.obolibrary.org/obo/ogms.owl"
+         xmlns:dc="&dc;"
+         xmlns:obo="&obo;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;">
+
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
+    <dc:creator>Alan Ruttenberg</dc:creator>
+    <dc:creator>Albert Goldfain</dc:creator>
+    <dc:creator>Anand Kumar</dc:creator>
+    <dc:creator>Barry Smith</dc:creator>
+    <dc:creator>Bill Hogan</dc:creator>
+    <dc:creator>Cornelius Rosse</dc:creator>
+    <dc:creator>Daniel Merico</dc:creator>
+    <dc:creator>Lindsay Cowell</dc:creator>
+    <dc:creator>Richard Scheuermann</dc:creator>
+    <dc:creator>Sivaram Arabandi</dc:creator>
+    <dc:creator>Werner Ceusters</dc:creator>
+    <dc:date rdf:datatype="&xsd;date">2010-01-29</dc:date>
+    <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+
+The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
+This is version 2009-01-29 aka '0.4'
+http://purl.obolibrary.org/obo/ogms/2010-01-29/ogms.owl
+
+The OGMS developer site is http://code.google.com/p/ogms/
+The discussion group is http://groups.google.com/group/ogms-discuss
+
+If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
+    <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
+    <owl:imports><owl:Ontology rdf:about="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/></owl:imports>
+    <owl:imports><owl:Ontology rdf:about="&obo;iao/dev/ontology-metadata.owl"/></owl:imports>
+    <owl:imports><owl:Ontology rdf:about="http://www.ifomis.org/bfo/1.1"/></owl:imports>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="&obo;IAO_0000027">
+    <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">OBO:imported 'http://purl.obolibrary.org/obo/iao.owl'</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;IAO_0000030">
+    <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">OBO:sourced 'OBI:0000142'</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000013">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:17:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_representation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000014">
+    <obo:IAO_0000115 xml:lang="en">A representation of a bodily feature of a patient that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:18:02Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000015">
+    <obo:IAO_0000115 xml:lang="en">A series of statements representing health-relevant features of a patient and of a patient's family.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:18:59Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical history</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000016">
+    <obo:IAO_0000115 xml:lang="en">A representation of the clinically significant bodily features of a patient that is inferred from the totality of clinical findings about the given patient.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:20:20Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical picture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000017">
+    <obo:IAO_0000115 xml:lang="en">A representation of an image that supports an inference to an assertion about some quality of a patient.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:21:10Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">image finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000018">
+    <obo:IAO_0000115 xml:lang="en">A representation of a quality of a specimen that is the output of a laboratory test and that can support an inference to an assertion about some quality of the patient.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:21:58Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">laboratory finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000019">
+    <obo:IAO_0000115 xml:lang="en">A representation of a bodily feature of a patient that is (1) recorded by a clinician because the feature is hypothesized to be of clinical significance and (2) refers to features obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T10:22:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">preclinical finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000020">
+    <obo:IAO_0000115 xml:lang="en">A bodily feature of a patient that is observed by the patient and is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:02:10Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">symptom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000021"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000021">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">note: defined class</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:09:37Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">bodily feature of a patient</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000022">
+    <obo:IAO_0000115 xml:lang="en">A bodily feature of a patient that is (a) a deviation from clinical normality that exists in virtue of the realization of a disease and (b) is observable.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:12:33Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">manifestation of a disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000021"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000023">
+    <obo:IAO_0000115 xml:lang="en">A (combination of) bodily feature(s) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:13:49Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">phenotype</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000021"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000024">
+    <obo:IAO_0000115 xml:lang="en">A bodily feature of a patient that is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:14:36Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">sign</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000021"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000025">
+    <obo:IAO_0000115 xml:lang="en">A manifestation of a disease that is detectable in a clinical history taking or physical examination.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:15:43Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical manifestation of a disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000022"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000026">
+    <obo:IAO_0000115 xml:lang="en">A manifestation of a disease that exists prior to the time at which it would be detected in a clinical history taking or physical examination, if the patient were to present to a clinician. A realization of a disease that exists prior to its becoming detectable in a clinical history taking or physical examination.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:16:50Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">preclinical manifestation of a disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000022"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000027">
+    <obo:IAO_0000115 xml:lang="en">A clinically abnormal phenotype.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:18:05Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical phenotype</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000023"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000028">
+    <obo:IAO_0000115 xml:lang="en">A clinically abnormal phenotype that is characteristic of a single disease.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:18:39Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">disease phenotype</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000023"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000029">
+    <obo:IAO_0000115 xml:lang="en">A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:19:17Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">vital sign</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000024"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000030">
+    <obo:IAO_0000115 xml:lang="en">A disposition in an organism that constitutes an increased risk of the organism's subsequently developing the disease X.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:20:25Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">predisposition to disease of type X</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000031">
+    <obo:IAO_0000115 xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:21:20Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000032">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:22:01Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">homeostasis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000033">
+    <obo:IAO_0000115 xml:lang="en">A predisposition to disease of type X whose physical basis is a constitutional abnormality in an organism's genome. This abnormality is the physical basis for the increased risk of acquiring the disease X.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:23:07Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">genetic predisposition to disease of type X</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000030"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000034">
+    <obo:IAO_0000115 xml:lang="en">A disease whose physical basis is an acquired genetic disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:24:05Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">acquired genetic disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000031"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000035">
+    <obo:IAO_0000115 xml:lang="en">A disease whose physical basis is a constitutional genetic disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:24:59Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">constitutional genetic disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000031"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000036">
+    <obo:IAO_0000115 xml:lang="en">A disease whose physical basis is an infectious disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:25:51Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_infectious disease</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000037">
+    <obo:IAO_0000115 xml:lang="en">Homeostasis that is clinically abnormal for an organism of a given type and age in a given environment.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:26:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">abnormal homeostasis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000032"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000038">
+    <obo:IAO_0000115 xml:lang="en">Homeostasis of a type that is not clinically abnormal.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:27:28Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">normal homeostasis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000032"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000039">
+    <obo:IAO_0000115 xml:lang="en">A quality which is an spatial arrangement or distribution of a(n) independent continuant(s) across a Three Dimensional Region.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:36:24Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">configuration</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000040">
+    <obo:IAO_0000115 xml:lang="en">A configuration which deviates in some way from a canonical configuration for a particular organism.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:36:58Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological physical configuration</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000039"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000045">
+    <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:39:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000046">
+    <obo:IAO_0000115 xml:lang="en">A disorder whose etiology involves (1) a modification to the patient's genomic DNA which leads to alterations in the normal expression pattern of the genome, but is (2) not a change in the nucleotide sequence.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:40:27Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">epigenetic disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000047">
+    <obo:IAO_0000115 xml:lang="en">A disorder whose etiology involves an abnormality in the nucleotide sequence of an organism's genome.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:41:14Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">genetic disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000048">
+    <obo:IAO_0000115 xml:lang="en">A disorder whose etiology includes the presence of a pathogenic organism within a host organism or an abnormal imbalance in the normal resident organismal flora.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:41:45Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_infectious disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000049">
+    <obo:IAO_0000115 xml:lang="en">A disorder consisting in the presence of a pathogenic organism within a host organism that occurs due to the disposition established by a prior infection with a pathogenic organism of a different kind.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:42:20Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_secondary infection</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000050">
+    <obo:IAO_0000115 xml:lang="en">A genetic disorder acquired by a single cell in an organism that leads to a population of cells within the organism bearing the disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:43:09Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">acquired genetic disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000047"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000051">
+    <obo:IAO_0000115 xml:lang="en">A genetic disorder inherited during conception that is part of all cells in the organism.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:43:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">constitutional genetic disorder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000047"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000054">
+    <obo:IAO_0000115 xml:lang="en">A fiat process part which involves the execution of a standardized protocol for measuring qualities of a patient.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:47:06Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_standardized clinical process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000055">
+    <obo:IAO_0000115 xml:lang="en">An interview in which a clinician elicits a clinical history from a patient or from a third party who is reporting on behalf of the patient.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:49:16Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinical history taking</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000056">
+    <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">laboratory test</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000057">
+    <obo:IAO_0000115 xml:lang="en">A sequence of acts of observing and measuring bodily features of a patient performed by a clinician; measurements may occur with and without elicitation.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:50:18Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">physical examination</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000059">
+    <obo:IAO_0000115 xml:lang="en">A process in an organism that leads to a subsequent disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:53:07Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">etiological process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000060">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:53:49Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">bodily process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000061">
+    <obo:IAO_0000115 xml:lang="en">A bodily process that is clinically abnormal.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:54:29Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological bodily process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000063">
+    <obo:IAO_0000115 xml:lang="en">The totality of all processes through which a given disease instance is realized.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:55:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">disease course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000064">
+    <obo:IAO_0000115 xml:lang="en">A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, fall within abnormal homeostatic range.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:56:26Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">chronic disease course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000065">
+    <obo:IAO_0000115 xml:lang="en">A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, involve an increasing deviation from homeostasis.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:57:09Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">progressive disease course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000066">
+    <obo:IAO_0000115 xml:lang="en">A disease course that terminates in a return to normal homeostasis.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:57:44Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">transient disease course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000067">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:58:22Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">_undefined primitive term</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000068">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:58:39Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_bodily feature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000069">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T11:59:24Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">clinically abnormal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000067"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000070">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T12:00:09Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">physical basis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000067"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000071">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T12:00:39Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">realization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000067"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000073">
+    <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of an interpretive process that has as input a clinical picture of a given patient and as output an assertion (diagnostic statement) to the effect that the patient has a disease of such and such a type.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">diagnosis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000074">
+    <obo:IAO_0000115 xml:lang="en">A value for a quality reported in a lab report and asserted by the testing lab or the kit manufacturer to be normal based on a statistical treatment of values from a reference population.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-06-26T10:31:34Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">normal value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000075">
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-08T12:20:49Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">obsolete_infection</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000077">
+    <obo:IAO_0000115 xml:lang="en">TODO: Define, relate to disorder, and place in the OGMS hierarchy.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:14:59Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological formation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000078">
+    <obo:IAO_0000115 xml:lang="en">An anatomical structure (FMA) is pathological whenever (1) it has come into being as a result of changes in some pre-existing canonical anatomical structure, (2) through processes other than the expression of the normal complement of genes of an organism of the given type, and (3) is predisposed to have health-related consequences for the organism in question manifested by symptoms and signs.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:14:05Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological anatomical structure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000079">
+    <obo:IAO_0000115 xml:lang="en">TODO: Define, relate to disorder, and place in the OGMS hierarchy.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:15:17Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">portion of pathological body substance</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000080">
+    <obo:IAO_0000115 xml:lang="en">A pathological bodily process in which a canonical anatomical structure becomes a pathological anatomical structure.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:17:07Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological transformation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000081">
+    <obo:IAO_0000115 xml:lang="en">A pathological bodily process in which matter is reorganized in such a way as to give rise to new pathological formations which take the place of entities existing earlier.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:17:24Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological derivation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000082">
+    <obo:IAO_0000115 xml:lang="en">TODO: Define.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-07-13T02:17:47Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pathological invasion</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000083">
+    <obo:IAO_0000115 xml:lang="en">TODO: Define.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=26</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">physical examination finding</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000084">
+    <obo:IAO_0000115 xml:lang="en">An aggregate of organisms of the same type.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=33</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">organism population</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000085">
+    <obo:IAO_0000115 xml:lang="en">TODO: Define.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=13</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">pain</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000086">
+    <obo:IAO_0000115 xml:lang="en">A clinical picture that is an association of symptoms, signs and other clinical findings that collectively indicate or characterize a disease or disorder.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=32</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">syndrome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OGMS_0000016"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000087">
+    <obo:IAO_0000115 xml:lang="en">An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=3</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">extended organism</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;OGMS_0000088">
+    <obo:IAO_0000115 xml:lang="en">A communication from a patient about something they perceive as being abnormal about their body or life.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Albert Goldfain</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://code.google.com/p/ogms/issues/detail?id=12</obo:IAO_0000119>
+    <obo:IAO_0000232 rdf:datatype="&xsd;string">creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
+    <rdfs:label rdf:datatype="&xsd;string">patient symptom report</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1#Entity"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+
+<!-- Annotation Properties -->
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+    <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+    <rdfs:label rdf:datatype="&xsd;string">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+    <rdfs:label rdf:datatype="&xsd;string">definition editor</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+    <rdfs:label rdf:datatype="&xsd;string">definition source</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000232">
+    <rdfs:label rdf:datatype="&xsd;string">curator note</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&dc;creator"/>
+  <owl:AnnotationProperty rdf:about="&dc;date"/>
+  <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+  <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+  
+</rdf:RDF>

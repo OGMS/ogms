@@ -1,4 +1,4 @@
-# ogms_releases
+<h1>About the Ontology for General Medical Science</h1>
 <i>You can get the OWL version of OGMS at http://purl.obolibrary.org/obo/ogms.owl.</i>
 
 <i>The development version of OGMS can be found at http://purl.obolibrary.org/obo/ogms/dev/ogms.owl.</i>

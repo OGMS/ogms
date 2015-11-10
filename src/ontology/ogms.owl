@@ -602,7 +602,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000057">
         <rdfs:label>physical examination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <obo:IAO_0000232>creation date: 2010-07-19T11:50:18Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>

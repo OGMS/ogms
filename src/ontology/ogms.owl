@@ -970,10 +970,14 @@ If you are interested in participating in the development of OGMS, please send e
     <owl:Class rdf:about="&obo;OGMS_0000092">
         <rdfs:label>life course</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z
+
+EDIT: 10 NOV 2015</obo:IAO_0000232>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=38</obo:IAO_0000119>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A processual entity which has as parts all the processes in which a given organism is participant.</obo:IAO_0000115>
-        <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+        <obo:IAO_0000117>Albert Goldfain
+Richard Scheuermann
+Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A process which has as parts all the processes in which a given organism is participant.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1007,11 +1011,15 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000095 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000095">
-        <rdfs:label>inflammation process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A process which is a response by an organism&apos;s tissues that is generally identified by swelling or localized pain</obo:IAO_0000115>
+        <rdfs:label>inflammatory process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+        <obo:IAO_0000115 xml:lang="en">A bodily process caused by some disorder that results in recruitment of leukocytes into a localized tissue site, typically causing localized pain and swelling. </obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain
+Richard Scheuermann
+Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z
+
+Updated: 10 NOV 2015</obo:IAO_0000232>
         <obo:IAO_0000119>http://code.google.com/p/ogms/wiki/Meeting_notes_20100513</obo:IAO_0000119>
     </owl:Class>
     
@@ -1149,10 +1157,13 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="&obo;OGMS_0000105">
         <rdfs:label xml:lang="en">relapse</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A part of a disease course that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <dc:date>10 NOV 2015</dc:date>
+        <obo:IAO_0000115 xml:lang="en">A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain
+Richard Scheuermann
+Sagar Jain</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1161,10 +1172,13 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="&obo;OGMS_0000106">
         <rdfs:label xml:lang="en">remission</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+        <obo:IAO_0000117>Albert Goldfain
+Richard Scheuermann
+Sagar Jain</obo:IAO_0000117>
+        <dc:date>10 NOV 2015</dc:date>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A part of a disease course that includes a temporary convalescense.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 

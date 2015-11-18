@@ -589,11 +589,11 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000056">
         <rdfs:label>laboratory test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -946,7 +946,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
     </owl:Class>
     

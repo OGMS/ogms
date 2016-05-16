@@ -576,7 +576,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000055">
         <rdfs:label>clinical history taking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000104"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:16Z</obo:IAO_0000232>
@@ -589,7 +589,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000056">
         <rdfs:label>laboratory test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000104"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
@@ -602,7 +602,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000057">
         <rdfs:label>physical examination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000104"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -943,7 +943,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="&obo;OGMS_0000090">
         <rdfs:label>treatment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#therapeutic_process"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
@@ -1130,7 +1130,7 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="&obo;OGMS_0000103">
         <rdfs:label>disease prophylaxis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#therapeutic_process"/>
         <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to reduce the risk of developing a disorder or the signs and symptoms of a disorder.</obo:IAO_0000115>
         <obo:IAO_0000116>Whether or not &apos;prophylaxis&apos; and &apos;treatment&apos; classes are disjoint is an open question.</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
@@ -1144,7 +1144,7 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="&obo;OGMS_0000104">
         <rdfs:label>diagnostic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#medical_process"/>
         <obo:IAO_0000115 xml:lang="en">A health care process that involves the interpretation of a clinical picture from a given patient (input) and the assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these (output).</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e</obo:IAO_0000119>
@@ -1179,6 +1179,22 @@ Sagar Jain</obo:IAO_0000117>
         <dc:date>10 NOV 2015</dc:date>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#medical_process -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#medical_process">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#therapeutic_process -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#therapeutic_process">
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#medical_process"/>
     </owl:Class>
 </rdf:RDF>
 

@@ -104,6 +104,12 @@ If you are interested in participating in the development of OGMS, please send e
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="&dc;date"/>
@@ -145,19 +151,31 @@ If you are interested in participating in the development of OGMS, please send e
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000031"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="&obo;BFO_0000040"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000030">
+    <owl:Class rdf:about="&obo;IAO_0000030">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;iao.owl"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1157,13 +1175,14 @@ https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/
 
     <owl:Class rdf:about="&obo;OGMS_0000105">
         <rdfs:label xml:lang="en">relapse</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#disease_stage"/>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
+        <obo:IAO_0000115>a disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease.</obo:IAO_0000115>
         <dc:date>10 NOV 2015</dc:date>
-        <obo:IAO_0000115 xml:lang="en">A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
 Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1172,13 +1191,22 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="&obo;OGMS_0000106">
         <rdfs:label xml:lang="en">remission</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+        <rdfs:subClassOf rdf:resource="&obo;ogms.owl#disease_stage"/>
+        <obo:IAO_0000116 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
 Sagar Jain</obo:IAO_0000117>
         <dc:date>10 NOV 2015</dc:date>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000115>
+        <obo:IAO_0000115>a disease stage which is characterized by the lack of a manifestation of a disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#disease_stage -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#disease_stage">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
     </owl:Class>
 </rdf:RDF>
 

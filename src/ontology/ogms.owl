@@ -1206,6 +1206,19 @@ Sagar Jain</obo:IAO_0000117>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#ancillary_health_care_process -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#ancillary_health_care_process">
+        <rdfs:label>ancillary health care process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <dc:date>2017-04-18</dc:date>
+        <obo:IAO_0000115>A planned process that has the objective to support the objective of a health care process without directly involving the treatment, diagnosis, or prevention of disease or injury of a patient.
+</obo:IAO_0000115>
+        <dc:publisher>Sagar Jain</dc:publisher>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ogms.owl#disease_stage -->
 
     <owl:Class rdf:about="&obo;ogms.owl#disease_stage">

@@ -1049,9 +1049,12 @@ Updated: 10 NOV 2015</obo:IAO_0000232>
         <rdfs:label>health care process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A social process that has at least one human participant and that includes as parts the treatment, diagnosis, or prevention of disease or injury--or the following of instructions of another human for treatment, diagnosis, or prevention--of a participant in the process</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain
+Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z
+editor date: 2017-04-18
+</obo:IAO_0000232>
     </owl:Class>
     
 

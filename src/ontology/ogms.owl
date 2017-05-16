@@ -1224,6 +1224,31 @@ Sagar Jain</obo:IAO_0000117>
     <owl:Class rdf:about="&obo;ogms.owl#disease_stage">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#health_care_process-_assay -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#health_care_process-_assay">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#health_care_process-_biomaterial_transformation -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#health_care_process-_biomaterial_transformation">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#health_care_process-_data_transformation -->
+
+    <owl:Class rdf:about="&obo;ogms.owl#health_care_process-_data_transformation">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+    </owl:Class>
 </rdf:RDF>
 
 

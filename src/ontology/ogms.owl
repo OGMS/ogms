@@ -1,17 +1,5 @@
 <?xml version="1.0"?>
 
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
-]>
-
-
 <rdf:RDF xmlns="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl#"
      xml:base="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -46,9 +34,9 @@ If you are interested in participating in the development of OGMS, please send e
         <dc:creator>Albert Goldfain</dc:creator>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="&obo;bfo.owl"/>
-        <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
     </owl:Ontology>
     
 

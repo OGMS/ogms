@@ -1,5 +1,18 @@
 <?xml version="1.0"?>
 
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+
 <rdf:RDF xmlns="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl#"
      xml:base="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,7 +22,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ogms.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
         <dc:creator>Daniel Merico</dc:creator>
         <dc:date>2009-08-07</dc:date>
         <dc:creator>Sivaram Arabandi</dc:creator>

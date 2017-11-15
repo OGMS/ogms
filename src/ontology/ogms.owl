@@ -152,7 +152,10 @@ If you are interested in participating in the development of OGMS, please contac
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <obo:IAO_0000115 xml:lang="en">A data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
     
 
 
@@ -160,7 +163,7 @@ If you are interested in participating in the development of OGMS, please contac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:Class>
     

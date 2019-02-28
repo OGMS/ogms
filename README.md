@@ -1,7 +1,6 @@
 <h1>About the Ontology for General Medical Science</h1>
 <i>You can get the OWL version of OGMS at http://purl.obolibrary.org/obo/ogms.owl.</i>
 
-<i>The development version of OGMS can be found at http://purl.obolibrary.org/obo/ogms/dev/ogms.owl.</i>
 
 The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter.  OGMS includes very general terms that are used across medical disciplines, including: 'disease', 'disorder', 'disease course', 'diagnosis', 'patient', and 'healthcare provider'.  OGMS uses the <a href="http://www.ifomis.org/bfo/">Basic Formal Ontology (BFO)</a> as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms.  OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies.  This theory is implemented using OWL-DL and <a href="http://obofoundry.org/ro/">OBO Relation Ontology</a> relations and is available in <a href="http://www.w3.org/TR/owl-features/">OWL</a> and <a href="http://www.geneontology.org/GO.format.obo-1_2.shtml">OBO</a> formats.
 

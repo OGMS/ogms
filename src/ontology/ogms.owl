@@ -207,7 +207,7 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 xml:lang="en">A series of statements representing health-relevant qualities of a patient and of a patient&apos;s family.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -951,7 +951,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate the signs and symptoms of a disorder or pathological process</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
@@ -1007,7 +1007,7 @@ EDIT: 10 NOV 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-        <obo:IAO_0000115 xml:lang="en">a disease course with a rapid onset but typical unfolding of signs and symptoms after this rapid onset.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a disease course with an acute onset</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/wiki/Meeting_notes_20100513</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>
@@ -1245,12 +1245,121 @@ Sagar Jain</obo:IAO_0000117>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#acute_onset -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#acute_onset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#onset"/>
+        <obo:IAO_0000115>a disease stage with a rapid unfolding of signs and symptoms</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#asymptomatic -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#asymptomatic">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <obo:IAO_0000115>a disease stage characterized by the lack of symptoms associated with a given disease</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#chemotherapy_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#chemotherapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure"/>
+        <obo:IAO_0000115>A therapeutic procedure that uses synthetic or naturally-occurring chemicals</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#complete_remission -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#complete_remission">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000106"/>
+        <obo:IAO_0000115>a remission which is characterized by a prolonged lack of all manifestations of a disease</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ogms.owl#disease_stage -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#disease_stage">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A part of a disease course</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should be imported from OBI. https://github.com/OGMS/ogms/issues/105</obo:IAO_0000116>
         <rdfs:label xml:lang="en">disease stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#immunotherapy_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#immunotherapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure"/>
+        <obo:IAO_0000115>A therapeutic procedure that uses immune system derived entities</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#onset -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#onset">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <obo:IAO_0000115>a disease stage that marks the beginning of a disease</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#partial_remission -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#partial_remission">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000106"/>
+        <obo:IAO_0000115>a remission which is characterized by a prolonged lack of some manifestations of a disease</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#physical_therapy_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#physical_therapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure"/>
+        <obo:IAO_0000115>a therapeutic procedure that uses physical conditioning</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#prophylactic_treatment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#prophylactic_treatment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <obo:IAO_0000115>A treatment whose completion is hypothesized by a health care provider to prevent the signs and symptoms of a disorder or pathological process</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#radiation_therapy_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#radiation_therapy_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure"/>
+        <obo:IAO_0000115>A therapeutic procedure that uses radiation</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#recovered_from_disease -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#recovered_from_disease">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A quality in which complete clearance of the disorder is attained; however, physiological &apos;memory&apos; may persist</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#therapeutic_procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000090"/>
+        <obo:IAO_0000115>A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 

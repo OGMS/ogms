@@ -18,19 +18,18 @@
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>
         <dc:date>2009-08-07</dc:date>
+        <dc:creator>Alan Ruttenberg</dc:creator>
+        <dc:creator>Werner Ceusters</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2011-09-20 aka &apos;0.9&apos;
-http://purl.obolibrary.org/obo/ogms/2011-09-20/ogms.owl
+This is version 2018-11-27 aka &apos;v2018&apos;
 
-The OGMS developer site is http://code.google.com/p/ogms/
+
+The OGMS developer site is https://github.com/OGMS/ogms
 The discussion group is http://groups.google.com/group/ogms-discuss
 
-If you are interested in participating in the development of OGMS, please send email to albertgoldfain@gmail.com. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
-        <dc:creator>Alan Ruttenberg</dc:creator>
-        <dc:creator>Werner Ceusters</dc:creator>
-        <owl:versionInfo>2011-09-20</owl:versionInfo>
+If you are interested in participating in the development of OGMS, please send email to baeverma@jcvi.org. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
         <dc:creator>Bill Hogan</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:creator>Cornelius Rosse</dc:creator>
@@ -38,6 +37,7 @@ If you are interested in participating in the development of OGMS, please send e
         <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
         <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Daniel Merico</dc:creator>
+        <owl:versionInfo>2018-11-27</owl:versionInfo>
         <dc:creator>Barry Smith</dc:creator>
     </owl:Ontology>
     

@@ -28,4 +28,8 @@ We are always interested in application-specific use cases for OGMS, such as tho
 
 If you are interested in participating in the development of OGMS, please send email to rscheuermann@jcvi.org.  Be sure to include a github-account username with your request.
 
-There is a google group for discussing the project - http://groups.google.com/group/ogms-discuss . Click the "Apply for group membership" link to join, or send an email to alanruttenberg@gmail.com with the email address you would like added.
+OGMS development meeting notes and associated files are located: https://drive.google.com/drive/folders/1pSAYgVJHUxIZ0ZlxYbA4gGql8JKvETh4
+
+## License
+
+This project is licensed under the MIT License - see the https://opensource.org/licenses/MIT for details

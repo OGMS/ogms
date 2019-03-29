@@ -10,7 +10,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
         <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/v2019-03-28"/>
@@ -20,7 +19,6 @@
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dcterms:license>http://creativecommons.org/licenses/by/4.0/</dcterms:license>
         <dc:creator>Alan Ruttenberg</dc:creator>
         <dc:creator>Werner Ceusters</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.

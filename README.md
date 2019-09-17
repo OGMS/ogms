@@ -29,6 +29,7 @@ We are always interested in application-specific use cases for OGMS, such as tho
 If you are interested in participating in the development of OGMS, please send email to rscheuermann@jcvi.org.  Be sure to include a github-account username with your request.
 
 OGMS development meeting notes and associated files are located: https://drive.google.com/drive/folders/1pSAYgVJHUxIZ0ZlxYbA4gGql8JKvETh4
+
 Development Notes and agendas located at https://docs.google.com/document/d/1_gNPXjC2-pr5wvrmO1iVd2Cp9rzqf0qQG2L4UUJwBIs/edit
 
 ## License

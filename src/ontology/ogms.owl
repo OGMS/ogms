@@ -8,11 +8,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdf1="http://www.w3.org/2002/07/owl#versionIRI rdf:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
-        <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/v2019-04-30"/>
+        <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/2020-07-06"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
@@ -28,18 +30,24 @@
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Werner Ceusters</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+        <dc:description xml:lang="jcvi.org. be sure to include a google-account username with your request (this will be the username associated with a gmail address). we use google apps for sharing and development purposes.">The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: &apos;disease&apos;, &apos;disorder&apos;, &apos;disease course&apos;, &apos;diagnosis&apos;, &apos;patient&apos;, and &apos;healthcare provider&apos;. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.
+
+OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.</dc:description>
+        <dc:title>Ontology for General Medical Science</dc:title>
+        <terms:license>url: http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment xml:lang="jcvi.org. be sure to include a google-account username with your request (this will be the username associated with a gmail address). we use google apps for sharing and development purposes.">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2018-11-27 aka &apos;v2018&apos;
+This is version 2020-07-06 aka &apos;v2020&apos;
 
 
 The OGMS developer site is https://github.com/OGMS/ogms
-The discussion group is http://groups.google.com/group/ogms-discuss
 
-If you are interested in participating in the development of OGMS, please send email to baeverma@jcvi.org. Be sure to include a google-account username with your request (this will be the username associated with a gmail address).</rdfs:comment>
-        <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
-        <owl:versionInfo>2018-11-27</owl:versionInfo>
+
+If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
+        <owl:versionInfo>2020-07-06</owl:versionInfo>
+        <rdf1:resource>http://purl.obolibrary.org/obo/ogms/2020-07-06/ogms.owl</rdf1:resource>
     </owl:Ontology>
     
 
@@ -104,6 +112,12 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI rdf:resource -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI rdf:resource"/>
     
 
 
@@ -177,6 +191,16 @@ If you are interested in participating in the development of OGMS, please send e
         <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">directive information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000115>An infection that is clinically abnormal.</obo:IAO_0000115>
+        <rdfs:label>infectious disorder</rdfs:label>
     </owl:Class>
     
 
@@ -273,11 +297,12 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient that is observed by the patient or a processual entity experienced by the patient, either of which is hypothesized by the patient to be a realization of a disease.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant.</obo:IAO_0000115>
         <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z</obo:IAO_0000232>
+        <obo:IAO_0000232>creation date: 2010-11-18T11:02:10Z
+Updated: 2020-07-06</obo:IAO_0000232>
         <rdfs:label>symptom</rdfs:label>
     </owl:Class>
     
@@ -312,13 +337,10 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
-        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2010-11-18T11:14:36Z</obo:IAO_0000232>
-        <rdfs:label>sign</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The class sign has been replaced by three seperate classes which reflect the different types of signs possible.</rdfs:comment>
+        <rdfs:label>DEPRECATED sign</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -378,7 +400,7 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/OGMS_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000129"/>
         <obo:IAO_0000115 xml:lang="en">A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -598,11 +620,11 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000108"/>
-        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen and as output a data itme that is about a quality of the specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen and as output a data item that is about a quality of the specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
-        <rdfs:label>laboratory test</rdfs:label>
+        <rdfs:label>clinical laboratory test</rdfs:label>
     </owl:Class>
     
 
@@ -965,7 +987,7 @@ If you are interested in participating in the development of OGMS, please send e
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
@@ -1008,7 +1030,7 @@ EDIT: 10 NOV 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
-        <obo:IAO_0000115 xml:lang="en">a disease course with an acute onset</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A disease course with an acute onset</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/wiki/Meeting_notes_20100513</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>
@@ -1021,7 +1043,7 @@ EDIT: 10 NOV 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A bodily process caused by some disorder that results in recruitment of leukocytes into a localized tissue site, typically causing localized pain and swelling. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A bodily process caused by some disorder that results in recruitment of leukocytes into a localized tissue site, typically causing localized pain and swelling.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
 Sagar Jain</obo:IAO_0000117>
@@ -1043,8 +1065,7 @@ Updated: 10 NOV 2015</obo:IAO_0000232>
 Sagar Jain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z
-editor date: 2017-04-18
-</obo:IAO_0000232>
+editor date: 2017-04-18</obo:IAO_0000232>
         <rdfs:label>health care process</rdfs:label>
     </owl:Class>
     
@@ -1106,11 +1127,11 @@ editor date: 2017-04-18
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-        <obo:IAO_0000115 xml:lang="en">TODO</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter in which care is provided for undifferentiated and unscheduled patients with illnesses or injuries requiring immediate medical attention.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
-        <rdfs:label>ED encounter</rdfs:label>
+        <rdfs:label>emergency department encounter</rdfs:label>
     </owl:Class>
     
 
@@ -1128,9 +1149,7 @@ Sagar Jain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5
 
 OGMS call adoption- 16 SEPT 2015
-https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit
-
-</obo:IAO_0000119>
+https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z
 edited date: 30 SEPT 2015</obo:IAO_0000232>
         <rdfs:label>injury</rdfs:label>
@@ -1169,7 +1188,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
-        <obo:IAO_0000115>a disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
@@ -1185,7 +1204,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
-        <obo:IAO_0000115>a disease stage which is characterized by the lack of a manifestation of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease stage which is characterized by the lack of a manifestation of a disease</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
@@ -1201,8 +1220,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A planned process that has the objective to support the objective of a health care process without directly involving the treatment, diagnosis, or prevention of disease or injury of a patient.
-</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that has the objective to support the objective of a health care process without directly involving the treatment, diagnosis, or prevention of disease or injury of a patient.</obo:IAO_0000115>
         <dc:date>2017-04-18</dc:date>
         <dc:publisher>Sagar Jain</dc:publisher>
         <rdfs:label>ancillary health care process</rdfs:label>
@@ -1226,10 +1244,10 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
-        <obo:IAO_0000115>A health care process which results in physical changes in a specified input material </obo:IAO_0000115>
+        <obo:IAO_0000115>A health care process which results in physical changes in a specified input material</obo:IAO_0000115>
         <dc:date>creation: 16MAY2017</dc:date>
         <dc:publisher>Sagar Jain</dc:publisher>
-        <rdfs:label>health care process biomaterial transformation </rdfs:label>
+        <rdfs:label>health care process biomaterial transformation</rdfs:label>
     </owl:Class>
     
 
@@ -1294,7 +1312,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112"/>
-        <obo:IAO_0000115>a therapeutic procedure that uses physical conditioning</obo:IAO_0000115>
+        <obo:IAO_0000115>A therapeutic procedure that uses physical conditioning</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">physical therapy procedure</rdfs:label>
     </owl:Class>
@@ -1316,7 +1334,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
-        <obo:IAO_0000115>a disease stage characterized by the lack of symptoms associated with a given disease</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease stage characterized by the lack of symptoms associated with a given disease</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">asymptomatic</rdfs:label>
     </owl:Class>
@@ -1327,7 +1345,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
-        <obo:IAO_0000115>a disease stage that marks the beginning of a disease</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease stage that marks the beginning of a disease</obo:IAO_0000115>
         <obo:IAO_0000232>creation date 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">onset</rdfs:label>
     </owl:Class>
@@ -1338,7 +1356,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000118"/>
-        <obo:IAO_0000115>a disease stage with a rapid unfolding of signs and symptoms</obo:IAO_0000115>
+        <obo:IAO_0000115>A disease stage with a rapid unfolding of signs and symptoms</obo:IAO_0000115>
         <obo:IAO_0000232>creation date 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">acute onset</rdfs:label>
     </owl:Class>
@@ -1349,7 +1367,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000106"/>
-        <obo:IAO_0000115>a remission which is characterized by a prolonged lack of all manifestations of a disease</obo:IAO_0000115>
+        <obo:IAO_0000115>A remission which is characterized by a prolonged lack of all manifestations of a disease</obo:IAO_0000115>
         <rdfs:label xml:lang="en">complete remission</rdfs:label>
     </owl:Class>
     
@@ -1359,7 +1377,7 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000106"/>
-        <obo:IAO_0000115>a remission which is characterized by a prolonged lack of some manifestations of a disease</obo:IAO_0000115>
+        <obo:IAO_0000115>A remission which is characterized by a prolonged lack of some manifestations of a disease</obo:IAO_0000115>
         <rdfs:label xml:lang="en">partial remission</rdfs:label>
     </owl:Class>
     
@@ -1380,9 +1398,199 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>a data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is about a patient and is the specified output of a health care process assay or diagnostic process</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">clinical data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.</obo:IAO_0000115>
+        <obo:IAO_0000232>Example: an abnormal growth, an inflammatory infiltrate, swollen tissue, distension</obo:IAO_0000232>
+        <rdfs:label>physical sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115>The process in which an allergic disease unfolds.</obo:IAO_0000115>
+        <rdfs:label>allergic disease process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115>The process in which cancer unfolds</obo:IAO_0000115>
+        <rdfs:label>cancer process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115>The process in which an autoimmune disease unfolds.</obo:IAO_0000115>
+        <rdfs:label>autoimmune disease process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:label>progression stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000133"/>
+        <rdfs:label>cancer progression stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000134"/>
+        <obo:IAO_0000115>A cancer progression stage characterized by abnormal cellular growth contained within normal tissue boundaries (e.g. carcinoma in situ).</obo:IAO_0000115>
+        <rdfs:label>cancer progression stage 0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000134"/>
+        <obo:IAO_0000115>A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass.</obo:IAO_0000115>
+        <rdfs:label>cancer progression stage I</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000134"/>
+        <obo:IAO_0000115>A cancer progression stage characterized by abnormal cellular growth that extends well beyond normal local tissue boundaries as a contiguous mass.</obo:IAO_0000115>
+        <rdfs:label>cancer progression stage II</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000134"/>
+        <obo:IAO_0000115>A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass and includes metastasis to one or more regional draining lymph nodes.</obo:IAO_0000115>
+        <rdfs:label>cancer progression stage III</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000134"/>
+        <obo:IAO_0000115>A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass and includes metastasis to other distant tissues besides lymph nodes.</obo:IAO_0000115>
+        <rdfs:label>cancer progression stage IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115>The process in which an infectious disease unfolds</obo:IAO_0000115>
+        <rdfs:label>infectious disease process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>An abnormal processual entity occuring in a patient that is hypothesized to be clinically relevant.</obo:IAO_0000115>
+        <rdfs:label>processual sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.</obo:IAO_0000115>
+        <obo:IAO_0000232>Example: the color of a rash; the shape of a melanoma</obo:IAO_0000232>
+        <rdfs:label>qualitative sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000112"/>
+        <obo:IAO_0000115>A therapeutic procedure in which a body part is transferred into a organism</obo:IAO_0000115>
+        <rdfs:label>transplantation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000143"/>
+        <obo:IAO_0000115>A transplantation in which the body part is a non-fluid tissue</obo:IAO_0000115>
+        <rdfs:label>solid organ transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000143"/>
+        <obo:IAO_0000115>A transplantation in which the body part is a bodily fluid</obo:IAO_0000115>
+        <rdfs:label>transfusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+        <obo:IAO_0000115>A disorder of some macroscopic part of a tissue</obo:IAO_0000115>
+        <rdfs:label>tissue disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000146"/>
+        <obo:IAO_0000115>A tissue disorder that has resulted from a dysregulation of cell proliferation leading to a net increase in mass</obo:IAO_0000115>
+        <rdfs:label>neoplasm</rdfs:label>
     </owl:Class>
     
 

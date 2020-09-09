@@ -8,7 +8,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdf1="http://www.w3.org/2002/07/owl#versionIRI rdf:"
+     xmlns:rdf1="http://www.w3.org/2002/07/owl#versionIRI%20rdf:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -30,13 +30,13 @@
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Werner Ceusters</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dc:description xml:lang="jcvi.org. be sure to include a google-account username with your request (this will be the username associated with a gmail address). we use google apps for sharing and development purposes.">The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: &apos;disease&apos;, &apos;disorder&apos;, &apos;disease course&apos;, &apos;diagnosis&apos;, &apos;patient&apos;, and &apos;healthcare provider&apos;. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.
+        <dc:description xml:lang="en">The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: &apos;disease&apos;, &apos;disorder&apos;, &apos;disease course&apos;, &apos;diagnosis&apos;, &apos;patient&apos;, and &apos;healthcare provider&apos;. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.
 
 OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.</dc:description>
         <dc:title>Ontology for General Medical Science</dc:title>
         <terms:license>url: http://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment></rdfs:comment>
-        <rdfs:comment xml:lang="jcvi.org. be sure to include a google-account username with your request (this will be the username associated with a gmail address). we use google apps for sharing and development purposes.">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+        <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
 This is version 2020-07-06 aka &apos;v2020&apos;
@@ -47,7 +47,6 @@ The OGMS developer site is https://github.com/OGMS/ogms
 
 If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
         <owl:versionInfo>2020-07-06</owl:versionInfo>
-        <rdf1:resource>http://purl.obolibrary.org/obo/ogms/2020-07-06/ogms.owl</rdf1:resource>
     </owl:Ontology>
     
 
@@ -115,9 +114,9 @@ If you are interested in participating in the development of OGMS, please send e
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#versionIRI rdf:resource -->
+    <!-- http://www.w3.org/2002/07/owl#versionIRI%20rdf:resource -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI rdf:resource"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI%20rdf:resource"/>
     
 
 
@@ -974,7 +973,7 @@ Updated: 2020-07-06</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate the signs and symptoms of a disorder or pathological process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>

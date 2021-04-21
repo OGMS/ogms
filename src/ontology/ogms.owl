@@ -14,7 +14,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
-        <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/2020-07-06"/>
+        <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/2021-04-20"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
@@ -39,14 +39,14 @@ OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagn
         <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
 The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2020-07-06 aka &apos;v2020&apos;
+This is version 2021-04-20 aka &apos;v2021&apos;
 
 
 The OGMS developer site is https://github.com/OGMS/ogms
 
 
 If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
-        <owl:versionInfo>2020-07-06</owl:versionInfo>
+        <owl:versionInfo>2021-04-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -698,7 +698,12 @@ Updated: 2020-07-06</obo:IAO_0000232>
         <obo:IAO_0000115 xml:lang="en">A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, fall within abnormal homeostatic range.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2009-06-23T11:56:26Z</obo:IAO_0000232>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:56:26Z
+
+10212020
+
+for definition use: 
+http://purl.obolibrary.org/obo/PATO_0001863</obo:IAO_0000232>
         <rdfs:label>chronic disease course</rdfs:label>
     </owl:Class>
     
@@ -962,9 +967,10 @@ Updated: 2020-07-06</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A structurally anomalous part of an organism acquired during fetal development and present at birth (but not necessarily hereditary) which is hypothesized to be harmful for the organism.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000118>congenital malformation</obo:IAO_0000118>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=28</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
-        <rdfs:label>congenital malformation</rdfs:label>
+        <rdfs:label>congenital disorder</rdfs:label>
     </owl:Class>
     
 
@@ -972,7 +978,7 @@ Updated: 2020-07-06</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
         <obo:IAO_0000115 xml:lang="en">A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
@@ -1032,7 +1038,13 @@ EDIT: 10 NOV 2015</obo:IAO_0000232>
         <obo:IAO_0000115 xml:lang="en">A disease course with an acute onset</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://code.google.com/p/ogms/wiki/Meeting_notes_20100513</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000232>creation date: 2010-07-19T11:57:44Z
+
+10212020
+
+for definition use
+
+http://purl.obolibrary.org/obo/PATO_0000389</obo:IAO_0000232>
         <rdfs:label>acute disease course</rdfs:label>
     </owl:Class>
     
@@ -1086,11 +1098,14 @@ editor date: 2017-04-18</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
         <obo:IAO_0000115 xml:lang="en">TODO</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
+        <rdfs:comment>09/16/2020
+Is this same as admission? 
+Is this the same as inpatient encounter?</rdfs:comment>
         <rdfs:label>hospitalization</rdfs:label>
     </owl:Class>
     
@@ -1113,7 +1128,7 @@ editor date: 2017-04-18</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-        <obo:IAO_0000115 xml:lang="en">TODO</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter involving a patient who has been admitted to a health care facility and remains in a hospital facility for at least one night.</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
@@ -1192,6 +1207,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
 Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000118>recurrent</obo:IAO_0000118>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=73</obo:IAO_0000119>
         <dc:date>10 NOV 2015</dc:date>
         <rdfs:label xml:lang="en">relapse</rdfs:label>
@@ -1404,6 +1420,59 @@ Sagar Jain</obo:IAO_0000117>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <obo:IAO_0000115>A health care encounter that is regularly scheduled for the purpose of health monitoring.</obo:IAO_0000115>
+        <obo:IAO_0000118>routine clinical visit</obo:IAO_0000118>
+        <rdfs:label>routine health care encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000099"/>
+        <obo:IAO_0000115>A health care encounter that is scheduled for the purpose of assessing a known set of specific issues</obo:IAO_0000115>
+        <obo:IAO_0000118>follow-up clinical visit</obo:IAO_0000118>
+        <rdfs:label>follow-up health care encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000089"/>
+        <obo:IAO_0000115>A congenital disorder arising as a result of an infectious process</obo:IAO_0000115>
+        <rdfs:label>congenital infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000089"/>
+        <obo:IAO_0000115>A congenital disorder arising as a result of a drug exposure causing an anatomical abnormality</obo:IAO_0000115>
+        <rdfs:label>drug induced congenital malformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <obo:IAO_0000115>A pathological bodily process that occurs in the fetus during fetal development</obo:IAO_0000115>
+        <rdfs:label>congenital process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000129">
@@ -1590,6 +1659,47 @@ Sagar Jain</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000146"/>
         <obo:IAO_0000115>A tissue disorder that has resulted from a dysregulation of cell proliferation leading to a net increase in mass</obo:IAO_0000115>
         <rdfs:label>neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>A role borne by some material entity which can be delivered/administrated into some organism and the role is realized during a clinical treatment process aiming to treat symptoms, signs or diagnosed disease.</obo:IAO_0000115>
+        <obo:IAO_0000116>Originally OBIB_0000026</obo:IAO_0000116>
+        <rdfs:label>medication role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+        <obo:IAO_0000115>A health care encounter that is regularly scheduled and primarily consists of a physical examination.</obo:IAO_0000115>
+        <rdfs:label>routine health care encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO:0000586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO:0000586">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Part of an organism that itself is part of an extended organism with a pathogen as part, which participates in the formation of the infection.</obo:IAO_0000115>
+        <rdfs:label>Infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO:0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO:0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO:0000586"/>
+        <obo:IAO_0000115>Infection resulting from a transmission process that did not unfold in a health care facility.</obo:IAO_0000115>
+        <rdfs:label>hospital-acquired infection</rdfs:label>
     </owl:Class>
     
 

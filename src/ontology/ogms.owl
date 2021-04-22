@@ -1674,16 +1674,6 @@ Sagar Jain</obo:IAO_0000117>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000149 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000149">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
-        <obo:IAO_0000115>A health care encounter that is regularly scheduled and primarily consists of a physical examination.</obo:IAO_0000115>
-        <rdfs:label>routine health care encounter</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IDO:0000586 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO:0000586">

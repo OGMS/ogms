@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl#"
-     xml:base="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogms/dev/ogms_dev.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ogms/dev/ogms_dev.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,18 +13,21 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms.owl">
-        <owl:versionIRI rdf:resource="https://github.com/OGMS/ogms/releases/tag/2021-04-20"/>
-        <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogms/dev/ogms_dev.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms/dev/import_IAO.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms/dev/import_IDO.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms/dev/import_OBI.owl"/>
         <dc:creator>Alan Ruttenberg</dc:creator>
         <dc:creator>Albert Goldfain</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <dc:creator>Barry Smith</dc:creator>
         <dc:creator>Bill Hogan</dc:creator>
+        <dc:creator>Brian Aevermann</dc:creator>
         <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Daniel Merico</dc:creator>
+        <dc:creator>Jie Zheng</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
         <dc:creator>Sivaram Arabandi</dc:creator>
@@ -34,19 +37,14 @@
 
 OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.</dc:description>
         <dc:title>Ontology for General Medical Science</dc:title>
-        <terms:license>url: http://creativecommons.org/licenses/by/4.0/</terms:license>
-        <rdfs:comment></rdfs:comment>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
-The latest version of OGMS is always available at http://purl.obolibrary.org/obo/ogms.owl
-This is version 2021-04-20 aka &apos;v2021&apos;
-
+The latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.owl
 
 The OGMS developer site is https://github.com/OGMS/ogms
 
-
 If you are interested in participating in the development of OGMS, please send email to baeverma</rdfs:comment>
-        <owl:versionInfo>2021-04-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -64,41 +62,31 @@ If you are interested in participating in the development of OGMS, please send e
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label>definition</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:label>editor note</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <rdfs:label>definition editor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:label>definition source</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
-        <rdfs:label>curator note</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
     
 
 
@@ -111,12 +99,6 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#versionIRI%20rdf:resource -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI%20rdf:resource"/>
     
 
 
@@ -164,54 +146,6 @@ If you are interested in participating in the development of OGMS, please send e
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">directive information content entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO_0000504 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000504">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-        <obo:IAO_0000115>An infection that is clinically abnormal.</obo:IAO_0000115>
-        <rdfs:label>infectious disorder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
     
 
 
@@ -337,8 +271,7 @@ Updated: 2020-07-06</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000024">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The class sign has been replaced by three seperate classes which reflect the different types of signs possible.</rdfs:comment>
-        <rdfs:label>DEPRECATED sign</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
+        <rdfs:label>obsolete_sign</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1220,7 +1153,7 @@ Sagar Jain</obo:IAO_0000117>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
         <obo:IAO_0000115>A disease stage which is characterized by the lack of a manifestation of a disease</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased. </obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased.</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
 Richard Scheuermann
 Sagar Jain</obo:IAO_0000117>
@@ -1466,7 +1399,6 @@ Sagar Jain</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
-        <obo:IAO_0000115></obo:IAO_0000115>
         <obo:IAO_0000115>A pathological bodily process that occurs in the fetus during fetal development</obo:IAO_0000115>
         <rdfs:label>congenital process</rdfs:label>
     </owl:Class>
@@ -1670,26 +1602,6 @@ Sagar Jain</obo:IAO_0000117>
         <obo:IAO_0000115>A role borne by some material entity which can be delivered/administrated into some organism and the role is realized during a clinical treatment process aiming to treat symptoms, signs or diagnosed disease.</obo:IAO_0000115>
         <obo:IAO_0000116>Originally OBIB_0000026</obo:IAO_0000116>
         <rdfs:label>medication role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO:0000586 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO:0000586">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>Part of an organism that itself is part of an extended organism with a pathogen as part, which participates in the formation of the infection.</obo:IAO_0000115>
-        <rdfs:label>Infection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IDO:0000630 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO:0000630">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO:0000586"/>
-        <obo:IAO_0000115>Infection resulting from a transmission process that did not unfold in a health care facility.</obo:IAO_0000115>
-        <rdfs:label>hospital-acquired infection</rdfs:label>
     </owl:Class>
     
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1619118431144" name="duplicate:http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl" uri="ogms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1619118431144" name="duplicate:http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl" uri="ogms_sj_process_test.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1619118431144" name="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl" uri="omre/OMRE_AEROImport.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1619118431144" name="http://purl.obolibrary.org/obo/ogms/omre.owl" uri="omre/omre.owl"/>
-    </group>
+    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_IDO.owl" uri="imports/import_IDO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_IAO.owl" uri="imports/import_IAO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_OBI.owl" uri="imports/import_OBI.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ogms/dev/ogms_dev.owl" uri="ogms_dev.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl" uri="omre/OMRE_AEROImport.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ogms/omre.owl" uri="omre/omre.owl"/>
 </catalog>

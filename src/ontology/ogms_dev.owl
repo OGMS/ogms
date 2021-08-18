@@ -149,6 +149,15 @@ If you are interested in participating in the development of OGMS, please send e
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">disease stage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014">
@@ -1134,7 +1143,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000278"/>
         <obo:IAO_0000115>A disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course.</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
@@ -1151,7 +1160,7 @@ Sagar Jain</obo:IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000278"/>
         <obo:IAO_0000115>A disease stage which is characterized by the lack of a manifestation of a disease</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased.</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain
@@ -1281,7 +1290,7 @@ Sagar Jain</obo:IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000278"/>
         <obo:IAO_0000115>A disease stage characterized by the lack of symptoms associated with a given disease</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">asymptomatic</rdfs:label>
@@ -1292,7 +1301,7 @@ Sagar Jain</obo:IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000118">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000278"/>
         <obo:IAO_0000115>A disease stage that marks the beginning of a disease</obo:IAO_0000115>
         <obo:IAO_0000232>creation date 2018-11-27</obo:IAO_0000232>
         <rdfs:label xml:lang="en">onset</rdfs:label>
@@ -1449,7 +1458,7 @@ Sagar Jain</obo:IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ogms.owl#disease_stage"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000278"/>
         <rdfs:label>progression stage</rdfs:label>
     </owl:Class>
     
@@ -1602,17 +1611,6 @@ Sagar Jain</obo:IAO_0000117>
         <obo:IAO_0000115>A role borne by some material entity which can be delivered/administrated into some organism and the role is realized during a clinical treatment process aiming to treat symptoms, signs or diagnosed disease.</obo:IAO_0000115>
         <obo:IAO_0000116>Originally OBIB_0000026</obo:IAO_0000116>
         <rdfs:label>medication role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ogms.owl#disease_stage -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ogms.owl#disease_stage">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A part of a disease course</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should be imported from OBI. https://github.com/OGMS/ogms/issues/105</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">disease stage</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

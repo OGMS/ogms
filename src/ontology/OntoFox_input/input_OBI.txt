@@ -9,9 +9,12 @@ OBI
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+http://purl.obolibrary.org/obo/OBI_0000278 #disease stage
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+http://purl.obolibrary.org/obo/OBI_0000278 #disease stage
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 
 [Source term retrieval setting]

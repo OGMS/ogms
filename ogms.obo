@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: 2021-06-28
+data-version: 2021-08-19
 remark: The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.\n\nThe latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.owl\n\nThe OGMS developer site is https://github.com/OGMS/ogms\n\nIf you are interested in participating in the development of OGMS, please send email to baeverma
 ontology: ogms
 property_value: http://purl.org/dc/elements/1.1/creator "Alan Ruttenberg" xsd:string
@@ -19,7 +19,7 @@ property_value: http://purl.org/dc/elements/1.1/date "2009-08-07" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: 'disease', 'disorder', 'disease course', 'diagnosis', 'patient', and 'healthcare provider'. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.\n\nOGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for General Medical Science" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2021-06-28" xsd:string
+property_value: owl:versionInfo "2021-08-19" xsd:string
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000024>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0006012>))\n############################\n#   Annotation Properties\n############################\n\n# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (BFO OWL specification label)\n\nSubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000179> rdfs:label)\n\n# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (BFO CLIF specification label)\n\nSubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000180> rdfs:label)\n\n# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0006012> (scheduled for obsoletion on or after)\n\nAnnotationPropertyRange(<http://purl.obolibrary.org/obo/IAO_0006012> xsd:dateTime)\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OGMS_0000024> (obsolete_sign)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000024> owl:Thing)\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\n)
 
 [Term]
@@ -870,6 +870,13 @@ is_a: BFO:0000015 ! process
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000278
+name: disease stage
+def: "a part of an occurrence of a disease process which is associated with position in the normal progression of the disease" []
+is_a: BFO:0000015 ! process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OGMS:0000014
 name: clinical finding
 def: "A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof." []
@@ -1528,7 +1535,7 @@ property_value: IAO:0000232 "creation date: 2011-09-20T09:57:44Z" xsd:string
 id: OGMS:0000105
 name: relapse
 def: "A disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease." []
-is_a: disease_stage ! disease stage
+is_a: OBI:0000278 ! disease stage
 property_value: http://purl.org/dc/elements/1.1/date "10 NOV 2015" xsd:string
 property_value: IAO:0000116 "A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course." xsd:string
 property_value: IAO:0000117 "Albert Goldfain\nRichard Scheuermann\nSagar Jain" xsd:string
@@ -1539,7 +1546,7 @@ property_value: IAO:0000119 http://code.google.com/p/ogms/issues/detail?id=73 xs
 id: OGMS:0000106
 name: remission
 def: "A disease stage which is characterized by the lack of a manifestation of a disease" []
-is_a: disease_stage ! disease stage
+is_a: OBI:0000278 ! disease stage
 property_value: http://purl.org/dc/elements/1.1/date "10 NOV 2015" xsd:string
 property_value: IAO:0000116 "A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased." xsd:string
 property_value: IAO:0000117 "Albert Goldfain\nRichard Scheuermann\nSagar Jain" xsd:string
@@ -1623,14 +1630,14 @@ property_value: IAO:0000232 "creation date: 2018-11-27" xsd:string
 id: OGMS:0000117
 name: asymptomatic
 def: "A disease stage characterized by the lack of symptoms associated with a given disease" []
-is_a: disease_stage ! disease stage
+is_a: OBI:0000278 ! disease stage
 property_value: IAO:0000232 "creation date: 2018-11-27" xsd:string
 
 [Term]
 id: OGMS:0000118
 name: onset
 def: "A disease stage that marks the beginning of a disease" []
-is_a: disease_stage ! disease stage
+is_a: OBI:0000278 ! disease stage
 property_value: IAO:0000232 "creation date 2018-11-27" xsd:string
 
 [Term]
@@ -1726,7 +1733,7 @@ is_a: OGMS:0000061 ! pathological bodily process
 [Term]
 id: OGMS:0000133
 name: progression stage
-is_a: disease_stage ! disease stage
+is_a: OBI:0000278 ! disease stage
 
 [Term]
 id: OGMS:0000134
@@ -1818,11 +1825,4 @@ name: medication role
 def: "A role borne by some material entity which can be delivered/administrated into some organism and the role is realized during a clinical treatment process aiming to treat symptoms, signs or diagnosed disease." []
 is_a: BFO:0000023 ! role
 property_value: IAO:0000116 "Originally OBIB_0000026" xsd:string
-
-[Term]
-id: disease_stage
-name: disease stage
-def: "A part of a disease course" []
-is_a: BFO:0000015 ! process
-property_value: IAO:0000116 "This class should be imported from OBI. https://github.com/OGMS/ogms/issues/105" xsd:string
 

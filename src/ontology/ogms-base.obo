@@ -1,0 +1,15 @@
+format-version: 1.2
+data-version: ogms/releases/2025-07-02/ogms-base.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+ontology: ogms/ogms-base
+property_value: dce:type IAO:8000001
+property_value: dcterms:description "None" xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/unspecified
+property_value: dcterms:title "The Ontology for General Medical Science" xsd:string
+property_value: owl:versionInfo "2025-07-02" xsd:string
+
+[Term]
+id: OGMS:0000000
+name: root node
+

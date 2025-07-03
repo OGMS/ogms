@@ -1,0 +1,58 @@
+Prefix(:=<http://purl.obolibrary.org/obo/ogms/imports/ido_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/ogms/imports/ido_import.owl>
+<http://purl.obolibrary.org/obo/ogms/releases/2025-07-02/imports/ido_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl>)
+Annotation(owl:versionInfo "2025-07-02")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000504>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000586>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000630>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IDO_0000504> (infectious disorder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IDO_0000504> "An infection that is clinically abnormal."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000504> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000504> "Alexander Diehl")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000504> "Lindsay Cowell")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IDO_0000504> "infectious disorder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IDO_0000504> <http://purl.obolibrary.org/obo/IDO_0000586>)
+
+# Class: <http://purl.obolibrary.org/obo/IDO_0000586> (infection)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IDO_0000586> "A part of an extended organism that itself has as part a population of one or more infectious agents and that (1) exists as a result of processes initiated by members of the infectious agent population and is (2) clinically abnormal in virtue of the presence of this infectious agent population, or (3) has a disposition to bring clinical abnormality to immunocompetent organisms of the same Species as the host (the organism corresponding to the extended organism) through transmission of a member or offspring of a member of the infectious agent population."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000586> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000586> "Alexander Diehl")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000586> "Lindsay Cowell")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IDO_0000586> "The organism corresponding to the extended organism is host to the infectious agents.  By this definition, parts of the host can be considered part of the infection.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IDO_0000586> "infection"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IDO_0000586> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/IDO_0000630> (hospital-acquired infection)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IDO_0000630> "An infection resulting from a transmission process that unfolds in a hospital."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000630> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000630> "Alexander Diehl")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000630> "Lindsay Cowell")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IDO_0000630> "nosocomial infection"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IDO_0000630> "hospital-acquired infection"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IDO_0000630> <http://purl.obolibrary.org/obo/IDO_0000586>)
+
+
+)

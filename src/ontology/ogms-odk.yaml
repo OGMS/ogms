@@ -1,0 +1,73 @@
+id: ogms
+title: "The Ontology for General Medical Science"
+github_org: OGMS
+repo: ogms
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+report_fail_on: None
+export_formats:
+  - owl
+  - obo
+  - json
+release_artefacts: 
+  - base
+  - full
+import_group:
+  annotation_properties:
+    - rdfs:label
+    - IAO:0000115
+    - IAO:0000116
+    - IAO:0000111
+    - oboInOwl:hasDbXref
+    - rdfs:comment
+  exclude_iri_patterns:
+    - <http://purl.obolibrary.org/obo/OGMS*>
+  products:
+    - id: ro
+      module_type: slme
+      slme_individuals: exclude
+    - id: obi
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/OBI_
+    - id: bfo
+      module_type: slme
+      slme_individuals: exclude
+    - id: iao 
+      module_type: mirror
+    - id: ido
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/IDO_
+
+use_custom_import_module: TRUE
+robot_java_args: '-Xmx8G'
+custom_makefile_header: |
+  ### Workflow
+  #
+  # Tasks to edit and release OGMS.
+  #
+  # #### Edit
+  #
+  # 1. [Prepare release](prepare_release)
+  # 2. [Refresh imports](all_imports)
+  # 3. [Update repo to latest ODK](update_repo)
+create_obo_metadata: FALSE
+documentation:
+  documentation_system: mkdocs
+robot_report:
+  use_base_iris: True
+  fail_on : ERROR
+  use_labels : False
+  custom_profile : True
+  report_on :
+    - ogms-base.owl
+    - edit
+  sparql_test_on:
+    - ogms-base.owl
+  custom_sparql_checks :
+    - equivalent-classes
+    - owldef-self-reference
+    - iri-range

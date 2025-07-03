@@ -1,0 +1,8 @@
+id: ogms
+title: The Ontology for General Medical Science
+github_org: OGMS
+repo: ogms
+import_group:
+  products:
+    - id: ro
+    - id: bfo

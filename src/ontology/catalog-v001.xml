@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_IDO.owl" uri="imports/import_IDO.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_IAO.owl" uri="imports/import_IAO.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/ogms/dev/import_OBI.owl" uri="imports/import_OBI.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/ogms/dev/ogms_dev.owl" uri="ogms_dev.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/aero/OMRE_AEROImport.owl" uri="omre/OMRE_AEROImport.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/ogms/omre.owl" uri="omre/omre.owl"/>
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <group id="odk-managed-catalog" prefer="public">
+    <uri name="http://purl.obolibrary.org/obo/ogms/imports/ro_import.owl" uri="imports/ro_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/ogms/imports/obi_import.owl" uri="imports/obi_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/ogms/imports/bfo_import.owl" uri="imports/bfo_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/ogms/imports/iao_import.owl" uri="imports/iao_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/ogms/imports/ido_import.owl" uri="imports/ido_import.owl" />
+  </group>
 </catalog>

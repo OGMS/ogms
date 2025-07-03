@@ -1,0 +1,1183 @@
+Prefix(:=<http://purl.obolibrary.org/obo/ogms.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdf1:=<http://www.w3.org/2002/07/owl#versionIRI%20rdf:>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/ogms.owl>
+Import(<http://purl.obolibrary.org/obo/ogms/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ogms/imports/iao_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ogms/imports/ido_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ogms/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ogms/imports/ro_import.owl>)
+Annotation(dc:contributor "Matthew Diller"@en)
+Annotation(dc:creator "Alan Ruttenberg")
+Annotation(dc:creator "Albert Goldfain")
+Annotation(dc:creator "Anand Kumar")
+Annotation(dc:creator "Barry Smith")
+Annotation(dc:creator "Bill Hogan")
+Annotation(dc:creator "Brian Aevermann")
+Annotation(dc:creator "Cornelius Rosse")
+Annotation(dc:creator "Daniel Merico")
+Annotation(dc:creator "Jie Zheng")
+Annotation(dc:creator "Lindsay Cowell")
+Annotation(dc:creator "Richard Scheuermann")
+Annotation(dc:creator "Sivaram Arabandi")
+Annotation(dc:creator "Werner Ceusters")
+Annotation(dc:date "2009-08-07")
+Annotation(dc:description "The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter. OGMS includes very general terms that are used across medical disciplines, including: 'disease', 'disorder', 'disease course', 'diagnosis', 'patient', and 'healthcare provider'. OGMS uses the Basic Formal Ontology (BFO) as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms. OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies. This theory is implemented using OWL-DL and OBO Relation Ontology relations and is available in OWL and OBO formats.
+
+OGMS is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology."@en)
+Annotation(dc:title "Ontology for General Medical Science")
+Annotation(terms:license "http://creativecommons.org/licenses/by/4.0/")
+Annotation(rdfs:comment "The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
+
+The latest version of OGMS is available at http://purl.obolibrary.org/obo/ogms.owl
+
+The OGMS developer site is https://github.com/OGMS/ogms
+
+If you are interested in participating in the development of OGMS, please send email to matthew.diller@nih.gov"@en)
+
+Declaration(Class(obo:BFO_0000001))
+Declaration(Class(obo:BFO_0000015))
+Declaration(Class(obo:BFO_0000016))
+Declaration(Class(obo:BFO_0000019))
+Declaration(Class(obo:BFO_0000023))
+Declaration(Class(obo:BFO_0000031))
+Declaration(Class(obo:BFO_0000040))
+Declaration(Class(obo:IAO_0000027))
+Declaration(Class(obo:IAO_0000030))
+Declaration(Class(obo:OBI_0000011))
+Declaration(Class(obo:OBI_0000278))
+Declaration(Class(obo:OGMS_0000014))
+Declaration(Class(obo:OGMS_0000015))
+Declaration(Class(obo:OGMS_0000016))
+Declaration(Class(obo:OGMS_0000017))
+Declaration(Class(obo:OGMS_0000018))
+Declaration(Class(obo:OGMS_0000019))
+Declaration(Class(obo:OGMS_0000020))
+Declaration(Class(obo:OGMS_0000022))
+Declaration(Class(obo:OGMS_0000023))
+Declaration(Class(obo:OGMS_0000024))
+Declaration(Class(obo:OGMS_0000025))
+Declaration(Class(obo:OGMS_0000026))
+Declaration(Class(obo:OGMS_0000027))
+Declaration(Class(obo:OGMS_0000028))
+Declaration(Class(obo:OGMS_0000029))
+Declaration(Class(obo:OGMS_0000030))
+Declaration(Class(obo:OGMS_0000031))
+Declaration(Class(obo:OGMS_0000032))
+Declaration(Class(obo:OGMS_0000033))
+Declaration(Class(obo:OGMS_0000034))
+Declaration(Class(obo:OGMS_0000035))
+Declaration(Class(obo:OGMS_0000037))
+Declaration(Class(obo:OGMS_0000038))
+Declaration(Class(obo:OGMS_0000039))
+Declaration(Class(obo:OGMS_0000040))
+Declaration(Class(obo:OGMS_0000045))
+Declaration(Class(obo:OGMS_0000046))
+Declaration(Class(obo:OGMS_0000047))
+Declaration(Class(obo:OGMS_0000050))
+Declaration(Class(obo:OGMS_0000051))
+Declaration(Class(obo:OGMS_0000055))
+Declaration(Class(obo:OGMS_0000056))
+Declaration(Class(obo:OGMS_0000057))
+Declaration(Class(obo:OGMS_0000059))
+Declaration(Class(obo:OGMS_0000060))
+Declaration(Class(obo:OGMS_0000061))
+Declaration(Class(obo:OGMS_0000063))
+Declaration(Class(obo:OGMS_0000064))
+Declaration(Class(obo:OGMS_0000065))
+Declaration(Class(obo:OGMS_0000066))
+Declaration(Class(obo:OGMS_0000067))
+Declaration(Class(obo:OGMS_0000069))
+Declaration(Class(obo:OGMS_0000070))
+Declaration(Class(obo:OGMS_0000071))
+Declaration(Class(obo:OGMS_0000073))
+Declaration(Class(obo:OGMS_0000074))
+Declaration(Class(obo:OGMS_0000077))
+Declaration(Class(obo:OGMS_0000078))
+Declaration(Class(obo:OGMS_0000079))
+Declaration(Class(obo:OGMS_0000080))
+Declaration(Class(obo:OGMS_0000081))
+Declaration(Class(obo:OGMS_0000082))
+Declaration(Class(obo:OGMS_0000083))
+Declaration(Class(obo:OGMS_0000084))
+Declaration(Class(obo:OGMS_0000085))
+Declaration(Class(obo:OGMS_0000086))
+Declaration(Class(obo:OGMS_0000087))
+Declaration(Class(obo:OGMS_0000088))
+Declaration(Class(obo:OGMS_0000089))
+Declaration(Class(obo:OGMS_0000090))
+Declaration(Class(obo:OGMS_0000091))
+Declaration(Class(obo:OGMS_0000092))
+Declaration(Class(obo:OGMS_0000093))
+Declaration(Class(obo:OGMS_0000094))
+Declaration(Class(obo:OGMS_0000095))
+Declaration(Class(obo:OGMS_0000096))
+Declaration(Class(obo:OGMS_0000097))
+Declaration(Class(obo:OGMS_0000098))
+Declaration(Class(obo:OGMS_0000099))
+Declaration(Class(obo:OGMS_0000100))
+Declaration(Class(obo:OGMS_0000101))
+Declaration(Class(obo:OGMS_0000102))
+Declaration(Class(obo:OGMS_0000103))
+Declaration(Class(obo:OGMS_0000104))
+Declaration(Class(obo:OGMS_0000105))
+Declaration(Class(obo:OGMS_0000106))
+Declaration(Class(obo:OGMS_0000107))
+Declaration(Class(obo:OGMS_0000108))
+Declaration(Class(obo:OGMS_0000109))
+Declaration(Class(obo:OGMS_0000110))
+Declaration(Class(obo:OGMS_0000111))
+Declaration(Class(obo:OGMS_0000112))
+Declaration(Class(obo:OGMS_0000113))
+Declaration(Class(obo:OGMS_0000114))
+Declaration(Class(obo:OGMS_0000115))
+Declaration(Class(obo:OGMS_0000116))
+Declaration(Class(obo:OGMS_0000117))
+Declaration(Class(obo:OGMS_0000118))
+Declaration(Class(obo:OGMS_0000119))
+Declaration(Class(obo:OGMS_0000120))
+Declaration(Class(obo:OGMS_0000121))
+Declaration(Class(obo:OGMS_0000122))
+Declaration(Class(obo:OGMS_0000123))
+Declaration(Class(obo:OGMS_0000124))
+Declaration(Class(obo:OGMS_0000125))
+Declaration(Class(obo:OGMS_0000126))
+Declaration(Class(obo:OGMS_0000127))
+Declaration(Class(obo:OGMS_0000128))
+Declaration(Class(obo:OGMS_0000129))
+Declaration(Class(obo:OGMS_0000130))
+Declaration(Class(obo:OGMS_0000131))
+Declaration(Class(obo:OGMS_0000132))
+Declaration(Class(obo:OGMS_0000133))
+Declaration(Class(obo:OGMS_0000134))
+Declaration(Class(obo:OGMS_0000135))
+Declaration(Class(obo:OGMS_0000136))
+Declaration(Class(obo:OGMS_0000137))
+Declaration(Class(obo:OGMS_0000138))
+Declaration(Class(obo:OGMS_0000139))
+Declaration(Class(obo:OGMS_0000140))
+Declaration(Class(obo:OGMS_0000141))
+Declaration(Class(obo:OGMS_0000142))
+Declaration(Class(obo:OGMS_0000143))
+Declaration(Class(obo:OGMS_0000144))
+Declaration(Class(obo:OGMS_0000145))
+Declaration(Class(obo:OGMS_0000146))
+Declaration(Class(obo:OGMS_0000147))
+Declaration(Class(obo:OGMS_0000148))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000116))
+Declaration(AnnotationProperty(obo:IAO_0000117))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000232))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:date))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:publisher))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:license))
+
+
+############################
+#   Classes
+############################
+
+# Class: obo:OGMS_0000014 (clinical finding)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000014 "A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000014 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000014 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000014 "creation date: 2010-07-19T10:18:02Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000014 "clinical finding")
+SubClassOf(obo:OGMS_0000014 obo:OGMS_0000123)
+
+# Class: obo:OGMS_0000015 (clinical history)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000015 "A series of statements representing health-relevant qualities of a patient and of a patient's family."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000015 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000015 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000015 "creation date: 2010-07-19T10:18:59Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000015 "clinical history")
+SubClassOf(obo:OGMS_0000015 obo:OGMS_0000123)
+
+# Class: obo:OGMS_0000016 (clinical picture)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000016 "A representation of clinically significant bodily components, dispositions, and/or bodily processes of a human being that is inferred from relevant clinical findings."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000016 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000016 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000016 "creation date: 2010-07-19T10:20:20Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000016 "clinical picture")
+SubClassOf(obo:OGMS_0000016 obo:OGMS_0000123)
+
+# Class: obo:OGMS_0000017 (image finding)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000017 "A representation of an image that supports an inference to an assertion about some quality of a patient."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000017 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000017 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000017 "creation date: 2009-06-23T10:21:10Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000017 "image finding")
+SubClassOf(obo:OGMS_0000017 obo:OGMS_0000014)
+
+# Class: obo:OGMS_0000018 (laboratory finding)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000018 "A representation of a quality of a specimen that is the output of a laboratory test and that can support an inference to an assertion about some quality of the patient."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000018 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000018 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000018 "creation date: 2009-06-23T10:21:58Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000018 "laboratory finding")
+SubClassOf(obo:OGMS_0000018 obo:OGMS_0000014)
+
+# Class: obo:OGMS_0000019 (preclinical finding)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000019 "A representation of a quality of a patient that is (1) recorded by a clinician because the quality is hypothesized to be of clinical significance and (2) refers to qualities obtaining in the patient prior to their becoming detectable in a clinical history taking or physical examination."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000019 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000019 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000019 "creation date: 2009-06-23T10:22:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000019 "preclinical finding")
+SubClassOf(obo:OGMS_0000019 obo:IAO_0000027)
+
+# Class: obo:OGMS_0000020 (symptom)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000020 "A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000020 "note: defined class")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000020 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000020 "creation date: 2010-11-18T11:02:10Z
+Updated: 2020-07-06")
+AnnotationAssertion(rdfs:label obo:OGMS_0000020 "symptom")
+SubClassOf(obo:OGMS_0000020 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000022 (manifestation of a disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000022 "A quality of a patient that is (a) a deviation from clinical normality that exists in virtue of the realization of a disease and (b) is observable."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000022 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000022 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000022 "creation date: 2009-06-23T11:12:33Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000022 "manifestation of a disease")
+SubClassOf(obo:OGMS_0000022 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000023 (phenotype)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000023 "A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000023 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000023 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000023 "creation date: 2010-07-19T11:13:49Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000023 "phenotype")
+SubClassOf(obo:OGMS_0000023 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000024 (obsolete_sign)
+
+AnnotationAssertion(rdfs:comment obo:OGMS_0000024 "The class sign has been replaced by three seperate classes which reflect the different types of signs possible.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000024 "obsolete_sign")
+AnnotationAssertion(owl:deprecated obo:OGMS_0000024 "true"^^xsd:boolean)
+
+# Class: obo:OGMS_0000025 (clinical manifestation of a disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000025 "A manifestation of a disease that is detectable in a clinical history taking or physical examination."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000025 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000025 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000025 "creation date: 2009-06-23T11:15:43Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000025 "clinical manifestation of a disease")
+SubClassOf(obo:OGMS_0000025 obo:OGMS_0000022)
+
+# Class: obo:OGMS_0000026 (preclinical manifestation of a disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000026 "A manifestation of a disease that exists prior to the time at which it would be detected in a clinical history taking or physical examination, if the patient were to present to a clinician. A realization of a disease that exists prior to its becoming detectable in a clinical history taking or physical examination."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000026 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000026 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000026 "creation date: 2009-06-23T11:16:50Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000026 "preclinical manifestation of a disease")
+SubClassOf(obo:OGMS_0000026 obo:OGMS_0000022)
+
+# Class: obo:OGMS_0000027 (clinical phenotype)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000027 "A clinically abnormal phenotype."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000027 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000027 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000027 "creation date: 2009-06-23T11:18:05Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000027 "clinical phenotype")
+SubClassOf(obo:OGMS_0000027 obo:OGMS_0000023)
+
+# Class: obo:OGMS_0000028 (disease phenotype)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000028 "A clinically abnormal phenotype that is characteristic of a single disease."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000028 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000028 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000028 "creation date: 2009-06-23T11:18:39Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000028 "disease phenotype")
+SubClassOf(obo:OGMS_0000028 obo:OGMS_0000023)
+
+# Class: obo:OGMS_0000029 (vital sign)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000029 "A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000029 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000029 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000029 "creation date: 2009-06-23T11:19:17Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000029 "vital sign")
+SubClassOf(obo:OGMS_0000029 obo:OGMS_0000129)
+
+# Class: obo:OGMS_0000030 (predisposition to disease of type X)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000030 "A disposition in an organism that constitutes an increased risk of the organism's subsequently developing the disease X."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000030 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000030 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000030 "creation date: 2009-06-23T11:20:25Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000030 "predisposition to disease of type X")
+SubClassOf(obo:OGMS_0000030 obo:BFO_0000016)
+
+# Class: obo:OGMS_0000031 (disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000031 "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000031 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000031 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000031 "creation date: 2009-06-23T11:21:20Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000031 "disease")
+SubClassOf(obo:OGMS_0000031 obo:BFO_0000016)
+
+# Class: obo:OGMS_0000032 (homeostasis)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000032 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000032 "creation date: 2009-06-23T11:22:01Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000032 "homeostasis")
+SubClassOf(obo:OGMS_0000032 obo:BFO_0000016)
+
+# Class: obo:OGMS_0000033 (genetic predisposition to disease of type X)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000033 "A predisposition to disease of type X whose physical basis is a constitutional abnormality in an organism's genome. This abnormality is the physical basis for the increased risk of acquiring the disease X."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000033 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000033 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000033 "creation date: 2009-06-23T11:23:07Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000033 "genetic predisposition to disease of type X")
+SubClassOf(obo:OGMS_0000033 obo:OGMS_0000030)
+
+# Class: obo:OGMS_0000034 (acquired genetic disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000034 "A disease whose physical basis is an acquired genetic disorder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000034 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000034 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000034 "creation date: 2009-06-23T11:24:05Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000034 "acquired genetic disease")
+SubClassOf(obo:OGMS_0000034 obo:OGMS_0000031)
+
+# Class: obo:OGMS_0000035 (constitutional genetic disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000035 "A disease whose physical basis is a constitutional genetic disorder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000035 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000035 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000035 "creation date: 2009-06-23T11:24:59Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000035 "constitutional genetic disease")
+SubClassOf(obo:OGMS_0000035 obo:OGMS_0000031)
+
+# Class: obo:OGMS_0000037 (abnormal homeostasis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000037 "Homeostasis that is clinically abnormal for an organism of a given type and age in a given environment."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000037 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000037 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000037 "creation date: 2009-06-23T11:26:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000037 "abnormal homeostasis")
+SubClassOf(obo:OGMS_0000037 obo:OGMS_0000032)
+
+# Class: obo:OGMS_0000038 (normal homeostasis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000038 "Homeostasis of a type that is not clinically abnormal."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000038 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000038 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000038 "creation date: 2009-06-23T11:27:28Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000038 "normal homeostasis")
+SubClassOf(obo:OGMS_0000038 obo:OGMS_0000032)
+
+# Class: obo:OGMS_0000039 (configuration)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000039 "A quality which is an spatial arrangement or distribution of a(n) independent continuant(s) across a Three Dimensional Region."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000039 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000039 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000039 "creation date: 2009-06-23T11:36:24Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000039 "configuration")
+SubClassOf(obo:OGMS_0000039 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000040 (pathological physical configuration)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000040 "A configuration which deviates in some way from a canonical configuration for a particular organism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000040 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000040 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000040 "creation date: 2009-06-23T11:36:58Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000040 "pathological physical configuration")
+SubClassOf(obo:OGMS_0000040 obo:OGMS_0000039)
+
+# Class: obo:OGMS_0000045 (disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000045 "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000045 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000045 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000045 "creation date: 2009-06-23T11:39:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000045 "disorder")
+SubClassOf(obo:OGMS_0000045 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000046 (epigenetic disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000046 "A disorder whose etiology involves (1) a modification to the patient's genomic DNA which leads to alterations in the normal expression pattern of the genome, but is (2) not a change in the nucleotide sequence."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000046 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000046 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000046 "creation date: 2009-06-23T11:40:27Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000046 "epigenetic disorder")
+SubClassOf(obo:OGMS_0000046 obo:OGMS_0000045)
+
+# Class: obo:OGMS_0000047 (genetic disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000047 "A disorder whose etiology involves an abnormality in the nucleotide sequence of an organism's genome."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000047 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000047 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000047 "creation date: 2009-06-23T11:41:14Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000047 "genetic disorder")
+SubClassOf(obo:OGMS_0000047 obo:OGMS_0000045)
+
+# Class: obo:OGMS_0000050 (acquired genetic disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000050 "A genetic disorder acquired by a single cell in an organism that leads to a population of cells within the organism bearing the disorder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000050 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000050 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000050 "creation date: 2009-06-23T11:43:09Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000050 "acquired genetic disorder")
+SubClassOf(obo:OGMS_0000050 obo:OGMS_0000047)
+
+# Class: obo:OGMS_0000051 (constitutional genetic disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000051 "A genetic disorder inherited during conception that is part of all cells in the organism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000051 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000051 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000051 "creation date: 2009-06-23T11:43:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000051 "constitutional genetic disorder")
+SubClassOf(obo:OGMS_0000051 obo:OGMS_0000047)
+
+# Class: obo:OGMS_0000055 (clinical history taking)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000055 "A health care process in which a clinician elicits a description of previous sign and symptoms of disease from a patient or from a third party who is reporting on behalf of the patient."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000055 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000055 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000055 "creation date: 2009-06-23T11:49:16Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000055 "clinical history taking")
+SubClassOf(obo:OGMS_0000055 obo:OGMS_0000108)
+
+# Class: obo:OGMS_0000056 (clinical laboratory test)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000056 "A measurement assay that has as input a patient-derived specimen and as output a data item that is about a quality of the specimen."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000056 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000056 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000056 "creation date: 2009-06-23T11:49:49Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000056 "clinical laboratory test")
+SubClassOf(obo:OGMS_0000056 obo:OGMS_0000108)
+
+# Class: obo:OGMS_0000057 (physical examination)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000057 "A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000057 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000057 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000057 "creation date: 2010-07-19T11:50:18Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000057 "physical examination")
+SubClassOf(obo:OGMS_0000057 obo:OGMS_0000108)
+
+# Class: obo:OGMS_0000059 (etiological process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000059 "A process in an organism that leads to a subsequent disorder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000059 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000059 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000059 "creation date: 2009-06-23T11:53:07Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000059 "etiological process")
+SubClassOf(obo:OGMS_0000059 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000060 (bodily process)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000060 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000060 "creation date: 2009-06-23T11:53:49Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000060 "bodily process")
+SubClassOf(obo:OGMS_0000060 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000061 (pathological bodily process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000061 "A bodily process that is clinically abnormal."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000061 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000061 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000061 "creation date: 2009-06-23T11:54:29Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000061 "pathological bodily process")
+SubClassOf(obo:OGMS_0000061 obo:OGMS_0000060)
+
+# Class: obo:OGMS_0000063 (disease course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000063 "The totality of all processes through which a given disease instance is realized."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000063 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000063 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000063 "creation date: 2009-06-23T11:55:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000063 "disease course")
+SubClassOf(obo:OGMS_0000063 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000064 (chronic disease course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000064 "A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, fall within abnormal homeostatic range."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000064 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000064 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000064 "creation date: 2009-06-23T11:56:26Z
+
+10212020
+
+for definition use: 
+http://purl.obolibrary.org/obo/PATO_0001863")
+AnnotationAssertion(rdfs:label obo:OGMS_0000064 "chronic disease course")
+SubClassOf(obo:OGMS_0000064 obo:OGMS_0000063)
+
+# Class: obo:OGMS_0000065 (progressive disease course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000065 "A disease course that (a) does not terminate in a return to normal homeostasis and (b) would, absent intervention, involve an increasing deviation from homeostasis."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000065 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000065 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000065 "creation date: 2009-06-23T11:57:09Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000065 "progressive disease course")
+SubClassOf(obo:OGMS_0000065 obo:OGMS_0000063)
+
+# Class: obo:OGMS_0000066 (transient disease course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000066 "A disease course that terminates in a return to normal homeostasis."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000066 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000066 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000066 "creation date: 2009-06-23T11:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000066 "transient disease course")
+SubClassOf(obo:OGMS_0000066 obo:OGMS_0000063)
+
+# Class: obo:OGMS_0000067 (_undefined primitive term)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000067 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000067 "creation date: 2009-06-23T11:58:22Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000067 "_undefined primitive term")
+SubClassOf(obo:OGMS_0000067 obo:BFO_0000001)
+
+# Class: obo:OGMS_0000069 (clinically abnormal)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000069 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000069 "creation date: 2009-06-23T11:59:24Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000069 "clinically abnormal")
+SubClassOf(obo:OGMS_0000069 obo:OGMS_0000067)
+
+# Class: obo:OGMS_0000070 (physical basis)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000070 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000070 "creation date: 2009-06-23T12:00:09Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000070 "physical basis")
+SubClassOf(obo:OGMS_0000070 obo:OGMS_0000067)
+
+# Class: obo:OGMS_0000071 (realization)
+
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000071 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000071 "creation date: 2009-06-23T12:00:39Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000071 "realization")
+SubClassOf(obo:OGMS_0000071 obo:OGMS_0000067)
+
+# Class: obo:OGMS_0000073 (diagnosis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000073 "The representation of a conclusion of a diagnostic process."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000073 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000073 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000073 "creation date: 2009-06-23T12:42:23Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000073 "diagnosis")
+SubClassOf(obo:OGMS_0000073 obo:OGMS_0000123)
+
+# Class: obo:OGMS_0000074 (normal value)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000074 "A value for a quality reported in a lab report and asserted by the testing lab or the kit manufacturer to be normal based on a statistical treatment of values from a reference population."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000074 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000074 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000074 "creation date: 2009-06-26T10:31:34Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000074 "normal value")
+SubClassOf(obo:OGMS_0000074 obo:BFO_0000031)
+
+# Class: obo:OGMS_0000077 (pathological formation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000077 "TODO: Define, relate to disorder, and place in the OGMS hierarchy."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000077 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000077 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000077 "creation date: 2009-07-13T02:14:59Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000077 "pathological formation")
+SubClassOf(obo:OGMS_0000077 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000078 (pathological anatomical structure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000078 "An anatomical structure (FMA) is pathological whenever (1) it has come into being as a result of changes in some pre-existing canonical anatomical structure, (2) through processes other than the expression of the normal complement of genes of an organism of the given type, and (3) is predisposed to have health-related consequences for the organism in question manifested by symptoms and signs."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000078 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000078 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000078 "creation date: 2009-07-13T02:14:05Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000078 "pathological anatomical structure")
+SubClassOf(obo:OGMS_0000078 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000079 (portion of pathological body substance)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000079 "TODO: Define, relate to disorder, and place in the OGMS hierarchy."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000079 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000079 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000079 "creation date: 2009-07-13T02:15:17Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000079 "portion of pathological body substance")
+SubClassOf(obo:OGMS_0000079 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000080 (pathological transformation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000080 "A pathological bodily process in which a canonical anatomical structure becomes a pathological anatomical structure."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000080 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000080 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000080 "creation date: 2009-07-13T02:17:07Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000080 "pathological transformation")
+SubClassOf(obo:OGMS_0000080 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000081 (pathological derivation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000081 "A pathological bodily process in which matter is reorganized in such a way as to give rise to new pathological formations which take the place of entities existing earlier."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000081 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000081 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000081 "creation date: 2009-07-13T02:17:24Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000081 "pathological derivation")
+SubClassOf(obo:OGMS_0000081 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000082 (pathological invasion)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000082 "TODO: Define."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000082 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000082 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000082 "creation date: 2009-07-13T02:17:47Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000082 "pathological invasion")
+SubClassOf(obo:OGMS_0000082 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000083 (physical examination finding)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000083 "TODO: Define."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000083 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000083 "http://code.google.com/p/ogms/issues/detail?id=26")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000083 "creation date: 2009-11-24T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000083 "physical examination finding")
+SubClassOf(obo:OGMS_0000083 obo:OGMS_0000014)
+
+# Class: obo:OGMS_0000084 (organism population)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000084 "An aggregate of organisms of the same type."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000084 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000084 "http://code.google.com/p/ogms/issues/detail?id=33")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000084 "creation date: 2009-11-24T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000084 "organism population")
+SubClassOf(obo:OGMS_0000084 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000085 (pain)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000085 "A bodily process in an organism S involving two integrated levels: (a) activation of the nociceptive system and associated emotion generating brain components of S, and (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000085 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000085 "http://www.referent-tracking.com/RTU/sendfile/?file=painTokyo1_27_2011.pdf")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000085 "creation date: 2009-11-24T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000085 "pain")
+SubClassOf(obo:OGMS_0000085 obo:OGMS_0000020)
+
+# Class: obo:OGMS_0000086 (syndrome)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000086 "A pattern of signs and symptoms that typically co-occur."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000086 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000086 "http://code.google.com/p/ogms/issues/detail?id=32")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000086 "creation date: 2009-11-24T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000086 "syndrome")
+SubClassOf(obo:OGMS_0000086 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000087 (extended organism)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000087 "An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000087 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000087 "http://code.google.com/p/ogms/issues/detail?id=3")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000087 "creation date: 2010-01-25T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000087 "extended organism")
+SubClassOf(obo:OGMS_0000087 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000088 (patient symptom report)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000088 "A communication from a patient about something they perceive as being abnormal about their body or life."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000088 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000088 "http://code.google.com/p/ogms/issues/detail?id=12")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000088 "creation date: 2010-01-25T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000088 "patient symptom report")
+SubClassOf(obo:OGMS_0000088 obo:IAO_0000030)
+
+# Class: obo:OGMS_0000089 (congenital disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000089 "A structurally anomalous part of an organism acquired during fetal development and present at birth (but not necessarily hereditary) which is hypothesized to be harmful for the organism."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000089 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000118 obo:OGMS_0000089 "congenital malformation")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000089 "http://code.google.com/p/ogms/issues/detail?id=28")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000089 "creation date: 2010-03-31T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000089 "congenital disorder")
+SubClassOf(obo:OGMS_0000089 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000090 (treatment)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000090 "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000090 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000090 "http://code.google.com/p/ogms/issues/detail?id=35")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000090 "creation date: 2010-03-31T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000090 "treatment")
+SubClassOf(obo:OGMS_0000090 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000091 (convalescence)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000091 "A processual entity during which a patient participating in a disease course gradually returns to participating in a canonical life course."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000091 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000091 "http://code.google.com/p/ogms/issues/detail?id=35")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000091 "creation date: 2010-03-31T04:51:11Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000091 "convalescence")
+SubClassOf(obo:OGMS_0000091 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000092 (life course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000092 "A process which has as parts all the processes in which a given organism is participant."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000092 "Albert Goldfain
+Richard Scheuermann
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000092 "http://code.google.com/p/ogms/issues/detail?id=38")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000092 "creation date: 2010-03-31T04:51:11Z
+
+EDIT: 10 NOV 2015")
+AnnotationAssertion(rdfs:label obo:OGMS_0000092 "life course")
+SubClassOf(obo:OGMS_0000092 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000093 (prognosis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000093 "A hypothesis about some future part of a disease course."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000093 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000093 "http://code.google.com/p/ogms/issues/detail?id=35")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000093 "creation date: 2010-03-31T12:42:23Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000093 "prognosis")
+SubClassOf(obo:OGMS_0000093 obo:IAO_0000027)
+
+# Class: obo:OGMS_0000094 (acute disease course)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000094 "A disease course with an acute onset"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000094 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000094 "http://code.google.com/p/ogms/wiki/Meeting_notes_20100513")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000094 "creation date: 2010-07-19T11:57:44Z
+
+10212020
+
+for definition use
+
+http://purl.obolibrary.org/obo/PATO_0000389")
+AnnotationAssertion(rdfs:label obo:OGMS_0000094 "acute disease course")
+SubClassOf(obo:OGMS_0000094 obo:OGMS_0000063)
+
+# Class: obo:OGMS_0000095 (inflammatory process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000095 "A bodily process caused by some disorder that results in recruitment of leukocytes into a localized tissue site, typically causing localized pain and swelling."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000095 "Albert Goldfain
+Richard Scheuermann
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000095 "http://code.google.com/p/ogms/wiki/Meeting_notes_20100513")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000095 "creation date: 2010-07-19T11:57:44Z
+
+Updated: 10 NOV 2015")
+AnnotationAssertion(rdfs:label obo:OGMS_0000095 "inflammatory process")
+SubClassOf(obo:OGMS_0000095 obo:OGMS_0000060)
+
+# Class: obo:OGMS_0000096 (health care process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000096 "A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000096 "Albert Goldfain
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000096 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000096 "creation date: 2011-02-21T09:57:44Z
+editor date: 2017-04-18")
+AnnotationAssertion(rdfs:label obo:OGMS_0000096 "health care process")
+SubClassOf(obo:OGMS_0000096 obo:OBI_0000011)
+
+# Class: obo:OGMS_0000097 (health care encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000097 "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000097 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000097 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000097 "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000097 "health care encounter")
+SubClassOf(obo:OGMS_0000097 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000098 (hospitalization)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000098 "TODO"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000098 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000098 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000098 "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:comment obo:OGMS_0000098 "09/16/2020
+Is this same as admission? 
+Is this the same as inpatient encounter?")
+AnnotationAssertion(rdfs:label obo:OGMS_0000098 "hospitalization")
+SubClassOf(obo:OGMS_0000098 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000099 (outpatient encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000099 "TODO"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000099 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000099 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000099 "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000099 "outpatient encounter")
+SubClassOf(obo:OGMS_0000099 obo:OGMS_0000097)
+
+# Class: obo:OGMS_0000100 (inpatient encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000100 "A health care encounter involving a patient who has been admitted to a health care facility and remains in a hospital facility for at least one night."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000100 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000100 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000100 "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000100 "inpatient encounter")
+SubClassOf(obo:OGMS_0000100 obo:OGMS_0000097)
+
+# Class: obo:OGMS_0000101 (emergency department encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000101 "A health care encounter in which care is provided for undifferentiated and unscheduled patients with illnesses or injuries requiring immediate medical attention."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000101 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000101 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000101 "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000101 "emergency department encounter")
+SubClassOf(obo:OGMS_0000101 obo:OGMS_0000097)
+
+# Class: obo:OGMS_0000102 (injury)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000102 "A disorder that involves some structural damage that is immediately caused by a catastrophic external force."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000102 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.
+
+Note: Adopted subtype of disorder, and injury can occur at the scale of organism down to cellular level.")
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000102 "Albert Goldfain
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000102 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5
+
+OGMS call adoption- 16 SEPT 2015
+https://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000102 "creation date: 2011-09-20T09:57:44Z
+edited date: 30 SEPT 2015")
+AnnotationAssertion(rdfs:label obo:OGMS_0000102 "injury")
+SubClassOf(obo:OGMS_0000102 obo:OGMS_0000045)
+
+# Class: obo:OGMS_0000103 (disease prophylaxis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000103 "A planned process whose completion is hypothesized by a health care provider to reduce the risk of developing a disorder or the signs and symptoms of a disorder."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000103 "Whether or not 'prophylaxis' and 'treatment' classes are disjoint is an open question.")
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000103 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000103 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/e42bde79218ee34e")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000103 "creation date: 2011-09-20T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000103 "disease prophylaxis")
+SubClassOf(obo:OGMS_0000103 obo:OBI_0000011)
+
+# Class: obo:OGMS_0000104 (diagnostic process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000104 "A health care process that involves the interpretation of a clinical picture from a given patient (input) and the assertion to the effect that the patient has a disease, disorder, or syndrome of a certain type, or none of these (output)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000104 "Albert Goldfain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000104 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/2a7008f311fac766/e7de486c94dfd82e")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000104 "creation date: 2011-09-20T09:57:44Z")
+AnnotationAssertion(rdfs:label obo:OGMS_0000104 "diagnostic process")
+SubClassOf(obo:OGMS_0000104 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000105 (relapse)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000105 "A disease stage which is preceded by a remission and characterized by the return of a manifestation of a disease.")
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000105 "A pathological bodily process which is part of a disease couse that occurs after an incomplete remission and that is similar to earlier parts of the disease course."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000105 "Albert Goldfain
+Richard Scheuermann
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000118 obo:OGMS_0000105 "recurrent")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000105 "http://code.google.com/p/ogms/issues/detail?id=73")
+AnnotationAssertion(dc:date obo:OGMS_0000105 "10 NOV 2015")
+AnnotationAssertion(rdfs:label obo:OGMS_0000105 "relapse"@en)
+SubClassOf(obo:OGMS_0000105 obo:OBI_0000278)
+
+# Class: obo:OGMS_0000106 (remission)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000106 "A disease stage which is characterized by the lack of a manifestation of a disease")
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000106 "A part of a disease course in which the extent or rate of change of the signs and symptoms of a disorder has decreased."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000106 "Albert Goldfain
+Richard Scheuermann
+Sagar Jain")
+AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000106 "http://code.google.com/p/ogms/issues/detail?id=73")
+AnnotationAssertion(dc:date obo:OGMS_0000106 "10 NOV 2015")
+AnnotationAssertion(rdfs:label obo:OGMS_0000106 "remission"@en)
+SubClassOf(obo:OGMS_0000106 obo:OBI_0000278)
+
+# Class: obo:OGMS_0000107 (ancillary health care process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000107 "A planned process that has the objective to support the objective of a health care process without directly involving the treatment, diagnosis, or prevention of disease or injury of a patient.")
+AnnotationAssertion(dc:date obo:OGMS_0000107 "2017-04-18")
+AnnotationAssertion(dc:publisher obo:OGMS_0000107 "Sagar Jain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000107 "ancillary health care process")
+SubClassOf(obo:OGMS_0000107 obo:OBI_0000011)
+
+# Class: obo:OGMS_0000108 (health care process assay)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000108 "A health care process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.")
+AnnotationAssertion(dc:date obo:OGMS_0000108 "creation: 16MAY2017")
+AnnotationAssertion(dc:publisher obo:OGMS_0000108 "Sagar Jain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000108 "health care process assay")
+SubClassOf(obo:OGMS_0000108 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000109 (health care process biomaterial transformation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000109 "A health care process which results in physical changes in a specified input material")
+AnnotationAssertion(dc:date obo:OGMS_0000109 "creation: 16MAY2017")
+AnnotationAssertion(dc:publisher obo:OGMS_0000109 "Sagar Jain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000109 "health care process biomaterial transformation")
+SubClassOf(obo:OGMS_0000109 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000110 (health care process data transformation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000110 "A health care process that produces output from input data")
+AnnotationAssertion(dc:date obo:OGMS_0000110 "creation: 16MAY2017")
+AnnotationAssertion(dc:publisher obo:OGMS_0000110 "Sagar Jain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000110 "health care process data transformation")
+SubClassOf(obo:OGMS_0000110 obo:OGMS_0000096)
+
+# Class: obo:OGMS_0000111 (prophylactic treatment)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000111 "A treatment whose completion is hypothesized by a health care provider to prevent the signs and symptoms of a disorder or pathological process.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000111 "Creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000111 "prophylactic treatment"@en)
+SubClassOf(obo:OGMS_0000111 obo:OGMS_0000090)
+
+# Class: obo:OGMS_0000112 (therapeutic procedure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000112 "A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000112 "Creation data: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000112 "therapeutic procedure"@en)
+SubClassOf(obo:OGMS_0000112 obo:OGMS_0000090)
+
+# Class: obo:OGMS_0000113 (chemotherapy procedure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000113 "A therapeutic procedure that uses synthetic or naturally-occurring chemicals")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000113 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000113 "chemotherapy procedure"@en)
+SubClassOf(obo:OGMS_0000113 obo:OGMS_0000112)
+
+# Class: obo:OGMS_0000114 (immunotherapy procedure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000114 "A therapeutic procedure that uses immune system derived entities.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000114 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000114 "immunotherapy procedure"@en)
+SubClassOf(obo:OGMS_0000114 obo:OGMS_0000112)
+
+# Class: obo:OGMS_0000115 (physical therapy procedure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000115 "A therapeutic procedure that uses physical conditioning")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000115 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000115 "physical therapy procedure"@en)
+SubClassOf(obo:OGMS_0000115 obo:OGMS_0000112)
+
+# Class: obo:OGMS_0000116 (radiation therapy procedure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000116 "A therapeutic procedure that uses radiation.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000116 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000116 "radiation therapy procedure"@en)
+SubClassOf(obo:OGMS_0000116 obo:OGMS_0000112)
+
+# Class: obo:OGMS_0000117 (asymptomatic)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000117 "A disease stage characterized by the lack of symptoms associated with a given disease")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000117 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000117 "asymptomatic"@en)
+SubClassOf(obo:OGMS_0000117 obo:OBI_0000278)
+
+# Class: obo:OGMS_0000118 (onset)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000118 "A disease stage that marks the beginning of a disease")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000118 "creation date 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000118 "onset"@en)
+SubClassOf(obo:OGMS_0000118 obo:OBI_0000278)
+
+# Class: obo:OGMS_0000119 (acute onset)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000119 "A disease stage with a rapid unfolding of signs and symptoms")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000119 "creation date 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000119 "acute onset"@en)
+SubClassOf(obo:OGMS_0000119 obo:OGMS_0000118)
+
+# Class: obo:OGMS_0000120 (complete remission)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000120 "A remission which is characterized by a prolonged lack of all manifestations of a disease")
+AnnotationAssertion(rdfs:label obo:OGMS_0000120 "complete remission"@en)
+SubClassOf(obo:OGMS_0000120 obo:OGMS_0000106)
+
+# Class: obo:OGMS_0000121 (partial remission)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000121 "A remission which is characterized by a prolonged lack of some manifestations of a disease")
+AnnotationAssertion(rdfs:label obo:OGMS_0000121 "partial remission"@en)
+SubClassOf(obo:OGMS_0000121 obo:OGMS_0000106)
+
+# Class: obo:OGMS_0000122 (recovered from disease)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000122 "A quality in which complete clearance of the disorder is attained; however, physiological 'memory' may persist")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000122 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000122 "recovered from disease"@en)
+SubClassOf(obo:OGMS_0000122 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000123 (clinical data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000123 "A data item that is about a patient and is the specified output of a health care process assay or diagnostic process")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000123 "creation date: 2018-11-27")
+AnnotationAssertion(rdfs:label obo:OGMS_0000123 "clinical data item"@en)
+SubClassOf(obo:OGMS_0000123 obo:IAO_0000027)
+
+# Class: obo:OGMS_0000124 (routine health care encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000124 "A health care encounter that is regularly scheduled for the purpose of health monitoring.")
+AnnotationAssertion(obo:IAO_0000118 obo:OGMS_0000124 "routine clinical visit")
+AnnotationAssertion(rdfs:label obo:OGMS_0000124 "routine health care encounter")
+SubClassOf(obo:OGMS_0000124 obo:OGMS_0000099)
+
+# Class: obo:OGMS_0000125 (follow-up health care encounter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000125 "A health care encounter that is scheduled for the purpose of assessing a known set of specific issues")
+AnnotationAssertion(obo:IAO_0000118 obo:OGMS_0000125 "follow-up clinical visit")
+AnnotationAssertion(rdfs:label obo:OGMS_0000125 "follow-up health care encounter")
+SubClassOf(obo:OGMS_0000125 obo:OGMS_0000099)
+
+# Class: obo:OGMS_0000126 (congenital infection)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000126 "A congenital disorder arising as a result of an infectious process")
+AnnotationAssertion(rdfs:label obo:OGMS_0000126 "congenital infection")
+SubClassOf(obo:OGMS_0000126 obo:OGMS_0000089)
+
+# Class: obo:OGMS_0000127 (drug induced congenital malformation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000127 "A congenital disorder arising as a result of a drug exposure causing an anatomical abnormality")
+AnnotationAssertion(rdfs:label obo:OGMS_0000127 "drug induced congenital malformation")
+SubClassOf(obo:OGMS_0000127 obo:OGMS_0000089)
+
+# Class: obo:OGMS_0000128 (congenital process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000128 "A pathological bodily process that occurs in the fetus during fetal development")
+AnnotationAssertion(rdfs:label obo:OGMS_0000128 "congenital process")
+SubClassOf(obo:OGMS_0000128 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000129 (physical sign)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000129 "An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000129 "Example: an abnormal growth, an inflammatory infiltrate, swollen tissue, distension")
+AnnotationAssertion(rdfs:label obo:OGMS_0000129 "physical sign")
+SubClassOf(obo:OGMS_0000129 obo:BFO_0000040)
+
+# Class: obo:OGMS_0000130 (allergic disease process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000130 "The process in which an allergic disease unfolds.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000130 "allergic disease process")
+SubClassOf(obo:OGMS_0000130 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000131 (cancer process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000131 "The process in which cancer unfolds")
+AnnotationAssertion(rdfs:label obo:OGMS_0000131 "cancer process")
+SubClassOf(obo:OGMS_0000131 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000132 (autoimmune disease process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000132 "The process in which an autoimmune disease unfolds.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000132 "autoimmune disease process")
+SubClassOf(obo:OGMS_0000132 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000133 (progression stage)
+
+AnnotationAssertion(rdfs:label obo:OGMS_0000133 "progression stage")
+SubClassOf(obo:OGMS_0000133 obo:OBI_0000278)
+
+# Class: obo:OGMS_0000134 (cancer progression stage)
+
+AnnotationAssertion(rdfs:label obo:OGMS_0000134 "cancer progression stage")
+SubClassOf(obo:OGMS_0000134 obo:OGMS_0000133)
+
+# Class: obo:OGMS_0000135 (cancer progression stage 0)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000135 "A cancer progression stage characterized by abnormal cellular growth contained within normal tissue boundaries (e.g. carcinoma in situ).")
+AnnotationAssertion(rdfs:label obo:OGMS_0000135 "cancer progression stage 0")
+SubClassOf(obo:OGMS_0000135 obo:OGMS_0000134)
+
+# Class: obo:OGMS_0000136 (cancer progression stage I)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000136 "A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000136 "cancer progression stage I")
+SubClassOf(obo:OGMS_0000136 obo:OGMS_0000134)
+
+# Class: obo:OGMS_0000137 (cancer progression stage II)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000137 "A cancer progression stage characterized by abnormal cellular growth that extends well beyond normal local tissue boundaries as a contiguous mass.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000137 "cancer progression stage II")
+SubClassOf(obo:OGMS_0000137 obo:OGMS_0000134)
+
+# Class: obo:OGMS_0000138 (cancer progression stage III)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000138 "A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass and includes metastasis to one or more regional draining lymph nodes.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000138 "cancer progression stage III")
+SubClassOf(obo:OGMS_0000138 obo:OGMS_0000134)
+
+# Class: obo:OGMS_0000139 (cancer progression stage IV)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000139 "A cancer progression stage characterized by abnormal cellular growth that extends through normal local tissue boundaries as a contiguous mass and includes metastasis to other distant tissues besides lymph nodes.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000139 "cancer progression stage IV")
+SubClassOf(obo:OGMS_0000139 obo:OGMS_0000134)
+
+# Class: obo:OGMS_0000140 (infectious disease process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000140 "The process in which an infectious disease unfolds")
+AnnotationAssertion(rdfs:label obo:OGMS_0000140 "infectious disease process")
+SubClassOf(obo:OGMS_0000140 obo:OGMS_0000061)
+
+# Class: obo:OGMS_0000141 (processual sign)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000141 "An abnormal processual entity occuring in a patient that is hypothesized to be clinically relevant.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000141 "processual sign")
+SubClassOf(obo:OGMS_0000141 obo:BFO_0000015)
+
+# Class: obo:OGMS_0000142 (qualitative sign)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000142 "An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.")
+AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000142 "Example: the color of a rash; the shape of a melanoma")
+AnnotationAssertion(rdfs:label obo:OGMS_0000142 "qualitative sign")
+SubClassOf(obo:OGMS_0000142 obo:BFO_0000019)
+
+# Class: obo:OGMS_0000143 (transplantation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000143 "A therapeutic procedure in which a body part is transferred into a organism")
+AnnotationAssertion(rdfs:label obo:OGMS_0000143 "transplantation")
+SubClassOf(obo:OGMS_0000143 obo:OGMS_0000112)
+
+# Class: obo:OGMS_0000144 (solid organ transplant)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000144 "A transplantation in which the body part is a non-fluid tissue")
+AnnotationAssertion(rdfs:label obo:OGMS_0000144 "solid organ transplant")
+SubClassOf(obo:OGMS_0000144 obo:OGMS_0000143)
+
+# Class: obo:OGMS_0000145 (transfusion)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000145 "A transplantation in which the body part is a bodily fluid")
+AnnotationAssertion(rdfs:label obo:OGMS_0000145 "transfusion")
+SubClassOf(obo:OGMS_0000145 obo:OGMS_0000143)
+
+# Class: obo:OGMS_0000146 (tissue disorder)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000146 "A disorder of some macroscopic part of a tissue")
+AnnotationAssertion(rdfs:label obo:OGMS_0000146 "tissue disorder")
+SubClassOf(obo:OGMS_0000146 obo:OGMS_0000045)
+
+# Class: obo:OGMS_0000147 (neoplasm)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000147 "A tissue disorder that has resulted from a dysregulation of cell proliferation leading to a net increase in mass")
+AnnotationAssertion(rdfs:label obo:OGMS_0000147 "neoplasm")
+SubClassOf(obo:OGMS_0000147 obo:OGMS_0000146)
+
+# Class: obo:OGMS_0000148 (medication role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000148 "A role borne by some material entity which can be delivered/administrated into some organism and the role is realized during a clinical treatment process aiming to treat symptoms, signs or diagnosed disease.")
+AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000148 "Originally OBIB_0000026")
+AnnotationAssertion(rdfs:label obo:OGMS_0000148 "medication role")
+SubClassOf(obo:OGMS_0000148 obo:BFO_0000023)
+
+
+)

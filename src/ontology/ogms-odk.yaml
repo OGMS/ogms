@@ -41,6 +41,8 @@ import_group:
       module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/IDO_
+    - id: omo
+      module_type: mirror
 
 use_custom_import_module: TRUE
 robot_java_args: '-Xmx8G'

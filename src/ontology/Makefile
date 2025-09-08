@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                b9f708fea6bc87eecb2be812707bbb951d8748263a7146c133af0f9812e21d9a
+CONFIG_HASH=                04d4c89977807b1ad2521b6386e797df708e1d2805834dc0af9cc669ff68d53d
 
 
 # ----------------------------------------
@@ -194,7 +194,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro obi bfo iao ido
+IMPORTS =  ro obi bfo iao ido omo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -481,6 +481,15 @@ $(IMPORTDIR)/ido_import.owl: $(MIRRORDIR)/ido.owl $(IMPORTDIR)/ido_terms.txt $(I
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
+## Module for ontology: omo (mirror)
+$(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -552,6 +561,14 @@ mirror-iao: | $(TMPDIR)
 mirror-ido: | $(TMPDIR)
 	curl -L $(OBOBASE)/ido.owl --create-dirs -o $(TMPDIR)/ido-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ido-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: omo
+.PHONY: mirror-omo
+.PRECIOUS: $(MIRRORDIR)/omo.owl
+mirror-omo: | $(TMPDIR)
+	curl -L $(OBOBASE)/omo.owl --create-dirs -o $(TMPDIR)/omo-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/omo-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

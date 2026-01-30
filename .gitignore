@@ -4,7 +4,6 @@
 .DS_Store
 semantic.cache
 bin/
-catalog-v001.xml
 
 *.tmp
 *.tmp.obo
@@ -78,9 +77,6 @@ src/ontology/omrse-basic.*
 src/ontology/omrse-full.*
 src/ontology/omrse-simple.*
 src/ontology/omrse-simple-non-classified.*
-
-archive/
-ogms_seed.owl
 
 src/ontology/merged-omrse-edit.owl
 src/ontology/reports

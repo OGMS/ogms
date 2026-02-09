@@ -1,5 +1,9 @@
 
 ![Build Status](https://github.com/OGMS/ogms/actions/workflows/qc.yml/badge.svg)
+[![Powered by the ROBOT](https://img.shields.io/static/v1?label=Powered%20by&message=ROBOT&color=green&style=flat)](http://robot.obolibrary.org/)
+<a href="http://dashboard.obofoundry.org/dashboard/ogms/dashboard.html"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2Fogms%2Fdashboard-qc-badge.json" /></a>
+<a href="http://dashboard.obofoundry.org/dashboard/ogms/dashboard.html"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2Fogms%2Fdashboard-score-badge.json" /></a>
+
 # The Ontology for General Medical Science
 
 The Ontology for General Medical Science (OGMS) is an ontology of entities involved in a clinical encounter.  OGMS includes very general terms that are used across medical disciplines, including: 'disease', 'disorder', 'disease course', 'diagnosis', 'patient', and 'healthcare provider'.  OGMS uses the <a href="https://obofoundry.org/ontology/bfo.html">Basic Formal Ontology (BFO)</a> as an upper-level ontology. The scope of OGMS is restricted to humans, but many terms can be applied to a variety of organisms.  OGMS provides a formal theory of disease that can be further elaborated by specific disease ontologies.  This theory is implemented using OWL-DL and <a href="https://obofoundry.org/ontology/ro.html">OBO Relation Ontology</a> relations and is available in <a href="http://www.w3.org/TR/owl-features/">OWL</a> and <a href="http://www.geneontology.org/GO.format.obo-1_2.shtml">OBO</a> formats.

@@ -10,12 +10,12 @@ Ontology(<http://purl.obolibrary.org/obo/ogms/external_import.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000578>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000504>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000630>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000278>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600052>))
 Declaration(Class(owl:Thing))

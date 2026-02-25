@@ -33,7 +33,6 @@ OBI:0000011	owl:ObjectProperty
 OBI:0000312	owl:ObjectProperty
 OBI:0000846	owl:ObjectProperty
 OBI:0001688	owl:ObjectProperty
-OBI:0100026	owl:Class
 OBI:0200000	owl:Class
 OBI:0600052	owl:Class
 RO:0000052	owl:ObjectProperty
@@ -55,3 +54,4 @@ RO:0002351	owl:ObjectProperty
 RO:0002353	owl:ObjectProperty
 RO:0002577	owl:ObjectProperty
 RO:0002012	owl:ObjectProperty
+COB:0000022	owl:Class

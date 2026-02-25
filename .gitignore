@@ -4,7 +4,6 @@
 .DS_Store
 semantic.cache
 bin/
-catalog-v001.xml
 
 *.tmp
 *.tmp.obo

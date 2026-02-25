@@ -43,9 +43,6 @@ import_group:
         - http://purl.obolibrary.org/obo/IDO_
     - id: omo
       module_type: mirror
-    - id: cob
-      module_type: slme
-      slme_individuals: exclude
 
 use_custom_import_module: TRUE
 robot_java_args: '-Xmx8G'

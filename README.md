@@ -18,7 +18,7 @@ http://fois2014.inf.ufes.br/p/paper-and-competition-awards.html
 We are always interested in application-specific use cases for OGMS.  Existing and planned extensions of OGMS include:
   * <a href="https://bioportal.bioontology.org/ontologies/SDO">Sleep Domain Ontology</a> (SDO)
   * <a href="https://github.com/infectious-disease-ontology/infectious-disease-ontology">Infectious Disease Ontology</a> (IDO) and its suite of <a href="https://github.com/infectious-disease-ontology-extensions">extensions</a>.
-  * <a href="https://github.com/mcwdsi/OMRSE">Ontology of Medically Relevant Social Entities</a> (OMRSE)
+  * <a href="https://github.com/mcwdsi/OMRSE">Ontology for Modeling and Represention of Social Entities</a> (OMRSE)
   * <a href="https://bioportal.bioontology.org/ontologies/VSO">Vital Sign Ontology</a> (VSO)
   * <a href="https://bioportal.bioontology.org/ontologies/MFOMD">Mental Diseases</a>
   * <a href="https://github.com/oral-health-and-disease-ontologies/ohd-ontology">Oral Health and Disease ontology</a>

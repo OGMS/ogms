@@ -6,6 +6,8 @@ http://purl.obolibrary.org/obo/BFO_0000054
 http://purl.obolibrary.org/obo/BFO_0000055
 http://purl.obolibrary.org/obo/BFO_0000066
 http://purl.obolibrary.org/obo/BFO_0000067
+http://purl.obolibrary.org/obo/COB_0000022 owl:Class
+http://purl.obolibrary.org/obo/COB_0000035 owl:Class
 http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000112
 http://purl.obolibrary.org/obo/IAO_0000114
@@ -25,12 +27,10 @@ http://purl.obolibrary.org/obo/IAO_0100001
 http://purl.obolibrary.org/obo/IDO_0000504
 http://purl.obolibrary.org/obo/IDO_0000586
 http://purl.obolibrary.org/obo/IDO_0000630
-http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OBI_0000278
 http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/OBI_0000846
 http://purl.obolibrary.org/obo/OBI_0001688
-http://purl.obolibrary.org/obo/OBI_0100026
 http://purl.obolibrary.org/obo/OBI_0200000
 http://purl.obolibrary.org/obo/OBI_0600052
 http://purl.obolibrary.org/obo/RO_0000052

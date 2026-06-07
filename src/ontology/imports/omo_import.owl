@@ -12,9 +12,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ogms/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/ogms/releases/2025-08-13/imports/omo_import.owl>
-Annotation(dc:source <http://purl.obolibrary.org/obo/omo/releases/2025-06-18/omo.owl>)
-Annotation(owl:versionInfo "2025-08-13")
+<http://purl.obolibrary.org/obo/ogms/releases/2026-06-07/imports/omo_import.owl>
+Annotation(dc:source <http://purl.obolibrary.org/obo/omo/releases/2026-03-16/omo.owl>)
+Annotation(owl:versionInfo "2026-06-07")
 
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
@@ -113,6 +113,7 @@ Declaration(AnnotationProperty(obo:OMO_0003009))
 Declaration(AnnotationProperty(obo:OMO_0003010))
 Declaration(AnnotationProperty(obo:OMO_0003011))
 Declaration(AnnotationProperty(obo:OMO_0003012))
+Declaration(AnnotationProperty(obo:OMO_0003014))
 Declaration(AnnotationProperty(obo:OMO_0004000))
 Declaration(AnnotationProperty(dc:contributor))
 Declaration(AnnotationProperty(dc:coverage))
@@ -267,13 +268,14 @@ AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)
 # Annotation Property: obo:IAO_0000233 (term tracker item)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000233 "term tracker item"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000233 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000233 "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000233 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "A URL for a request or discussion of an ontology term."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:comment obo:IAO_0000233 "The 'tracker item' can associate a tracker with a specific ontology term."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
+AnnotationPropertyRange(obo:IAO_0000233 xsd:anyURI)
 
 # Annotation Property: obo:IAO_0000234 (ontology term requester)
 
@@ -526,7 +528,7 @@ AnnotationAssertion(rdfs:label obo:OMO_0002001 "preferred label for community")
 # Annotation Property: obo:OMO_0003000 (abbreviation)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMO_0003000 "CHEBI:26523 (reactive oxygen species) has an exact synonym (ROS), which is of type OMO:0003000 (abbreviation)")
-AnnotationAssertion(obo:IAO_0000115 obo:OMO_0003000 "A synonym type for describing abbreviations or initalisms")
+AnnotationAssertion(obo:IAO_0000115 obo:OMO_0003000 "A synonym type for describing abbreviations or initialisms")
 AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003000 <https://github.com/information-artifact-ontology/ontology-metadata/issues/122>)
 AnnotationAssertion(terms:contributor obo:OMO_0003000 <https://orcid.org/0000-0003-4423-4370>)
 AnnotationAssertion(terms:created obo:OMO_0003000 "2023-03-03"^^xsd:date)
@@ -650,6 +652,15 @@ AnnotationAssertion(terms:created obo:OMO_0003012 "2023-11-01"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:OMO_0003012 "acronym")
 SubAnnotationPropertyOf(obo:OMO_0003012 oboInOwl:SynonymTypeProperty)
 
+# Annotation Property: obo:OMO_0003014 (has ontology hierarchical property)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OMO_0003014 "The Developing Mouse Brain Atlas Ontology (DBMA) ontology uses part-of in its hierarchy, so this would correspond to the following turtle: `<https://purl.brain-bican.org/ontology/dmbao/dmbao.owl> a owl:Ontology; OMO:0003014 rdfs:subClassOf, BFO:0000050`.")
+AnnotationAssertion(obo:IAO_0000115 obo:OMO_0003014 "Relates an ontology to predicates/properties that should be used by user interfaces to render the hierarchical structure of the ontology. Typically, this is rdfs:subClassOf, but in ontologies that are partonomies, this might also include BFO:0000050 (part of). Tools like OLS can use predicates annotated with this property for rendering the ontology class hierarchy. There can be more than one hierarchical property. In the absence of any, it should be assumed that it is rdfs:subClassOf.")
+AnnotationAssertion(obo:IAO_0000233 obo:OMO_0003014 <https://github.com/information-artifact-ontology/IAO/issues/292>)
+AnnotationAssertion(terms:contributor obo:OMO_0003014 <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(terms:created obo:OMO_0003014 "2025-09-17"^^xsd:date)
+AnnotationAssertion(rdfs:label obo:OMO_0003014 "has ontology hierarchical property")
+
 # Annotation Property: obo:OMO_0004000 (has symbol)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMO_0004000 "A serial number such as \"12324X\"; a stop sign; a written proper name such as \"OBI")
@@ -710,10 +721,10 @@ SubAnnotationPropertyOf(oboInOwl:hasRelatedSynonym obo:IAO_0000118)
 #   Classes
 ############################
 
-# Class: obo:IAO_0000027 (data item)
+# Class: obo:IAO_0000027 (data entity)
 
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000027 "data item"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000027 "data item"@en)
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000027 "data entity"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000027 "data entity"@en)
 SubClassOf(obo:IAO_0000027 obo:IAO_0000030)
 
 # Class: obo:IAO_0000030 (information content entity)

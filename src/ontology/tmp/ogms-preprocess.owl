@@ -605,7 +605,6 @@ SubClassOf(obo:OGMS_0000074 obo:BFO_0000031)
 
 # Class: obo:OGMS_0000077 (pathological formation)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000077 "TODO: Define, relate to disorder, and place in the OGMS hierarchy."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000077 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000077 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000077 "creation date: 2009-07-13T02:14:59Z")
@@ -623,7 +622,6 @@ SubClassOf(obo:OGMS_0000078 obo:BFO_0000040)
 
 # Class: obo:OGMS_0000079 (portion of pathological body substance)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000079 "TODO: Define, relate to disorder, and place in the OGMS hierarchy."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000079 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000079 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000079 "creation date: 2009-07-13T02:15:17Z")
@@ -650,7 +648,6 @@ SubClassOf(obo:OGMS_0000081 obo:OGMS_0000061)
 
 # Class: obo:OGMS_0000082 (pathological invasion)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000082 "TODO: Define."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000082 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000119 obo:OGMS_0000082 "http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000082 "creation date: 2009-07-13T02:17:47Z")
@@ -659,7 +656,6 @@ SubClassOf(obo:OGMS_0000082 obo:OGMS_0000061)
 
 # Class: obo:OGMS_0000083 (physical examination finding)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000083 "TODO: Define."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000083 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000083 "creation date: 2009-11-24T04:51:11Z")
 AnnotationAssertion(rdfs:label obo:OGMS_0000083 "physical examination finding")
@@ -720,6 +716,7 @@ SubClassOf(obo:OGMS_0000089 obo:BFO_0000040)
 AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000090 "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000090 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000090 "creation date: 2010-03-31T04:51:11Z")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OGMS_0000090 "medical intervention"@en)
 AnnotationAssertion(rdfs:label obo:OGMS_0000090 "treatment")
 SubClassOf(obo:OGMS_0000090 obo:OGMS_0000096)
 
@@ -785,7 +782,7 @@ Sagar Jain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000096 "creation date: 2011-02-21T09:57:44Z
 editor date: 2017-04-18")
 AnnotationAssertion(rdfs:label obo:OGMS_0000096 "health care process")
-SubClassOf(obo:OGMS_0000096 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000096 obo:COB_0000035)
 
 # Class: obo:OGMS_0000097 (health care encounter)
 
@@ -805,7 +802,6 @@ SubClassOf(obo:OGMS_0000098 obo:OGMS_0000096)
 
 # Class: obo:OGMS_0000099 (outpatient encounter)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000099 "TODO"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000099 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000099 "creation date: 2011-02-21T09:57:44Z")
 AnnotationAssertion(rdfs:label obo:OGMS_0000099 "outpatient encounter")
@@ -847,7 +843,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000103 "Whether or not 'prophylaxi
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000103 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000103 "creation date: 2011-09-20T09:57:44Z")
 AnnotationAssertion(rdfs:label obo:OGMS_0000103 "disease prophylaxis")
-SubClassOf(obo:OGMS_0000103 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000103 obo:COB_0000035)
 
 # Class: obo:OGMS_0000104 (diagnostic process)
 
@@ -886,7 +882,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000107 "A planned process that has
 AnnotationAssertion(dc:date obo:OGMS_0000107 "2017-04-18")
 AnnotationAssertion(dc:publisher obo:OGMS_0000107 "Sagar Jain")
 AnnotationAssertion(rdfs:label obo:OGMS_0000107 "ancillary health care process")
-SubClassOf(obo:OGMS_0000107 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000107 obo:COB_0000035)
 
 # Class: obo:OGMS_0000108 (health care process assay)
 
@@ -916,6 +912,7 @@ SubClassOf(obo:OGMS_0000110 obo:OGMS_0000096)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000111 "A treatment whose completion is hypothesized by a health care provider to prevent the signs and symptoms of a disorder or pathological process.")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000111 "Creation date: 2018-11-27")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OGMS_0000111 "preventive intervention"@en)
 AnnotationAssertion(rdfs:label obo:OGMS_0000111 "prophylactic treatment"@en)
 SubClassOf(obo:OGMS_0000111 obo:OGMS_0000090)
 

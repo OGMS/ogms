@@ -12,6 +12,9 @@ http://purl.obolibrary.org/obo/BFO_0000054
 http://purl.obolibrary.org/obo/BFO_0000055
 http://purl.obolibrary.org/obo/BFO_0000066
 http://purl.obolibrary.org/obo/BFO_0000067
+http://purl.obolibrary.org/obo/COB_0000022 owl:Class
+http://purl.obolibrary.org/obo/COB_0000035
+http://purl.obolibrary.org/obo/COB_0000035 owl:Class
 http://purl.obolibrary.org/obo/IAO_0000027
 http://purl.obolibrary.org/obo/IAO_0000030
 http://purl.obolibrary.org/obo/IAO_0000111
@@ -38,7 +41,6 @@ http://purl.obolibrary.org/obo/OBI_0000278
 http://purl.obolibrary.org/obo/OBI_0000312
 http://purl.obolibrary.org/obo/OBI_0000846
 http://purl.obolibrary.org/obo/OBI_0001688
-http://purl.obolibrary.org/obo/OBI_0100026
 http://purl.obolibrary.org/obo/OBI_0200000
 http://purl.obolibrary.org/obo/OBI_0600052
 http://purl.obolibrary.org/obo/OGMS_0000014
@@ -189,5 +191,6 @@ http://purl.org/dc/elements/1.1/publisher
 http://purl.org/dc/elements/1.1/title
 http://purl.org/dc/terms/license
 http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.w3.org/2002/07/owl#Thing
 term

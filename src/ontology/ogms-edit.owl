@@ -782,7 +782,7 @@ Sagar Jain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000096 "creation date: 2011-02-21T09:57:44Z
 editor date: 2017-04-18")
 AnnotationAssertion(rdfs:label obo:OGMS_0000096 "health care process")
-SubClassOf(obo:OGMS_0000096 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000096 obo:COB_0000035)
 
 # Class: obo:OGMS_0000097 (health care encounter)
 
@@ -843,7 +843,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:OGMS_0000103 "Whether or not 'prophylaxi
 AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000103 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000232 obo:OGMS_0000103 "creation date: 2011-09-20T09:57:44Z")
 AnnotationAssertion(rdfs:label obo:OGMS_0000103 "disease prophylaxis")
-SubClassOf(obo:OGMS_0000103 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000103 obo:COB_0000035)
 
 # Class: obo:OGMS_0000104 (diagnostic process)
 
@@ -882,7 +882,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000107 "A planned process that has
 AnnotationAssertion(dc:date obo:OGMS_0000107 "2017-04-18")
 AnnotationAssertion(dc:publisher obo:OGMS_0000107 "Sagar Jain")
 AnnotationAssertion(rdfs:label obo:OGMS_0000107 "ancillary health care process")
-SubClassOf(obo:OGMS_0000107 obo:OBI_0000011)
+SubClassOf(obo:OGMS_0000107 obo:COB_0000035)
 
 # Class: obo:OGMS_0000108 (health care process assay)
 

@@ -24,7 +24,7 @@ http://purl.obolibrary.org/obo/BFO_0000016
 http://purl.obolibrary.org/obo/OGMS_0000123
 http://purl.obolibrary.org/obo/OGMS_0000097
 http://purl.obolibrary.org/obo/IAO_0000027
-http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/COB_0000035
 http://purl.obolibrary.org/obo/OGMS_0000112
 http://purl.obolibrary.org/obo/OGMS_0000020
 http://purl.obolibrary.org/obo/OGMS_0000108
@@ -92,6 +92,7 @@ http://purl.obolibrary.org/obo/OGMS_0000057
 http://purl.obolibrary.org/obo/OGMS_0000110
 http://purl.obolibrary.org/obo/OGMS_0000029
 http://purl.obolibrary.org/obo/OGMS_0000098
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://purl.obolibrary.org/obo/OGMS_0000136
 http://purl.obolibrary.org/obo/OGMS_0000051
 http://purl.obolibrary.org/obo/OGMS_0000149
@@ -103,6 +104,7 @@ http://purl.obolibrary.org/obo/OGMS_0000102
 http://purl.obolibrary.org/obo/OGMS_0000115
 http://purl.obolibrary.org/obo/OGMS_0000128
 http://purl.obolibrary.org/obo/OGMS_0000071
+http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OGMS_0000015
 http://purl.obolibrary.org/obo/OGMS_0000084
 http://purl.obolibrary.org/obo/OGMS_0000056

@@ -9,8 +9,9 @@ BFO:0000054	owl:ObjectProperty
 BFO:0000055	owl:ObjectProperty
 BFO:0000066	owl:ObjectProperty
 BFO:0000067	owl:ObjectProperty
-COB:0000022 owl:Class
-COB:0000035 owl:Class
+COB:0000022	owl:Class
+COB:0000035	owl:Class
+COB:0000110	owl:Class
 IAO:0000111	owl:AnnotationProperty
 IAO:0000112	owl:AnnotationProperty
 IAO:0000114	owl:AnnotationProperty
@@ -31,11 +32,12 @@ IDO:0000504	owl:Class
 IDO:0000586	owl:Class
 IDO:0000630	owl:Class
 OBI:0000278	owl:Class
+OBI:0200000	owl:Class
+OBI:0600052	owl:Class
+OBI:0600014	owl:Class
 OBI:0000312	owl:ObjectProperty
 OBI:0000846	owl:ObjectProperty
 OBI:0001688	owl:ObjectProperty
-OBI:0200000	owl:Class
-OBI:0600052	owl:Class
 RO:0000052	owl:ObjectProperty
 RO:0000053	owl:ObjectProperty
 RO:0000056	owl:ObjectProperty

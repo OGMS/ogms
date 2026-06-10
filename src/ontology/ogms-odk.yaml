@@ -32,6 +32,7 @@ import_group:
       module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/OBI_
+        - http://purl.obolibrary.org/obo/COB_
     - id: bfo
       module_type: slme
       slme_individuals: exclude

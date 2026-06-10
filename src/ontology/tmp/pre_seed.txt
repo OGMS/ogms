@@ -104,7 +104,6 @@ http://purl.obolibrary.org/obo/OGMS_0000102
 http://purl.obolibrary.org/obo/OGMS_0000115
 http://purl.obolibrary.org/obo/OGMS_0000128
 http://purl.obolibrary.org/obo/OGMS_0000071
-http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OGMS_0000015
 http://purl.obolibrary.org/obo/OGMS_0000084
 http://purl.obolibrary.org/obo/OGMS_0000056

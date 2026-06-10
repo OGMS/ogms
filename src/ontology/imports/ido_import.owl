@@ -7,14 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ogms/imports/ido_import.owl>
-<http://purl.obolibrary.org/obo/ogms/releases/2025-07-02/imports/ido_import.owl>
+<http://purl.obolibrary.org/obo/ogms/releases/2026-06-07/imports/ido_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl>)
-Annotation(owl:versionInfo "2025-07-02")
+Annotation(owl:versionInfo "2026-06-07")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000504>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IDO_0000630>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000045>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
@@ -33,6 +34,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IDO_0000504> "Lindsay Cowell")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IDO_0000504> "infectious disorder"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IDO_0000504> <http://purl.obolibrary.org/obo/IDO_0000586>)
+SubClassOf(<http://purl.obolibrary.org/obo/IDO_0000504> <http://purl.obolibrary.org/obo/OGMS_0000045>)
 
 # Class: <http://purl.obolibrary.org/obo/IDO_0000586> (infection)
 
